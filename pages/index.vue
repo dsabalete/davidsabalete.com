@@ -1,11 +1,11 @@
 <template>
-    <main class="sm:ml-60 sm:mt-32">
+    <main class="md:ml-60 md:mt-32">
         <h1
-            class="hidden sm:block text-5xl uppercase font-bold text-blue-900 pl-8"
+            class="hidden md:block text-5xl uppercase font-bold text-blue-900 pl-8"
         >
             <span class="text-black">David</span> Sabalete Rodríguez
         </h1>
-        <h2 class="text-center sm:text-left pl-8">
+        <h2 class="text-center md:text-left pl-8">
             <a
                 href="mailto:dsabalete@gmail.com"
                 class="font-extralight text-blue-900"
