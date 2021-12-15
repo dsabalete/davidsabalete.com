@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row">
+    <div class="flex flex-col sm:flex-row">
         <Nav />
         <nuxt />
     </div>
