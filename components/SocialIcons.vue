@@ -74,4 +74,11 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="postcss" scoped>
+a {
+    @apply bg-blue-100 p-3 rounded-full;
+}
+svg {
+    fill: white;
+}
+</style>

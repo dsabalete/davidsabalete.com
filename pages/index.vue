@@ -1,26 +1,23 @@
 <template>
-    <main class="px-4">
-        <h1 class="hidden sm:block text-5xl uppercase font-bold text-blue-900">
+    <main class="sm:ml-60 sm:mt-32">
+        <h1
+            class="hidden sm:block text-5xl uppercase font-bold text-blue-900 pl-8"
+        >
             <span class="text-black">David</span> Sabalete Rodríguez
         </h1>
-        <h2 class="text-center">
+        <h2 class="text-center sm:text-left pl-8">
             <a
                 href="mailto:dsabalete@gmail.com"
                 class="font-extralight text-blue-900"
-                ><span class="text-black">dsabalete</span><b>@</b>gmail.com</a
+                >dsabalete@gmail.com</a
             >
         </h2>
         <About />
-        <hr />
-        Experience
-        <hr />
-        Education
-        <hr />
-        Skills
-        <hr />
-        Interests
-        <hr />
-        Projects
+        <Experience />
+        <Education />
+        <Skills />
+        <Interests />
+        <Projects />
     </main>
 </template>
 
@@ -29,3 +26,13 @@ export default {
     name: "IndexPage"
 }
 </script>
+
+<style lang="postcss">
+section {
+    @apply border-b border-gray-300 py-10 pl-8 p-60;
+}
+
+section h2 {
+    @apply text-2xl font-bold text-blue-900 uppercase py-8;
+}
+</style>

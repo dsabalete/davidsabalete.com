@@ -1,5 +1,5 @@
 <template>
-    <section class="my-8" id="about">
+    <section>
         <p>
             I am experienced in Vue.js and Nuxt.js in which I produce high
             quality code for my clients that are both well performing and well
