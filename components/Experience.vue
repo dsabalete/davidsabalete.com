@@ -2,30 +2,26 @@
     <section id="experience">
         <h2>Experience</h2>
 
-        <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
+        <div class="resume-item">
             <div class="resume-content">
-                <h3 class="mb-0">Senior Frontend Developer</h3>
-                <div class="subheading mb-3">LoveToKnow Media Spain</div>
+                <h3>Senior Frontend Developer</h3>
+                <div class="subheading">LoveToKnow Media Spain</div>
                 <p>
-                    Frontend task with Vue.js in the YourDictionary.com team.
-                    Creation of new features, enforcing best practices and
-                    working in an agile environment in a decentralized
-                    international team.
+                    Frontend task with Vue.js and Nuxt.js in the
+                    YourDictionary.com team. Creation of new features, enforcing
+                    best practices and working in an agile environment in a
+                    decentralized international team.
                 </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date">
                 <span class="text-primary">November 2019 - Present</span>
             </div>
         </div>
 
-        <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
+        <div class="resume-item mb-5">
             <div class="resume-content">
-                <h3 class="mb-0">Frontend Developer</h3>
-                <div class="subheading mb-3">EDREAMS Odigeo</div>
+                <h3>Frontend Developer</h3>
+                <div class="subheading">EDREAMS Odigeo</div>
                 <p>
                     Frontend development in Backbone, create unit testing with
                     Karma, functional testing with Gerkin (launching an
@@ -36,20 +32,18 @@
                     backend part of the flow when it is needed.
                 </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date">
                 <span class="text-primary">April 2012 - October 2019</span>
             </div>
         </div>
 
-        <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-        >
+        <div class="resume-item mb-5">
             <div class="resume-content">
-                <h3 class="mb-0">
+                <h3>
                     Senior Frontend Developer, Test Automation Engineer and
                     Analyst Programmer
                 </h3>
-                <div class="subheading mb-3">CAPITOLE CONSULTING</div>
+                <div class="subheading">CAPITOLE CONSULTING</div>
                 <p>
                     Frontend development in Backbone, JQuery and Lodash for
                     client-company of the travel agency sector in Barcelona.
@@ -67,58 +61,52 @@
                     12/2017)
                 </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date">
                 <span class="text-primary">July 2016 - April 2018</span>
             </div>
         </div>
 
-        <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-        >
+        <div class="resume-item">
             <div class="resume-content">
-                <h3 class="mb-0">Web Developer</h3>
-                <div class="subheading mb-3">FIATC Seguros</div>
+                <h3>Web Developer</h3>
+                <div class="subheading">FIATC Seguros</div>
                 <p>
                     Implementation of the "frontend" web for charging and
                     contracting insurance applications in travel assistance and
                     car insurance.
                 </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date">
                 <span class="text-primary">June 2003 - July 2016</span>
             </div>
         </div>
 
-        <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-        >
+        <div class="resume-item">
             <div class="resume-content">
-                <h3 class="mb-0">Web Developer</h3>
-                <div class="subheading mb-3">Institut Català de Tecnologia</div>
+                <h3>Web Developer</h3>
+                <div class="subheading">Institut Català de Tecnologia</div>
                 <p>
                     In charge of maintaining the web portal of the organization
                     (XML + XLS + Oracle with Cocoon) and other applications
                     (with Struts).
                 </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date">
                 <span class="text-primary">June 2001 - May 2003</span>
             </div>
         </div>
 
-        <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between"
-        >
+        <div class="resume-item">
             <div class="resume-content">
-                <h3 class="mb-0">Web Developer</h3>
-                <div class="subheading mb-3">Secretariaplus.com</div>
+                <h3>Web Developer</h3>
+                <div class="subheading">Secretariaplus.com</div>
                 <p>
                     Web development with ASP language, accessing a Microsoft SQL
                     Server database with an intensive use of HTML and
                     Javascript.
                 </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date">
                 <span class="text-primary">April 2000 - May 2001</span>
             </div>
         </div>
@@ -129,4 +117,23 @@
 export default {}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="postcss" scoped>
+section {
+    @apply pr-8;
+}
+.resume-item {
+    @apply flex flex-col md:flex-row justify-between mb-8;
+}
+
+h3 {
+    @apply text-2xl font-bold text-blue-900 py-6;
+}
+
+.subheading {
+    @apply uppercase text-lg font-semibold mb-2;
+}
+
+.resume-date {
+    @apply text-sm text-blue-900 whitespace-nowrap p-6;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
     <main class="md:ml-60 md:mt-32">
         <h1
-            class="hidden md:block text-5xl uppercase font-bold text-blue-900 pl-8"
+            class="hidden md:block text-6xl uppercase font-bold text-blue-900 pl-8"
         >
             <span class="text-black">David</span> Sabalete Rodríguez
         </h1>
@@ -33,6 +33,6 @@ section {
 }
 
 section h2 {
-    @apply text-2xl font-bold text-blue-900 uppercase py-8;
+    @apply text-4xl font-bold text-blue-900 uppercase py-8;
 }
 </style>
