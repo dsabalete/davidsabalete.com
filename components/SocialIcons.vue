@@ -79,6 +79,6 @@ a {
     @apply bg-blue-100 p-3 rounded-full;
 }
 svg {
-    fill: white;
+    fill: bg-blue-500;
 }
 </style>

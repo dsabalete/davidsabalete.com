@@ -43,6 +43,14 @@ export default {
         "@nuxt/postcss8"
     ],
 
+    tailwindcss: {
+        cssPath: "@/assets/css/main.css",
+        configPath: "tailwind.config.js",
+        exposeConfig: false,
+        config: {},
+        injectPosition: 0
+    },
+
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [["vue-scrollto/nuxt", { duration: 500 }]],
 
@@ -50,7 +58,6 @@ export default {
     build: {
         postcss: {
             plugins: {
-                tailwindcss: {},
                 autoprefixer: {}
             }
         }

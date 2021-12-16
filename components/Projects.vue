@@ -1,9 +1,9 @@
 <template>
-    <section id="projects">
+    <section id="projects" class="md:pr-60">
         <h2>Projects</h2>
 
-        <div class="flex flex-col mb-3">
-            <div class="project shadow-large">
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="../assets/images/kiloday.png"
@@ -16,7 +16,10 @@
                         Alternative birthday calculator app made with Vue, Vite
                         and Pinia
                     </p>
-                    <a href="https://kiloday.netlify.app/" class="view-project"
+                    <a
+                        href="https://kiloday.netlify.app/"
+                        class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -24,7 +27,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/vue-twitter-clone.png"
@@ -41,11 +44,13 @@
                     <a
                         href="https://github.com/dsabalete/vue-twitter-clone"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                     <a
                         href="https://elegant-rosalind-90c586.netlify.app/"
                         class="view-demo"
+                        target="_blank"
                         >Demo</a
                     >
                 </div>
@@ -53,7 +58,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/expensify.png"
@@ -70,11 +75,13 @@
                     <a
                         href="https://github.com/dsabalete/udemy-expensify-app"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                     <a
                         href="https://raspbian-expensify.herokuapp.com/"
                         class="view-demo"
+                        target="_blank"
                         >Demo</a
                     >
                 </div>
@@ -82,7 +89,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/indecision.png"
@@ -99,11 +106,13 @@
                     <a
                         href="https://github.com/dsabalete/udemy-indecision-app"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                     <a
                         href="https://raspbian-indecision.herokuapp.com/"
                         class="view-demo"
+                        target="_blank"
                         >Demo</a
                     >
                 </div>
@@ -111,7 +120,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/portfolio.png"
@@ -125,6 +134,7 @@
                     <a
                         href="https://github.com/dsabalete/gridsome-portfolio"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -132,7 +142,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/creualta.png"
@@ -150,6 +160,7 @@
                     <a
                         href="https://www.creualtabasquet.cat"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -157,7 +168,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/my-1-rm.png"
@@ -173,11 +184,13 @@
                     <a
                         href="https://github.com/dsabalete/my-1-rm"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                     <a
                         href="https://priceless-fermat-717abc.netlify.app/"
                         class="view-demo"
+                        target="_blank"
                         >Demo</a
                     >
                 </div>
@@ -185,7 +198,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/calculator.png"
@@ -198,6 +211,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/yZrxzP"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -205,7 +219,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/drum_machine.png"
@@ -218,6 +232,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/bzQEqQ"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -225,7 +240,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/markdown.png"
@@ -238,6 +253,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/daqqBQ"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -245,7 +261,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/pomodoro.png"
@@ -258,6 +274,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/MLNQvQ"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -265,7 +282,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/quote_machine.png"
@@ -278,6 +295,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/QdYLOZ"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -285,7 +303,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/tribute_page.png"
@@ -298,6 +316,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/aBPxzB"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -305,7 +324,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/weather.png"
@@ -320,6 +339,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/RKvqjJ"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -327,7 +347,7 @@
             </div>
             <!-- End .project -->
 
-            <div class="project shadow-large">
+            <div class="project">
                 <div class="project-image">
                     <img
                         src="https://dsabalete.github.io/images/wikipedia_viewer.png"
@@ -342,6 +362,7 @@
                     <a
                         href="https://codepen.io/dsabalete/full/OpRKEZ"
                         class="view-project"
+                        target="_blank"
                         >View Project</a
                     >
                 </div>
@@ -358,6 +379,24 @@ export default {}
 
 <style lang="postcss" scoped>
 img {
-    @apply w-1/4;
+    @apply w-60 h-40 hover:scale-110 transition duration-500 ease-in-out;
+}
+.project {
+    @apply flex flex-col drop-shadow-2xl;
+}
+.project-image {
+    @apply w-full;
+}
+.project-info {
+    @apply justify-center;
+}
+.project-info h3 {
+    @apply text-lg font-bold py-3;
+}
+.view-project {
+    @apply text-blue-500 hover:text-blue-700 mr-4;
+}
+.view-demo {
+    @apply text-right text-blue-500 hover:text-blue-700;
 }
 </style>
