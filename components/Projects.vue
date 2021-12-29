@@ -6,6 +6,35 @@
             <div class="project">
                 <div class="project-image">
                     <img
+                        src="../assets/images/space-tourism.png"
+                        alt="Space tourism homepage picture"
+                    />
+                </div>
+                <div class="project-info">
+                    <h3>Space Tourism</h3>
+                    <p>
+                        Static responsive website for a space tourism company.
+                    </p>
+                    <a
+                        href="https://github.com/dsabalete/space-tourism"
+                        class="view-project"
+                        target="_blank"
+                        >View Project</a
+                    >
+                    <a
+                        href="https://sabalete-space-tourism.netlify.app/"
+                        class="view-demo"
+                        target="_blank"
+                        >Demo</a
+                    >
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+            <div class="project">
+                <div class="project-image">
+                    <img
                         src="../assets/images/kiloday.png"
                         alt="Kiloday homepage picture"
                     />
