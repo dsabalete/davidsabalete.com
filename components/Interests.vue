@@ -1,5 +1,5 @@
 <template>
-    <section id="interests" class="md:pr-60">
+    <section id="interests" class="lg:pr-60">
         <h2>Interests</h2>
 
         <p>

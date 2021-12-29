@@ -39,7 +39,7 @@ export default {
     @apply flex flex-col drop-shadow-2xl;
 }
 img {
-    @apply w-60 h-40 rounded-xl hover:scale-110 transition duration-500 ease-in-out;
+    @apply mx-auto md:mx-0 md:w-80 md:aspect-video rounded-xl hover:scale-110 transition duration-500 ease-in-out;
 }
 p {
     @apply mb-4;

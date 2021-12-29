@@ -1,8 +1,8 @@
 <template>
-    <section id="projects" class="md:pr-60">
+    <section id="projects" class="lg:pr-32">
         <h2>Projects</h2>
 
-        <div class="grid md:grid-cols-2 gap-10">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
             <Project
                 v-for="(project, idx) in projects"
                 :key="idx"

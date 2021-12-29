@@ -1,5 +1,5 @@
 <template>
-    <section id="skills">
+    <section id="skills" class="lg:pr-32">
         <h2>Skills</h2>
 
         <h3>Programming Languages &amp; Tools</h3>
