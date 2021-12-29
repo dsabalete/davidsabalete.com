@@ -1,17 +1,5 @@
 <template>
-    <section class="">
-        <h1
-            class="hidden text-left md:block text-7xl uppercase font-extrabold text-blue-900"
-        >
-            <span class="text-black">David</span> Sabalete Rodríguez
-        </h1>
-        <p class="text-center md:text-left">
-            <a
-                href="mailto:dsabalete@gmail.com"
-                class="font-normal text-blue-900 uppercase"
-                >dsabalete@gmail.com</a
-            >
-        </p>
+    <section>
         <p class="md:my-48">
             I am experienced in Vue.js and Nuxt.js in which I produce high
             quality code for my clients that are both well performing and well

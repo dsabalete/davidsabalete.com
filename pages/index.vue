@@ -1,12 +1,28 @@
 <template>
-    <main class="md:ml-60 md:mt-32">
-        <About />
-        <Experience />
-        <Education />
-        <Skills />
-        <Interests />
-        <Projects />
-    </main>
+    <div class="page-container">
+        <header>
+            <h1
+                class="hidden text-left md:block text-7xl uppercase font-extrabold text-blue-900"
+            >
+                <span class="text-black">David</span> Sabalete Rodríguez
+            </h1>
+            <p class="text-center md:text-left">
+                <a
+                    href="mailto:dsabalete@gmail.com"
+                    class="font-normal text-blue-900 uppercase"
+                    >dsabalete@gmail.com</a
+                >
+            </p>
+        </header>
+        <main>
+            <About />
+            <Experience />
+            <Education />
+            <Skills />
+            <Interests />
+            <Projects />
+        </main>
+    </div>
 </template>
 
 <script>
@@ -16,6 +32,12 @@ export default {
 </script>
 
 <style lang="postcss">
+.page-container {
+    @apply md:ml-64 md:mt-32;
+}
+header {
+    @apply m-8;
+}
 section {
     @apply border-b border-gray-300 py-10 px-8 p-60 md:min-h-screen;
 }

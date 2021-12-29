@@ -2,7 +2,7 @@
     <section id="skills">
         <h2>Skills</h2>
 
-        <div class="subheading">Programming Languages &amp; Tools</div>
+        <h3>Programming Languages &amp; Tools</h3>
         <ul class="list-inline dev-icons">
             <li class="list-inline-item">html5</li>
             <li class="list-inline-item">css3-alt</li>
@@ -20,7 +20,7 @@
             <li class="list-inline-item">yarn</li>
         </ul>
 
-        <div class="subheading">Workflow</div>
+        <h3>Workflow</h3>
         <ul>
             <li>Mobile-First, Responsive Design</li>
             <li>Cross Browser Testing &amp; Debugging</li>

@@ -22,27 +22,3 @@ export default {
     }
 }
 </script>
-
-<style lang="postcss" scoped>
-img {
-    @apply w-60 h-40 hover:scale-110 transition duration-500 ease-in-out;
-}
-.project {
-    @apply flex flex-col drop-shadow-2xl;
-}
-.project-image {
-    @apply w-full;
-}
-.project-info {
-    @apply justify-center;
-}
-.project-info h3 {
-    @apply text-lg font-bold py-3;
-}
-.view-project {
-    @apply text-blue-500 hover:text-blue-700 mr-4;
-}
-.view-demo {
-    @apply text-right text-blue-500 hover:text-blue-700;
-}
-</style>
