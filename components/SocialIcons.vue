@@ -1,5 +1,5 @@
 <template>
-    <div class="social-icons flex mt-10 justify-around">
+    <div class="social-icons flex my-10 justify-around">
         <a
             href="https://linkedin.com/in/dsabalete"
             target="_blank"

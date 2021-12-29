@@ -40,7 +40,8 @@ export default {
         "@nuxtjs/eslint-module",
         // https://go.nuxtjs.dev/tailwindcss
         "@nuxtjs/tailwindcss",
-        "@nuxt/postcss8"
+        "@nuxt/postcss8",
+        "@nuxtjs/google-fonts"
     ],
 
     tailwindcss: {
@@ -49,6 +50,19 @@ export default {
         exposeConfig: false,
         config: {},
         injectPosition: 0
+    },
+
+    googleFonts: {
+        families: {
+            Roboto: true,
+            "Josefin+Sans": true,
+            Lato: [100, 300],
+            Raleway: {
+                wght: [100, 400],
+                ital: [100]
+            }
+        },
+        display: "swap"
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules

@@ -3,8 +3,8 @@
         <h2>Education</h2>
         <div class="resume-item">
             <div class="resume-content">
-                <h3>Institut Català de Tecnología</h3>
-                <div class="subheading">E-business Technologies</div>
+                <h3>E-business Technologies</h3>
+                <div class="subheading">Institut Català de Tecnología</div>
                 <p>Master degree</p>
             </div>
             <div class="resume-date text-md-right">
@@ -14,8 +14,10 @@
 
         <div class="resume-item">
             <div class="resume-content">
-                <h3>Universitat Politècnica de Catalunya</h3>
-                <div class="subheading">Industrial technical engineering</div>
+                <h3>Industrial technical engineering</h3>
+                <div class="subheading">
+                    Universitat Politècnica de Catalunya
+                </div>
                 <p>Electronic specialty</p>
             </div>
 

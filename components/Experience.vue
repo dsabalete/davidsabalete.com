@@ -2,7 +2,7 @@
     <section id="experience">
         <h2>Experience</h2>
 
-        <div class="resume-item">
+        <div class="resume-item mb-5">
             <div class="resume-content">
                 <h3>Senior Frontend Developer</h3>
                 <div class="subheading">LoveToKnow Media Spain</div>

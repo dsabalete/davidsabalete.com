@@ -24,8 +24,8 @@
 export default {}
 </script>
 
-<style lang="css" scoped>
+<style lang="postcss" scoped>
 p {
-    margin-bottom: 1rem;
+    @apply mb-4;
 }
 </style>
