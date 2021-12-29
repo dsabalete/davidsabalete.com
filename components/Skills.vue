@@ -3,7 +3,7 @@
         <h2>Skills</h2>
 
         <h3>Programming Languages &amp; Tools</h3>
-        <ul>
+        <ul class="langs-n-tools">
             <li>
                 <img
                     v-tooltip.bottom="`HTML5`"
@@ -69,7 +69,9 @@
             </li>
             <li>
                 <img
-                    v-tooltip.bottom="`Sass &amp; Less`"
+                    v-tooltip.bottom="
+                        `Sass: Syntactically Awesome Style Sheets`
+                    "
                     src="/icons/sass.svg"
                     alt="Sass"
                 />
@@ -109,10 +111,31 @@
                     alt="Yarn"
                 />
             </li>
+            <li>
+                <img
+                    v-tooltip.bottom="`Java: Programming Language`"
+                    src="/icons/java.svg"
+                    alt="Java"
+                />
+            </li>
+            <li>
+                <img
+                    v-tooltip.bottom="`PHP: Programming Language`"
+                    src="/icons/php.svg"
+                    alt="PHP"
+                />
+            </li>
+            <li>
+                <img
+                    v-tooltip.bottom="`Python: Programming Language`"
+                    src="/icons/python.svg"
+                    alt="Python"
+                />
+            </li>
         </ul>
 
         <h3>Workflow</h3>
-        <ul>
+        <ul class="workflow">
             <li>Mobile-First, Responsive Design</li>
             <li>Cross Browser Testing &amp; Debugging</li>
             <li>Cross Functional Teams</li>
@@ -131,11 +154,23 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-ul {
+.langs-n-tools {
     @apply flex flex-wrap;
 }
-li {
+.langs-n-tools li {
     @apply w-12 mx-4 my-8 hover:scale-150 duration-500;
+}
+.workflow {
+    @apply flex flex-col;
+}
+.workflow li:before {
+    content: "✅";
+    display: inline-block;
+    margin-left: 2em;
+    width: 2em;
+}
+.workflow img {
+    @apply w-6;
 }
 </style>
 
