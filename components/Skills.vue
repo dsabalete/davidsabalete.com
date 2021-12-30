@@ -177,7 +177,7 @@ export default {
 <style scoped>
 .tooltip {
     display: block !important;
-    z-index: 10000;
+    z-index: 100;
 }
 
 .tooltip .tooltip-inner {
