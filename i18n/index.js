@@ -1,11 +1,13 @@
 import en from "./translations/en"
 import es from "./translations/es"
+import ca from "./translations/ca"
 
 const DEFAULT_LOCALE = "en"
 
 const messages = {
     en,
-    es
+    es,
+    ca
 }
 
 export default {
@@ -19,6 +21,11 @@ export default {
             code: "es",
             iso: "es-ES",
             name: "Español"
+        },
+        {
+            code: "ca",
+            iso: "ca-ES",
+            name: "Català"
         }
     ],
     defaultLocale: DEFAULT_LOCALE,
