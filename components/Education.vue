@@ -1,6 +1,6 @@
 <template>
     <section id="education">
-        <h2>Education</h2>
+        <h2>{{ $t("education_title") }}</h2>
         <div class="resume-item">
             <div class="resume-content">
                 <h3>E-business Technologies</h3>

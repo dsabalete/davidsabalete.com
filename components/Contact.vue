@@ -1,10 +1,10 @@
 <template>
     <section id="contact" class="pb-16 flex flex-col">
-        <h2>You can reach me...</h2>
+        <h2>{{ $t("contact_title") }}</h2>
         <Social size="lg" class="mt-20 mb-12" />
 
         <a href="#about" v-scroll-to="'#about'" class="link">
-            Back to the top</a
+            {{ $t("contact_back") }}</a
         >
     </section>
 </template>

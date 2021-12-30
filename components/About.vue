@@ -2,21 +2,15 @@
     <section class="flex flex-col pt-0 sm:pt-8">
         <div>
             <p>
-                I am experienced in Vue.js and Nuxt.js in which I produce high
-                quality code for my clients that are both well performing and
-                well tested.
+                {{ $t("about_text_1") }}
             </p>
             <p>
-                I focus on solving problems, not only technical problems but
-                creating an awesome experience for the users of my software both
-                visual and accessible. Mixing powerful tools and knowledge about
-                the users brings visual UI's to life and leads to webpages being
-                accessible and useful.
+                {{ $t("about_text_2") }}
             </p>
         </div>
 
         <a href="#contact" v-scroll-to="'#contact'" class="link">
-            Contact me!</a
+            {{ $t("about_contact_me") }}</a
         >
     </section>
 </template>

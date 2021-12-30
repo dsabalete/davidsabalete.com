@@ -1,8 +1,8 @@
 <template>
     <section id="skills" class="lg:pr-32">
-        <h2>Skills</h2>
+        <h2>{{ $t("skills_title") }}</h2>
 
-        <h3>Programming Languages &amp; Tools</h3>
+        <h3>{{ $t("skills_programming_languages") }}</h3>
         <ul class="langs-n-tools">
             <li>
                 <img
@@ -134,14 +134,14 @@
             </li>
         </ul>
 
-        <h3>Workflow</h3>
+        <h3>{{ $t("skills_workflow") }}</h3>
         <ul class="workflow">
-            <li>Mobile-First, Responsive Design</li>
-            <li>Cross Browser Testing &amp; Debugging</li>
-            <li>Cross Functional Teams</li>
-            <li>Agile Development &amp; Scrum</li>
-            <li>Cutting edge JavaScript frameworks</li>
-            <li>Design principles and UX</li>
+            <li>{{ $t("skills_workflow_text_1") }}</li>
+            <li>{{ $t("skills_workflow_text_2") }}</li>
+            <li>{{ $t("skills_workflow_text_3") }}</li>
+            <li>{{ $t("skills_workflow_text_4") }}</li>
+            <li>{{ $t("skills_workflow_text_5") }}</li>
+            <li>{{ $t("skills_workflow_text_6") }}</li>
         </ul>
     </section>
 </template>

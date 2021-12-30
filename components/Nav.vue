@@ -23,7 +23,7 @@
         <ul id="primary-navigation" :data-visible="isOpen" @click="close">
             <li>
                 <a href="#about" class="nav-entry" v-scroll-to="'#about'"
-                    >about
+                    >{{ $t("about") }}
                 </a>
             </li>
             <li>
@@ -31,7 +31,7 @@
                     href="#experience"
                     class="nav-entry"
                     v-scroll-to="'#experience'"
-                    >experience
+                    >{{ $t("experience") }}
                 </a>
             </li>
             <li>
@@ -39,12 +39,12 @@
                     href="#education"
                     class="nav-entry"
                     v-scroll-to="'#education'"
-                    >education
+                    >{{ $t("education") }}
                 </a>
             </li>
             <li>
                 <a href="#skills" class="nav-entry" v-scroll-to="'#skills'"
-                    >skills
+                    >{{ $t("skills") }}
                 </a>
             </li>
             <li>
@@ -52,21 +52,29 @@
                     href="#interests"
                     class="nav-entry"
                     v-scroll-to="'#interests'"
-                    >interests
+                    >{{ $t("interests") }}
                 </a>
             </li>
             <li>
                 <a href="#projects" class="nav-entry" v-scroll-to="'#projects'"
-                    >projects
+                    >{{ $t("projects") }}
                 </a>
             </li>
             <li><a href="#" class="nav-entry" @click="goToBlog">blog </a></li>
             <li>
                 <a href="#contact" class="nav-entry" v-scroll-to="'#contact'"
-                    >contact
+                    >{{ $t("contact") }}
                 </a>
             </li>
         </ul>
+        <nuxt-link
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)"
+            class="text-center"
+        >
+            <img :src="`/icons/flag-${locale.code}.svg`" :alt="locale.name" />
+        </nuxt-link>
     </nav>
 </template>
 
@@ -77,6 +85,13 @@ export default {
         return {
             expanded: "false",
             isOpen: false
+        }
+    },
+    computed: {
+        availableLocales() {
+            return this.$i18n.locales.filter(
+                (i) => i.code !== this.$i18n.locale
+            )
         }
     },
     methods: {

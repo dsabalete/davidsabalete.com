@@ -8,15 +8,15 @@
         <div class="project-info">
             <h3>{{ project.title }}</h3>
             <p>{{ project.description }}</p>
-            <a :href="project.repo" class="view-project" target="_blank"
-                >View Project</a
-            >
+            <a :href="project.repo" class="view-project" target="_blank">{{
+                $t("project_view")
+            }}</a>
             <a
                 v-if="project.live"
                 :href="project.live"
                 class="view-demo"
                 target="_blank"
-                >Demo</a
+                >{{ $t("project_demo") }}</a
             >
         </div>
     </div>

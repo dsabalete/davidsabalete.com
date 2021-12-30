@@ -12,11 +12,13 @@ export default {
     locales: [
         {
             code: "en",
-            iso: "en-US"
+            iso: "en-US",
+            name: "English"
         },
         {
             code: "es",
-            iso: "es-ES"
+            iso: "es-ES",
+            name: "Español"
         }
     ],
     defaultLocale: DEFAULT_LOCALE,
