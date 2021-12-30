@@ -24,16 +24,12 @@ export default {}
 
 <style lang="css" scoped>
 section {
-    min-height: calc(100vh - 300px);
+    min-height: calc(100vh - 370px);
 }
 </style>
 
 <style lang="postcss" scoped>
 section {
-    @apply flex flex-col w-full lg:w-2/3 sm:mr-4;
-}
-
-p {
-    @apply my-4;
+    @apply flex flex-col w-full lg:w-2/3 sm:mr-4 pt-0;
 }
 </style>

@@ -5,10 +5,6 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Linkedin"
-            v-tooltip.bottom="{
-                content: 'Contact me on LinkedIn!',
-                delay: 500
-            }"
         >
             <img src="/icons/linkedin.svg" alt="LinkedIn" />
         </a>
@@ -18,12 +14,12 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Github"
-            v-tooltip.bottom="{
-                content: 'Take a look at my repos in Github',
-                delay: 500
-            }"
         >
             <img src="/icons/github.svg" alt="Github" />
+        </a>
+
+        <a href="mailto:dsabalete@gmail.com" aria-label="Email">
+            <img src="/icons/email.svg" alt="Email" />
         </a>
 
         <a
@@ -31,7 +27,6 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Twitter"
-            v-tooltip.bottom="{ content: 'Follow me on Twitter', delay: 500 }"
         >
             <img src="/icons/twitter.svg" alt="Twitter" />
         </a>
@@ -41,10 +36,6 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Blogger"
-            v-tooltip.bottom="{
-                content: 'Read my recent post on Blogger',
-                delay: 500
-            }"
         >
             <img src="/icons/blogger.svg" alt="Blogger" />
         </a>

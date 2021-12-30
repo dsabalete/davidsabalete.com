@@ -164,10 +164,8 @@ export default {
     @apply flex flex-col;
 }
 .workflow li:before {
+    @apply inline-block ml-0 sm:ml-8 w-8;
     content: "✅";
-    display: inline-block;
-    margin-left: 2em;
-    width: 2em;
 }
 .workflow img {
     @apply w-6;
