@@ -1,12 +1,11 @@
 <template>
-    <section class="grid pr-8 pt-0 h-full">
+    <section class="flex flex-col pt-0 sm:pt-8">
         <div>
             <p>
                 I am experienced in Vue.js and Nuxt.js in which I produce high
                 quality code for my clients that are both well performing and
                 well tested.
             </p>
-
             <p>
                 I focus on solving problems, not only technical problems but
                 creating an awesome experience for the users of my software both
@@ -28,6 +27,6 @@ export default {}
 
 <style lang="postcss" scoped>
 .link {
-    @apply mt-20 sm:mt-32 bg-blue-100 text-blue-900 px-1 py-2 text-center uppercase font-bold tracking-wide text-xl rounded-xl;
+    @apply w-full mt-20 sm:mt-32 bg-blue-100 text-blue-900 px-1 py-2 text-center uppercase font-bold tracking-wide text-xl rounded-xl;
 }
 </style>
