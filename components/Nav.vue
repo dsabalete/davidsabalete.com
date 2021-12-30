@@ -66,15 +66,19 @@
                     >{{ $t("contact") }}
                 </a>
             </li>
+            <li class="flex justify-center">
+                <nuxt-link
+                    v-for="locale in availableLocales"
+                    :key="locale.code"
+                    :to="switchLocalePath(locale.code)"
+                >
+                    <img
+                        :src="`/icons/flag-${locale.code}.svg`"
+                        :alt="locale.name"
+                    />
+                </nuxt-link>
+            </li>
         </ul>
-        <nuxt-link
-            v-for="locale in availableLocales"
-            :key="locale.code"
-            :to="switchLocalePath(locale.code)"
-            class="text-center"
-        >
-            <img :src="`/icons/flag-${locale.code}.svg`" :alt="locale.name" />
-        </nuxt-link>
     </nav>
 </template>
 
