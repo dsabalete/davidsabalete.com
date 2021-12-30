@@ -56,6 +56,7 @@ export default {
         families: {
             Roboto: true,
             "Josefin+Sans": true,
+            Audiowide: true,
             Lato: [100, 300],
             Raleway: {
                 wght: [100, 400],

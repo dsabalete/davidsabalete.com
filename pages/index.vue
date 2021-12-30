@@ -2,13 +2,6 @@
     <div class="page-container">
         <header>
             <h1><span class="text-black">David</span> Sabalete Rodríguez</h1>
-            <p class="text-center md:text-left">
-                <a
-                    href="mailto:dsabalete@gmail.com"
-                    class="font-normal text-blue-900 uppercase"
-                    >dsabalete@gmail.com</a
-                >
-            </p>
         </header>
         <main>
             <About />
@@ -17,6 +10,7 @@
             <Skills />
             <Interests />
             <Projects />
+            <Contact />
         </main>
     </div>
 </template>
@@ -29,19 +23,19 @@ export default {
 
 <style lang="postcss">
 .page-container {
-    @apply md:ml-64 md:mt-32;
+    @apply md:ml-64 md:mt-0;
 }
 header {
-    @apply m-8;
+    @apply sm:m-8;
 }
 header h1 {
     @apply hidden font-sans text-left md:block text-7xl uppercase font-extrabold text-blue-900;
 }
 section {
-    @apply border-b border-gray-300 py-10 px-8 p-60 md:min-h-screen;
+    @apply border-b border-gray-300 py-10 px-4 sm:px-8 md:min-h-screen;
 }
 section h2 {
-    @apply text-4xl font-bold text-blue-900 uppercase py-8;
+    @apply font-title text-4xl font-bold text-blue-900 uppercase py-8;
 }
 .resume-item {
     @apply flex flex-col md:flex-row justify-between mb-8;
@@ -54,5 +48,8 @@ h3 {
 }
 .resume-date {
     @apply text-sm text-blue-900 whitespace-nowrap p-6;
+}
+p {
+    @apply text-justify my-4;
 }
 </style>

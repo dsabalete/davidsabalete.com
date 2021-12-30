@@ -7,7 +7,13 @@ module.exports = {
         "./nuxt.config.{js,ts}"
     ],
     theme: {
-        extend: {}
+        extend: {},
+        fontFamily: {
+            sans: ["ui-sans-serif", "system-ui"],
+            serif: ["ui-serif", "Georgia"],
+            mono: ["ui-monospace", "SFMono-Regular"],
+            title: ["Audiowide", "serif"]
+        }
     },
     plugins: []
 }
