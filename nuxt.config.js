@@ -1,3 +1,5 @@
+import i18n from "./i18n"
+
 export default {
     // Target: https://go.nuxtjs.dev/config-target
     target: "static",
@@ -67,7 +69,10 @@ export default {
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [["vue-scrollto/nuxt", { duration: 500 }]],
+    modules: [
+        ["vue-scrollto/nuxt", { duration: 500 }],
+        ["@nuxtjs/i18n", { ...i18n }]
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
