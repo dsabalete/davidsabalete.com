@@ -23,7 +23,7 @@ export default {
 
 <style lang="postcss">
 .page-container {
-    @apply md:ml-64 md:mt-0;
+    @apply sm:ml-64 sm:mt-16;
 }
 header {
     @apply sm:m-8;
@@ -32,10 +32,10 @@ header h1 {
     @apply hidden font-sans text-left md:block text-7xl uppercase font-extrabold text-blue-900;
 }
 section {
-    @apply border-b border-gray-300 py-10 px-4 sm:px-8 md:min-h-screen;
+    @apply border-b border-gray-300 py-10 px-4 sm:px-8 sm:min-h-screen;
 }
 section h2 {
-    @apply font-title text-4xl font-bold text-blue-900 uppercase py-8;
+    @apply font-title text-4xl font-bold text-blue-900 uppercase pt-8 pb-16;
 }
 .resume-item {
     @apply flex flex-col md:flex-row justify-between mb-8;
