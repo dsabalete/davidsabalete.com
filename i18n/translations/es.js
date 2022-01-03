@@ -42,9 +42,9 @@ const es = {
     interests_text_1:
         "Me gusta crear sitios web para divertirme, probando nuevas tecnologías y herramientas para mejorarme como desarrollador y estar al día con la tecnología actual.",
     interests_text_2:
-        "Además de ser un desarrollador frontend, soy un aficionado al gimnasio y disfruto entrenar con pesas y placas de hierro. También me encanta ver charlas TED y también disfruto viendo películas y series en Netflix (para mejorar mis habilidades en inglés 😉).",
+        "Además de ser un desarrollador frontend, soy un aficionado al gimnasio y me gusta entrenar con pesas y barras de hierro. También me interesan las charlas TED y disfruto viendo películas y series en Netflix (para mejorar mis habilidades en inglés 😉).",
     interests_text_3:
-        "Y durante el verano, disfruto haciendo camping con mi familia cerca del mar.",
+        "Y durante el verano, suelo hacer camping con mi familia cerca del mar.",
     project_view: "Ver el proyecto",
     project_demo: "Demo",
     projects_title: "Proyectos",

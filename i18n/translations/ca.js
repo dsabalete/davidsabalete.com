@@ -9,7 +9,7 @@ const ca = {
     about_text_1:
         "Tinc experiència en Vue.js i Nuxt.js amb els que produeixo codi d'alta qualitat pels meus clients que tenen un bon rendiment i estan ben provats.",
     about_text_2:
-        "Em concentro en resoldre problemes, no només problemes tècnics, sino també en crear una experiència increible pels usuaris del meu software, tant visual com accesible. La combinació d'eines poderoses i coneixements sobre els usuaris dona vida a les interficies d'usuari visuales i fa que les pàgines web siguin accesibles i utils.",
+        "Em concentro en resoldre problemes, no només problemes tècnics, sino també en crear una experiència increïble pels usuaris del meu software, tant visual com accesible. La combinació d'eines poderoses i coneixements sobre els usuaris dona vida a les interficies d'usuari visuals i fa que les pàgines web siguin accesibles i útils.",
     about_contact_me: "Contacta'm!",
     contact_title: "Pots torbar-me a...",
     contact_back: "Tornar a l'inici",
@@ -25,7 +25,7 @@ const ca = {
     experience_job_text_1:
         "Tasques de Frontend amb Vue.js i Nuxt.js a l'equip de YourDictionary.com. Creació de noves funcionalitats, aplicant les millors pràctiques i treballant en un entorn àgil en un equip internacional descentralitzat.",
     experience_job_text_2:
-        "Desenvolupament de frontend en Backbone, creació de proves unitàries amb Karma, proves funcionales amb Gerkin (iniciant un procés automatitzat que s'ejecuta a Jenkins) i Testing AB de versions beta abans de passar a upstream. A part d'això, també reviso el codi de la solicitut d'extracció de diferents equips, inclòs el codi React i actualitzar, modificar o depurar el codi Java a la part de backend del fluxe quan es necessari.",
+        "Desenvolupament de frontend en Backbone, creació de proves unitàries amb Karma, proves funcionales amb Gerkin (iniciant un procés automatitzat que s'ejecuta a Jenkins) i Testing AB de versions beta abans de passar a upstream. A part d'això, també reviso el codi de la sol.licitud d'extracció de diferents equips, inclòs el codi React i actualitzar, modificar o depurar el codi Java a la part de backend del fluxe quan es necessari.",
     experience_job_text_3_1:
         "Desenvolupament de frontend en Backbone, JQuery i Lodash pel client-empresa del sector de viatges a Barcelona. (10/2017 - 04/2018)",
     experience_job_text_3_2:
@@ -40,11 +40,11 @@ const ca = {
         "Desenvolupament web amb llenguatge ASP, accedint a una base de dades Microsoft SQL Server amb ús intensiu de HTML i Javascript.",
     interests_title: "Interessos",
     interests_text_1:
-        "M'agrada crear llocs web par divertir-me, provant noves tecnologies i eines para millorar-me com Desenvolupador i estar al dia amb la tecnologia actual.",
+        "M'agrada crear llocs web per divertir-me, provant noves tecnologies i eines para millorar-me com Desenvolupador i estar al dia amb la tecnologia actual.",
     interests_text_2:
-        "A més de ser un Desenvolupador frontend, soc un aficionat al gimnàs i gaudeixo entrenant amb peses i barres de ferro. També m'agrada veure xerrades TED i gaudeixo veient películes i sèries a Netflix (per millorar l'anglès, es clar 😉).",
+        "A més de ser un Desenvolupador frontend, soc un aficionat al gimnàs i m'agrada entrenar amb peses i barres de ferro. També m'interessen les xerrades TED i gaudeixo veient películes i sèries a Netflix (per millorar l'anglès, es clar 😉).",
     interests_text_3:
-        "I durant l'estiu, gaudeixo fent camping amb la meva familia prop del mar.",
+        "I durant l'estiu, solc a fer camping amb la meva familia prop del mar.",
     project_view: "Veure el projecte",
     project_demo: "Demo",
     projects_title: "Projectes",
