@@ -10,6 +10,7 @@
         "lint": "eslint --ext .ts,.js,.vue ."
     },
     "dependencies": {
+        "@nuxtjs/google-gtag": "^1.0.4",
         "@nuxtjs/i18n": "^7.2.0",
         "core-js": "^3.19.3",
         "nuxt": "^2.15.8",

@@ -104,6 +104,7 @@ export default {
                 "Are you sure you want to go to the blog?"
             )
             if (areYouSure) {
+                this.$gtag("event", "visit_blog", { event_category: "nav" })
                 window.location.href = "https://blog.davidsabalete.com"
             }
         },
