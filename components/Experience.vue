@@ -20,7 +20,7 @@
                 <p>{{ $t("experience_job_text_2") }}</p>
             </div>
             <div class="resume-date">
-                <span class="text-primary">April 2012 - October 2019</span>
+                <span class="text-primary">April 2018 - October 2019</span>
             </div>
         </div>
 
