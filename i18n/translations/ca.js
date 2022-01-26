@@ -31,7 +31,7 @@ const ca = {
     experience_job_text_3_2:
         "Implantació de proves automatitzades amb Test Complete i Jenkins en un cliente-empresa del sector farmaceutic a Parets del Vallès. (01/2017 - 10/2017)",
     experience_job_text_3_3:
-        "Migració d'una aplicació en format web, responsive i Single Page (amb AngularJS) per un cliente-empresa del sector bancari a Sant Cugat del Vallès. (07/2017 - 12/2017)",
+        "Migració d'una aplicació en format web, responsive i Single Page (amb AngularJS) per un cliente-empresa del sector bancari a Sant Cugat del Vallès. (07/2016 - 12/2016)",
     experience_job_text_4:
         "Implementació de la web \"frontend\" pel cobrament i contractació d'aplicacions d'assegurances en assistència en viatge i assegurances d'automòbil.",
     experience_job_text_5:
