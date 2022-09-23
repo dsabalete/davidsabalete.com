@@ -49,12 +49,12 @@ const en = {
     project_demo: "Demo",
     projects_title: "Projects",
     skills_title: "Skills",
-    skills_programming_languages: "Programming Languages &amp; Tools",
+    skills_programming_languages: "Programming Languages and Tools",
     skills_workflow: "Workflow",
     skills_workflow_text_1: "Mobile-First, Responsive Design",
-    skills_workflow_text_2: "Cross Browser Testing &amp; Debugging",
+    skills_workflow_text_2: "Cross Browser Testing and Debugging",
     skills_workflow_text_3: "Cross Functional Teams",
-    skills_workflow_text_4: "Agile Development &amp; Scrum",
+    skills_workflow_text_4: "Agile Development and Scrum",
     skills_workflow_text_5: "Cutting edge JavaScript frameworks",
     skills_workflow_text_6: "Design principles and UX"
 }

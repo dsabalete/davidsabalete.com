@@ -7,5 +7,28 @@ pipeline {
       }
     }
 
+    stage('Log') {
+      parallel {
+        stage('Log') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+        stage('Front-End Unit Tests') {
+          steps {
+            sh 'npm i && npm run lint'
+          }
+        }
+
+      }
+    }
+
+    stage('Build') {
+      steps {
+        sh 'npm run generate'
+      }
+    }
+
   }
 }
