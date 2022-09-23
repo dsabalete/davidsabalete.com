@@ -1,5 +1,14 @@
 export const projects = [
     {
+        image: "/qrcode.png",
+        alt: "QR Code Generator picture",
+        title: "QR Code Generator",
+        description:
+            "Webapp tool for generating QR Codes from valid URLs. Static Astro website with Cloudfare Worker to generate the image.",
+        repo: "https://github.com/dsabalete/qr-code",
+        live: "https://qr-code-e3h.pages.dev/"
+    },
+    {
         image: "/space-tourism.png",
         alt: "Space tourism homepage picture",
         title: "Space tourism",
