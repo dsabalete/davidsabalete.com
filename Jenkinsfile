@@ -17,7 +17,8 @@ pipeline {
 
         stage('Front-End Unit Tests') {
           steps {
-            sh 'cd davidsabalete\\.com && npm i && npm run lint'
+            sh '''pwd
+cd davidsabalete\\.com && npm i && npm run lint'''
           }
         }
 
