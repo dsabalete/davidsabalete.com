@@ -2,29 +2,18 @@
     <SectionApp id="education">
         <template #title>{{ $t("education_title") }}</template>
 
-        <div class="resume-item">
-            <div class="resume-content">
-                <h3>E-business Technologies</h3>
-                <div class="subheading">Institut Català de Tecnología</div>
-                <p>Master degree</p>
-            </div>
-            <div class="resume-date text-md-right">
-                <span class="text-primary">Oct 2001 - May 2002</span>
-            </div>
-        </div>
+        <ResumeItem
+            position="E-business Technologies"
+            company="Institut Català de Tecnología"
+            description="Master's degree"
+            period="Oct 2001 - May 2002"
+        />
 
-        <div class="resume-item">
-            <div class="resume-content">
-                <h3>Industrial technical engineering</h3>
-                <div class="subheading">
-                    Universitat Politècnica de Catalunya
-                </div>
-                <p>Electronic specialty</p>
-            </div>
-
-            <div class="resume-date text-md-right">
-                <span class="text-primary">Sept 1995 - Jun 1999</span>
-            </div>
-        </div>
+        <ResumeItem
+            position="Industrial technical engineering"
+            company="Universitat Politècnica de Catalunya"
+            description="Electronic specialty"
+            period="Sept 1995 - Jun 1999"
+        />
     </SectionApp>
 </template>

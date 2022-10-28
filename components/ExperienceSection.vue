@@ -2,72 +2,60 @@
     <SectionApp id="experience">
         <template #title>{{ $t("experience_title") }}</template>
 
-        <div class="resume-item mb-5">
-            <div class="resume-content">
-                <h3>{{ $t("experience_job_1") }}</h3>
-                <div class="subheading">LoveToKnow Media Spain</div>
-                <p>{{ $t("experience_job_text_1") }}</p>
-            </div>
-            <div class="resume-date">
-                <span class="text-primary">November 2019 - Present</span>
-            </div>
-        </div>
+        <ResumeItem
+            :position="$t('experience_job_1')"
+            company="LoveToKnow Media Spain"
+            :description="$t('experience_job_text_1')"
+            period="November 2019 - Present"
+        />
 
-        <div class="resume-item mb-5">
-            <div class="resume-content">
-                <h3>{{ $t("experience_job_2") }}</h3>
-                <div class="subheading">EDREAMS Odigeo</div>
-                <p>{{ $t("experience_job_text_2") }}</p>
-            </div>
-            <div class="resume-date">
-                <span class="text-primary">April 2018 - October 2019</span>
-            </div>
-        </div>
+        <ResumeItem
+            :position="$t('experience_job_2')"
+            company="EDREAMS Odigeo"
+            :description="$t('experience_job_text_2')"
+            period="April 2018 - October 2019"
+        />
 
-        <div class="resume-item mb-5">
-            <div class="resume-content">
-                <h3>{{ $t("experience_job_3") }}</h3>
-                <div class="subheading">CAPITOLE CONSULTING</div>
-                <p>{{ $t("experience_job_text_3_1") }}</p>
-                <p>{{ $t("experience_job_text_3_2") }}</p>
-                <p>{{ $t("experience_job_text_3_3") }}</p>
-            </div>
-            <div class="resume-date">
-                <span class="text-primary">July 2016 - April 2018</span>
-            </div>
-        </div>
+        <ResumeItem
+            :position="$t('experience_job_3')"
+            company="CAPITOLE CONSULTING"
+            :description="capitoleDescription"
+            period="April 2018 - October 2019"
+        />
 
-        <div class="resume-item">
-            <div class="resume-content">
-                <h3>{{ $t("experience_job_4") }}</h3>
-                <div class="subheading">FIATC Seguros</div>
-                <p>{{ $t("experience_job_text_4") }}</p>
-            </div>
-            <div class="resume-date">
-                <span class="text-primary">June 2003 - July 2016</span>
-            </div>
-        </div>
+        <ResumeItem
+            :position="$t('experience_job_4')"
+            company="FIATC Seguros"
+            :description="$t('experience_job_text_4')"
+            period="June 2003 - July 2016"
+        />
 
-        <div class="resume-item">
-            <div class="resume-content">
-                <h3>{{ $t("experience_job_5") }}</h3>
-                <div class="subheading">Institut Català de Tecnologia</div>
-                <p>{{ $t("experience_job_text_5") }}</p>
-            </div>
-            <div class="resume-date">
-                <span class="text-primary">June 2001 - May 2003</span>
-            </div>
-        </div>
+        <ResumeItem
+            :position="$t('experience_job_5')"
+            company="Institut Català de Tecnologia"
+            :description="$t('experience_job_text_5')"
+            period="June 2001 - May 2003"
+        />
 
-        <div class="resume-item">
-            <div class="resume-content">
-                <h3>{{ $t("experience_job_6") }}</h3>
-                <div class="subheading">Secretariaplus.com</div>
-                <p>{{ $t("experience_job_text_6") }}</p>
-            </div>
-            <div class="resume-date">
-                <span class="text-primary">April 2000 - May 2001</span>
-            </div>
-        </div>
+        <ResumeItem
+            :position="$t('experience_job_6')"
+            company="Secretariaplus.com"
+            :description="$t('experience_job_text_6')"
+            period="April 2000 - May 2001"
+        />
     </SectionApp>
 </template>
+
+<script>
+export default {
+    computed: {
+        capitoleDescription() {
+            return `
+                <p>${this.$t("experience_job_text_3_1")}</p>
+                <p>${this.$t("experience_job_text_3_2")}</p>
+                <p>${this.$t("experience_job_text_3_3")}</p>
+            `
+        }
+    }
+}
+</script>
