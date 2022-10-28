@@ -19,7 +19,13 @@
         <ResumeItem
             :position="$t('experience_job_3')"
             company="CAPITOLE CONSULTING"
-            :description="capitoleDescription"
+            :description="
+                $t('experience_job_text_3_1') +
+                '<br/>' +
+                $t('experience_job_text_3_2') +
+                '<br/>' +
+                $t('experience_job_text_3_3')
+            "
             period="April 2018 - October 2019"
         />
 
@@ -45,17 +51,3 @@
         />
     </SectionApp>
 </template>
-
-<script>
-export default {
-    computed: {
-        capitoleDescription() {
-            return `
-                <p>${this.$t("experience_job_text_3_1")}</p>
-                <p>${this.$t("experience_job_text_3_2")}</p>
-                <p>${this.$t("experience_job_text_3_3")}</p>
-            `
-        }
-    }
-}
-</script>
