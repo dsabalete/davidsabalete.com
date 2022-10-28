@@ -31,7 +31,10 @@
             id="primary-navigation"
             :data-visible="isOpen"
             @click="close"
-            class="fixed px-8 sm:px-0 pt-20 sm:pt-0 top-0 right-0 bottom-0 sm:relative translate-x-96 sm:translate-x-0 backdrop-blur-2xl sm:backdrop-blur-none duration-500 ease-in-out"
+            :class="`fixed px-8 sm:px-0 pt-20 sm:pt-0 top-0 right-0 bottom-0
+                sm:relative translate-x-96 sm:translate-x-0
+                sm:backdrop-blur-none duration-500 ease-in-out`"
+            style="backdrop-filter: blur(40px)"
         >
             <li>
                 <a href="#about" class="nav-entry" v-scroll-to="'#about'"
