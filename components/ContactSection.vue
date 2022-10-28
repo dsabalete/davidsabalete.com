@@ -1,7 +1,7 @@
 <template>
     <SectionApp id="contact" class="pb-16 flex flex-col">
         <template #title>{{ $t("contact_title") }}</template>
-        <Social size="lg" class="mt-20 mb-12" />
+        <SocialBlock size="lg" class="mt-20 mb-12" />
 
         <a
             href="#about"

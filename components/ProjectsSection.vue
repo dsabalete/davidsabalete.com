@@ -3,7 +3,7 @@
         <template #title>{{ $t("projects_title") }}</template>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <Project
+            <ProjectCard
                 v-for="(project, idx) in projects"
                 :key="idx"
                 :project="project"

@@ -8,13 +8,13 @@
             </h1>
         </header>
         <main>
-            <About />
-            <Experience />
-            <Education />
-            <Skills />
-            <Interests />
-            <Projects />
-            <Contact />
+            <AboutSection />
+            <ExperienceSection />
+            <EducationSection />
+            <SkillsSection />
+            <InterestsSection />
+            <ProjectsSection />
+            <ContactSection />
         </main>
     </div>
 </template>
