@@ -3,7 +3,7 @@
         <h2>{{ $t("skills_title") }}</h2>
 
         <h3>{{ $t("skills_programming_languages") }}</h3>
-        <ul class="langs-n-tools">
+        <ul class="langs-n-tools flex flex-wrap">
             <li>
                 <img
                     v-tooltip.bottom="`HTML5`"
@@ -135,7 +135,7 @@
         </ul>
 
         <h3>{{ $t("skills_workflow") }}</h3>
-        <ul class="workflow">
+        <ul class="workflow flex flex-col">
             <li>{{ $t("skills_workflow_text_1") }}</li>
             <li>{{ $t("skills_workflow_text_2") }}</li>
             <li>{{ $t("skills_workflow_text_3") }}</li>
@@ -154,21 +154,12 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.langs-n-tools {
-    @apply flex flex-wrap;
-}
 .langs-n-tools li {
     @apply w-12 mx-4 my-8 hover:scale-150 duration-500;
-}
-.workflow {
-    @apply flex flex-col;
 }
 .workflow li:before {
     @apply inline-block ml-0 sm:ml-8 w-8;
     content: "✅";
-}
-.workflow img {
-    @apply w-6;
 }
 </style>
 
