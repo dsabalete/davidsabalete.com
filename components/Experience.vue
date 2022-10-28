@@ -1,6 +1,6 @@
 <template>
-    <section id="experience">
-        <h2>{{ $t("experience_title") }}</h2>
+    <SectionApp id="experience">
+        <template #title>{{ $t("experience_title") }}</template>
 
         <div class="resume-item mb-5">
             <div class="resume-content">
@@ -69,5 +69,5 @@
                 <span class="text-primary">April 2000 - May 2001</span>
             </div>
         </div>
-    </section>
+    </SectionApp>
 </template>

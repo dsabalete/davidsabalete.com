@@ -1,6 +1,6 @@
 <template>
-    <section id="projects" class="lg:pr-32">
-        <h2>{{ $t("projects_title") }}</h2>
+    <SectionApp id="projects" class="lg:pr-32">
+        <template #title>{{ $t("projects_title") }}</template>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
             <Project
@@ -9,7 +9,7 @@
                 :project="project"
             />
         </div>
-    </section>
+    </SectionApp>
 </template>
 
 <script>

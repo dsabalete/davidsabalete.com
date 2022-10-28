@@ -1,5 +1,5 @@
 <template>
-    <section class="flex flex-col pt-0 sm:pt-8">
+    <SectionApp class="flex flex-col pt-0 sm:pt-8">
         <div>
             <p>
                 {{ $t("about_text_1") }}
@@ -16,9 +16,5 @@
         >
             {{ $t("about_contact_me") }}</a
         >
-    </section>
+    </SectionApp>
 </template>
-
-<script>
-export default {}
-</script>

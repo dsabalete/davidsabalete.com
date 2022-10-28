@@ -1,6 +1,6 @@
 <template>
-    <section id="contact" class="pb-16 flex flex-col">
-        <h2>{{ $t("contact_title") }}</h2>
+    <SectionApp id="contact" class="pb-16 flex flex-col">
+        <template #title>{{ $t("contact_title") }}</template>
         <Social size="lg" class="mt-20 mb-12" />
 
         <a
@@ -10,5 +10,5 @@
         >
             {{ $t("contact_back") }}</a
         >
-    </section>
+    </SectionApp>
 </template>

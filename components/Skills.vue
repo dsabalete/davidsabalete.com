@@ -1,6 +1,6 @@
 <template>
-    <section id="skills" class="lg:pr-32">
-        <h2>{{ $t("skills_title") }}</h2>
+    <SectionApp id="skills" class="lg:pr-32">
+        <template #title>{{ $t("skills_title") }}</template>
 
         <h3>{{ $t("skills_programming_languages") }}</h3>
         <ul class="langs-n-tools flex flex-wrap">
@@ -143,7 +143,7 @@
             <li>{{ $t("skills_workflow_text_5") }}</li>
             <li>{{ $t("skills_workflow_text_6") }}</li>
         </ul>
-    </section>
+    </SectionApp>
 </template>
 
 <script>
