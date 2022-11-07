@@ -70,6 +70,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        ["@nuxt/content"],
         ["vue-scrollto/nuxt", { duration: 500 }],
         ["@nuxtjs/i18n", { ...i18n }],
         [
