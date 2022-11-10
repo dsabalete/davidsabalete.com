@@ -31,7 +31,7 @@ export default {
     css: ["@/assets/css/main.css"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["~/plugins/vue-tooltip.client.js"],
+    plugins: ["~/plugins/vue-tooltip.client.js", "~/plugins/vue-gtag.js"],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
