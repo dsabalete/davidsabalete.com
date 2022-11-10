@@ -75,7 +75,6 @@
                     >{{ $t("projects") }}
                 </a>
             </li>
-            <li><a href="#" class="nav-entry" @click="goToBlog">blog </a></li>
             <li>
                 <a href="#contact" class="nav-entry" v-scroll-to="'#contact'"
                     >{{ $t("contact") }}
@@ -114,15 +113,6 @@ export default {
         }
     },
     methods: {
-        goToBlog() {
-            const areYouSure = confirm(
-                "Are you sure you want to go to the blog?"
-            )
-            if (areYouSure) {
-                this.$gtag("event", "visit_blog", { event_category: "nav" })
-                window.location.href = "https://blog.davidsabalete.com"
-            }
-        },
         toggleMobileNav() {
             this.isOpen = !this.isOpen
             this.expanded = this.expanded === "false" ? "true" : "false"
