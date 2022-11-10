@@ -76,6 +76,10 @@
                 </a>
             </li>
             <li>
+                <nuxt-link to="/blog" class="nav-entry">new blog</nuxt-link>
+            </li>
+
+            <li>
                 <a href="#contact" class="nav-entry" v-scroll-to="'#contact'"
                     >{{ $t("contact") }}
                 </a>
