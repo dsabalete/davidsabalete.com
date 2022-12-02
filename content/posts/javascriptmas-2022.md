@@ -12,7 +12,7 @@ This is going to be the third year in a row that I try to complete the JavaScrip
 And here are my solutions:
 
 -   [Dec 1st](https://scrimba.com/scrim/coc8c453f9e7ebaa612de65a6)
--   [Dec 2nd](https://t.co/NEbZyvnAnV)
+-   [Dec 2nd](https://scrimba.com/scrim/co671425895c0d519294c6ada)
 -   [Dec 3rd](https://t.co/eJomZBjERI)
 -   [Dec 4th](https://t.co/X4kaAN2t0W)
 -   [Dec 5th](https://t.co/3bu9TnCePV)
