@@ -13,7 +13,7 @@ And here are my solutions:
 
 -   [Dec 1st](https://scrimba.com/scrim/coc8c453f9e7ebaa612de65a6)
 -   [Dec 2nd](https://scrimba.com/scrim/co671425895c0d519294c6ada)
--   [Dec 3rd](https://t.co/eJomZBjERI)
+-   [Dec 3rd](https://scrimba.com/scrim/codb443b2af7551ed37350474)
 -   [Dec 4th](https://t.co/X4kaAN2t0W)
 -   [Dec 5th](https://t.co/3bu9TnCePV)
 -   [Dec 6th](https://t.co/elCFsaLCMA)
