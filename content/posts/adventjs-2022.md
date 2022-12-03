@@ -37,7 +37,16 @@ function countHours(year, holidays) {
 # [Day 3](https://adventjs.dev/challenges/2022/3)
 
 ```js
-
+function distributeGifts(packOfGifts, reindeers) {
+    return Math.floor(
+        reindeers.reduce((acc, cur) => {
+            return acc + cur.length * 2
+        }, 0) /
+            packOfGifts.reduce((acc, cur) => {
+                return acc + cur.length
+            }, 0)
+    )
+}
 ```
 
 # [Day 4](https://adventjs.dev/challenges/2022/4)
