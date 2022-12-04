@@ -1,5 +1,7 @@
 <template>
-    <article class="bg-white rounded-xl drop-shadow-xl p-2 sm:p-8 sm:m-8">
+    <article
+        class="bg-white rounded-xl drop-shadow-xl p-4 sm:p-6 md:p-8 sm:m-8"
+    >
         <h1 class="text-3xl mb-4 font-bold">{{ article.title }}</h1>
         <p class="text-base mb-2">{{ article.description }}</p>
         <p class="text-sm mb-8">
