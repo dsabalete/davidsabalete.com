@@ -7,9 +7,13 @@ createdAt: dic 1 2022
 updatedAt: dic 1 2022
 ---
 
-I finally published not one but two articles (translations to spanish) in FreeCodeCamp.
+I finally published not one but ~two~ three articles (translations to spanish) in FreeCodeCamp.
 
 If you are interested in React, that might catch your eye:
 
 -   [Cómo convertirse en profesional con React setState() en 10 minutos](https://www.freecodecamp.org/espanol/news/como-convertirte-en-profesional-con-react-setstate-en-10-minutos/)
 -   [Cómo borrar entradas en campos de valores de formularios dinámicos en React](https://www.freecodecamp.org/espanol/news/como-borrar-entradas-en-campos-de-valores-de-formularios-dinamicos-en-react/)
+
+### Update
+
+-   [Los principios SOLID explicados en español](https://www.freecodecamp.org/espanol/news/los-principios-solid-explicados-en-espanol/)
