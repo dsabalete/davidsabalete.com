@@ -52,7 +52,15 @@ function distributeGifts(packOfGifts, reindeers) {
 # [Day 4](https://adventjs.dev/challenges/2022/4)
 
 ```js
-
+function fitsInOneBox(boxes) {
+    return boxes
+        .sort((a, b) => a.l - b.l)
+        .every((box, i) => {
+            if (i === 0) return true
+            const prevBox = boxes[i - 1]
+            return box.l > prevBox.l && box.w > prevBox.w && box.h > prevBox.h
+        })
+}
 ```
 
 # [Day 5](https://adventjs.dev/challenges/2022/5)
