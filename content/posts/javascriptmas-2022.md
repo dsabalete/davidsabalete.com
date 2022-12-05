@@ -15,7 +15,7 @@ And here are my solutions:
 -   [Dec 2nd](https://scrimba.com/scrim/co671425895c0d519294c6ada)
 -   [Dec 3rd](https://scrimba.com/scrim/codb443b2af7551ed37350474)
 -   [Dec 4th](https://scrimba.com/scrim/co4744fcead514da2eabf5670)
--   [Dec 5th](https://t.co/3bu9TnCePV)
+-   [Dec 5th](https://scrimba.com/scrim/cob914563b319044b923752ec)
 -   [Dec 6th](https://t.co/elCFsaLCMA)
 -   [Dec 7th](https://t.co/2OKJ7T4JUO)
 -   [Dec 8th](https://t.co/chjURzWhWa)

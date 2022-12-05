@@ -66,7 +66,22 @@ function fitsInOneBox(boxes) {
 # [Day 5](https://adventjs.dev/challenges/2022/5)
 
 ```js
-
+function getMaxGifts(giftsCities, maxGifts, maxCities) {
+    if (maxCities === 0) return 0
+    const allGifts = giftsCities.reduce((acc, cur) => acc + cur, 0)
+    return giftsCities.reduce((acc, giftsCity, idx) => {
+        if (giftsCity > maxGifts) return acc
+        const giftsCitiesClone = [...giftsCities]
+        giftsCitiesClone.splice(idx, 1)
+        const res =
+            getMaxGifts(giftsCitiesClone, maxGifts - giftsCity, maxCities - 1) +
+            giftsCity
+        if (allGifts === res) {
+            giftsCities.splice(1)
+        }
+        return res > acc ? res : acc
+    }, 0)
+}
 ```
 
 # [Day 6](https://adventjs.dev/challenges/2022/6)
