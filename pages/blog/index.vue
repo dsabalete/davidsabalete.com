@@ -12,7 +12,7 @@
             >
                 {{ post.title }}
                 <span class="text-base"
-                    >({{ formatDate(post.createdAt) }})</span
+                    >({{ formatDate(post.updatedAt) }})</span
                 >
             </nuxt-link>
             <nuxt-link
@@ -31,7 +31,7 @@ export default {
         const posts = await $content("posts").fetch()
         return {
             posts: posts.sort(
-                (a, b) => new Date(b.createdAt) - new Date(a.createdAt)
+                (a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)
             )
         }
     },

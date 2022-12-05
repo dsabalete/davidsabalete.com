@@ -4,7 +4,7 @@ description:
 img: /adventjs.png
 alt: AdventJs 2022
 createdAt: dec 1 2022
-updatedAt: dec 2 2022
+updatedAt: dec 5 2022
 ---
 
 [AdventJs](https://adventjs.dev/) is another coding challenge for this Christmas. This time coming from [Midudev](https://midu.dev/)

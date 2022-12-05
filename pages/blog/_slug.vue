@@ -5,7 +5,9 @@
         <h1 class="text-3xl mb-4 font-bold">{{ article.title }}</h1>
         <p class="text-base mb-2">{{ article.description }}</p>
         <p class="text-sm mb-8">
-            Article last updated: {{ formatDate(article.updatedAt) }}
+            Article created on {{ formatDate(article.createdAt) }} and updated
+            on
+            {{ formatDate(article.updatedAt) }}
         </p>
 
         <img :src="article.img" :alt="article.alt" class="mx-auto mb-8" />
