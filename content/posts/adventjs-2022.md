@@ -104,7 +104,12 @@ function createCube(size) {
 # [Day 7](https://adventjs.dev/challenges/2022/7)
 
 ```js
-
+function getGiftsToRefill(a1, a2, a3) {
+    const allGifts = [...new Set([...a1, ...a2, ...a3])]
+    return allGifts.filter(
+        (gift) => a1.includes(gift) + a2.includes(gift) + a3.includes(gift) < 2
+    )
+}
 ```
 
 # [Day 8](https://adventjs.dev/challenges/2022/8)
