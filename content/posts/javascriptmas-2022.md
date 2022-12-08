@@ -18,7 +18,7 @@ And here are my solutions:
 -   [Dec 5th](https://scrimba.com/scrim/cob914563b319044b923752ec)
 -   [Dec 6th](https://scrimba.com/scrim/co8db4bab82f1286a2d796d94)
 -   [Dec 7th](https://scrimba.com/scrim/co7c34af5beb8135e1dd68cd6)
--   [Dec 8th]()
+-   [Dec 8th](https://scrimba.com/scrim/co0574fd3b41d5dfb8d626202)
 -   [Dec 9th]()
 -   [Dec 10th]()
 -   [Dec 11th]()

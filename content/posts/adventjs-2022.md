@@ -115,7 +115,20 @@ function getGiftsToRefill(a1, a2, a3) {
 # [Day 8](https://adventjs.dev/challenges/2022/8)
 
 ```js
+function checkPart(part) {
+    if (part === [...part].reverse().join("")) {
+        return true
+    }
 
+    for (let i = 0; i < [...part].length; i++) {
+        const candidate = [...part]
+        candidate.splice(i, 1)
+        if (candidate.join("") === candidate.reverse().join("")) {
+            return true
+        }
+    }
+    return false
+}
 ```
 
 # [Day 9](https://adventjs.dev/challenges/2022/9)
