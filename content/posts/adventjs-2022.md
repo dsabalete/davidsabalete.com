@@ -134,7 +134,11 @@ function checkPart(part) {
 # [Day 9](https://adventjs.dev/challenges/2022/9)
 
 ```js
-
+function countTime(leds) {
+    const arr = leds.join("").split("1")
+    arr[0] += arr.splice(-1)
+    return Math.max(...arr.map((el) => el.length)) * 7
+}
 ```
 
 # [Day 10](https://adventjs.dev/challenges/2022/10)
