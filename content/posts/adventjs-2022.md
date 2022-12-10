@@ -11,7 +11,7 @@ updatedAt: dec 7 2022
 
 I will be posting the solutions in this same post and in a [Github repo](https://github.com/dsabalete/advent-js-2022)
 
-# [Day 1](https://adventjs.dev/challenges/2022/1)
+# [Day 1](https://github.com/dsabalete/advent-js-2022/tree/main/day01)
 
 ```js
 function wrapping(gifts) {
@@ -22,7 +22,7 @@ function wrapping(gifts) {
 }
 ```
 
-# [Day 2](https://adventjs.dev/challenges/2022/2)
+# [Day 2](https://github.com/dsabalete/advent-js-2022/tree/main/day02)
 
 ```js
 function countHours(year, holidays) {
@@ -34,7 +34,7 @@ function countHours(year, holidays) {
 }
 ```
 
-# [Day 3](https://adventjs.dev/challenges/2022/3)
+# [Day 3](https://github.com/dsabalete/advent-js-2022/tree/main/day03)
 
 ```js
 function distributeGifts(packOfGifts, reindeers) {
@@ -49,7 +49,7 @@ function distributeGifts(packOfGifts, reindeers) {
 }
 ```
 
-# [Day 4](https://adventjs.dev/challenges/2022/4)
+# [Day 4](https://github.com/dsabalete/advent-js-2022/tree/main/day04)
 
 ```js
 function fitsInOneBox(boxes) {
@@ -63,7 +63,7 @@ function fitsInOneBox(boxes) {
 }
 ```
 
-# [Day 5](https://adventjs.dev/challenges/2022/5)
+# [Day 5](https://github.com/dsabalete/advent-js-2022/tree/main/day05)
 
 ```js
 function getMaxGifts(giftsCities, maxGifts, maxCities) {
@@ -84,7 +84,7 @@ function getMaxGifts(giftsCities, maxGifts, maxCities) {
 }
 ```
 
-# [Day 6](https://adventjs.dev/challenges/2022/6)
+# [Day 6](https://github.com/dsabalete/advent-js-2022/tree/main/day06)
 
 ```js
 function createCube(size) {
@@ -101,7 +101,7 @@ function createCube(size) {
 }
 ```
 
-# [Day 7](https://adventjs.dev/challenges/2022/7)
+# [Day 7](https://github.com/dsabalete/advent-js-2022/tree/main/day07)
 
 ```js
 function getGiftsToRefill(a1, a2, a3) {
@@ -112,7 +112,7 @@ function getGiftsToRefill(a1, a2, a3) {
 }
 ```
 
-# [Day 8](https://adventjs.dev/challenges/2022/8)
+# [Day 8](https://github.com/dsabalete/advent-js-2022/tree/main/day08)
 
 ```js
 function checkPart(part) {
@@ -131,7 +131,7 @@ function checkPart(part) {
 }
 ```
 
-# [Day 9](https://adventjs.dev/challenges/2022/9)
+# [Day 9](https://github.com/dsabalete/advent-js-2022/tree/main/day09)
 
 ```js
 function countTime(leds) {
@@ -141,7 +141,7 @@ function countTime(leds) {
 }
 ```
 
-# [Day 10](https://adventjs.dev/challenges/2022/10)
+# [Day 10](https://github.com/dsabalete/advent-js-2022/tree/main/day10)
 
 ```js
 function checkJump(heights) {
@@ -155,85 +155,85 @@ function checkJump(heights) {
 }
 ```
 
-# [Day 11](https://adventjs.dev/challenges/2022/11)
+# [Day 11](https://github.com/dsabalete/advent-js-2022/tree/main/day11)
 
 ```js
 
 ```
 
-# [Day 12](https://adventjs.dev/challenges/2022/12)
+# [Day 12](https://github.com/dsabalete/advent-js-2022/tree/main/day12)
 
 ```js
 
 ```
 
-# [Day 13](https://adventjs.dev/challenges/2022/13)
+# [Day 13](https://github.com/dsabalete/advent-js-2022/tree/main/day13)
 
 ```js
 
 ```
 
-# [Day 14](https://adventjs.dev/challenges/2022/14)
+# [Day 14](https://github.com/dsabalete/advent-js-2022/tree/main/day14)
 
 ```js
 
 ```
 
-# [Day 15](https://adventjs.dev/challenges/2022/15)
+# [Day 15](https://github.com/dsabalete/advent-js-2022/tree/main/day15)
 
 ```js
 
 ```
 
-# [Day 16](https://adventjs.dev/challenges/2022/16)
+# [Day 16](https://github.com/dsabalete/advent-js-2022/tree/main/day16)
 
 ```js
 
 ```
 
-# [Day 17](https://adventjs.dev/challenges/2022/17)
+# [Day 17](https://github.com/dsabalete/advent-js-2022/tree/main/day17)
 
 ```js
 
 ```
 
-# [Day 18](https://adventjs.dev/challenges/2022/18)
+# [Day 18](https://github.com/dsabalete/advent-js-2022/tree/main/day18)
 
 ```js
 
 ```
 
-# [Day 19](https://adventjs.dev/challenges/2022/19)
+# [Day 19](https://github.com/dsabalete/advent-js-2022/tree/main/day19)
 
 ```js
 
 ```
 
-# [Day 20](https://adventjs.dev/challenges/2022/20)
+# [Day 20](https://github.com/dsabalete/advent-js-2022/tree/main/day20)
 
 ```js
 
 ```
 
-# [Day 21](https://adventjs.dev/challenges/2022/21)
+# [Day 21](https://github.com/dsabalete/advent-js-2022/tree/main/day21)
 
 ```js
 
 ```
 
-# [Day 22](https://adventjs.dev/challenges/2022/22)
+# [Day 22](https://github.com/dsabalete/advent-js-2022/tree/main/day22)
 
 ```js
 
 ```
 
-# [Day 23](https://adventjs.dev/challenges/2022/23)
+# [Day 23](https://github.com/dsabalete/advent-js-2022/tree/main/day23)
 
 ```js
 
 ```
 
-# [Day 24](https://adventjs.dev/challenges/2022/24)
+# [Day 24](https://github.com/dsabalete/advent-js-2022/tree/main/day24)
 
 ```js
 
