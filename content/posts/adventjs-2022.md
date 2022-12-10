@@ -144,7 +144,15 @@ function countTime(leds) {
 # [Day 10](https://adventjs.dev/challenges/2022/10)
 
 ```js
-
+function checkJump(heights) {
+    const peak = Math.max(...heights)
+    const peakIndex = heights.indexOf(peak)
+    const left = heights.slice(0, peakIndex)
+    const right = heights.slice(peakIndex + 1)
+    const isGoingUp = left.slice(1).every((l, i) => l >= left[i])
+    const isGoingDown = right.slice(1).every((r, i) => r <= right[i])
+    return isGoingUp && isGoingDown && left.length !== 0 && right.length !== 0
+}
 ```
 
 # [Day 11](https://adventjs.dev/challenges/2022/11)
