@@ -22,7 +22,7 @@ And here are my solutions:
 -   [Dec 9th](https://scrimba.com/scrim/codda4ee5a82d44ae6429cfae)
 -   [Dec 10th](https://scrimba.com/scrim/co1ae471eabe06e19ed6d92bf)
 -   [Dec 11th](https://scrimba.com/scrim/co2134183ad499daaeeec0afe)
--   [Dec 12th]()
+-   [Dec 12th](https://scrimba.com/scrim/coa3a4eccb55db0074acf563a)
 -   [Dec 13th]()
 -   [Dec 14th]()
 -   [Dec 15th]()

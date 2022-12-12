@@ -173,7 +173,10 @@ function getCompleted(part, total) {
 # [Day 12](https://github.com/dsabalete/advent-js-2022/tree/main/day12)
 
 ```js
-
+function selectSleigh(distance, sleighs) {
+    const selection = sleighs.filter((s) => s.consumption * distance <= 20)
+    return selection.length > 0 ? selection[selection.length - 1].name : null
+}
 ```
 
 # [Day 13](https://github.com/dsabalete/advent-js-2022/tree/main/day13)
