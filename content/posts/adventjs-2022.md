@@ -182,7 +182,15 @@ function selectSleigh(distance, sleighs) {
 # [Day 13](https://github.com/dsabalete/advent-js-2022/tree/main/day13)
 
 ```js
-
+function getFilesToBackup(lastBackup, changes) {
+    const result = new Set()
+    changes
+        .filter((change) => change[1] > lastBackup)
+        .map((change) => change[0])
+        .sort((a, b) => a - b)
+        .forEach((file) => result.add(file))
+    return [...result]
+}
 ```
 
 # [Day 14](https://github.com/dsabalete/advent-js-2022/tree/main/day14)
