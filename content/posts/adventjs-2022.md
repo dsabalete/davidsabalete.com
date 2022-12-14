@@ -196,7 +196,21 @@ function getFilesToBackup(lastBackup, changes) {
 # [Day 14](https://github.com/dsabalete/advent-js-2022/tree/main/day14)
 
 ```js
-
+function getOptimalPath(path) {
+    let result = path.reduce((acc, value) => {
+        let sliceStart = 0
+        return acc
+            .map((n) => {
+                let tmp0 = value
+                    .slice(sliceStart, sliceStart + 2)
+                    .map((l) => l + n)
+                sliceStart += 1
+                return tmp0
+            })
+            .flat()
+    })
+    return Math.min(...result)
+}
 ```
 
 # [Day 15](https://github.com/dsabalete/advent-js-2022/tree/main/day15)

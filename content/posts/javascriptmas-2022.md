@@ -24,7 +24,7 @@ And here are my solutions:
 -   [Dec 11th](https://scrimba.com/scrim/co2134183ad499daaeeec0afe)
 -   [Dec 12th](https://scrimba.com/scrim/coa3a4eccb55db0074acf563a)
 -   [Dec 13th](https://scrimba.com/scrim/co933459392850762f57929f8)
--   [Dec 14th]()
+-   [Dec 14th](https://scrimba.com/scrim/coea84f0383b50ade59d9f648)
 -   [Dec 15th]()
 -   [Dec 16th]()
 -   [Dec 17th]()
