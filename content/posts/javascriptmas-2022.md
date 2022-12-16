@@ -26,7 +26,7 @@ And here are my solutions:
 -   [Dec 13th](https://scrimba.com/scrim/co933459392850762f57929f8)
 -   [Dec 14th](https://scrimba.com/scrim/coea84f0383b50ade59d9f648)
 -   [Dec 15th](https://scrimba.com/scrim/cob22458b89f17eacb85823eb)
--   [Dec 16th]()
+-   [Dec 16th](https://scrimba.com/scrim/co80b44a1a1ef4f0892d6ce3c)
 -   [Dec 17th]()
 -   [Dec 18th]()
 -   [Dec 19th]()

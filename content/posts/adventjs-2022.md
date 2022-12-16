@@ -246,7 +246,19 @@ function decorateTree(base) {
 # [Day 16](https://github.com/dsabalete/advent-js-2022/tree/main/day16)
 
 ```js
-
+function fixLetter(letter) {
+    return letter
+        .trim()
+        .replace(/,/g, ", ")
+        .replace(/\s+\./g, ".")
+        .replace(/\s+/g, " ")
+        .replace(/[??]+/g, "?")
+        .replace(/(\s+)([,.?!])+/g, (m, s1, s2) => s2)
+        .replace(/^([A-z])/, (m, p) => p.toUpperCase())
+        .replace(/([?.!])\s+(\w)/g, (m, s1, s2) => `${s1} ${s2.toUpperCase()}`)
+        .replace(/santa claus/gi, "Santa Claus")
+        .replace(/([A-z])$/, (m, s) => `${s}.`)
+}
 ```
 
 # [Day 17](https://github.com/dsabalete/advent-js-2022/tree/main/day17)
