@@ -216,7 +216,31 @@ function getOptimalPath(path) {
 # [Day 15](https://github.com/dsabalete/advent-js-2022/tree/main/day15)
 
 ```js
-
+function decorateTree(base) {
+    const rules = {
+        PP: "P",
+        BB: "B",
+        RR: "R",
+        PB: "R",
+        BP: "R",
+        PR: "B",
+        RP: "B",
+        BR: "P",
+        RB: "P"
+    }
+    const decorate = [base]
+    base = base.split(" ")
+    let height = base.length - 1
+    for (let i = 0; i < height; i++) {
+        const newBase = []
+        for (let j = 0; j < base.length - 1; j++) {
+            newBase.push(rules[base[j] + base[j + 1]])
+        }
+        base = newBase
+        decorate.unshift(newBase.join(" "))
+    }
+    return decorate
+}
 ```
 
 # [Day 16](https://github.com/dsabalete/advent-js-2022/tree/main/day16)
