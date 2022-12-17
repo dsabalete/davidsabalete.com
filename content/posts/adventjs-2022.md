@@ -264,7 +264,31 @@ function fixLetter(letter) {
 # [Day 17](https://github.com/dsabalete/advent-js-2022/tree/main/day17)
 
 ```js
-
+function carryGifts(gifts, maxWeight) {
+    if (gifts.some((gift) => gift.length > maxWeight)) {
+        return []
+    }
+    const bags = []
+    let tempBag = []
+    let tempWeight = 0
+    gifts.forEach((gift) => {
+        const weight = gift.length
+        // if the gift fits in the bag
+        if (tempWeight + weight <= maxWeight) {
+            tempBag.push(gift)
+            tempWeight += weight
+        } else {
+            // if the gift does not fit in the bag
+            bags.push(tempBag.join(" "))
+            tempBag = [gift]
+            tempWeight = weight
+        }
+    })
+    if (tempBag.length > 0) {
+        bags.push(tempBag.join(" "))
+    }
+    return bags
+}
 ```
 
 # [Day 18](https://github.com/dsabalete/advent-js-2022/tree/main/day18)
