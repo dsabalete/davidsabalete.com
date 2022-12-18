@@ -294,7 +294,15 @@ function carryGifts(gifts, maxWeight) {
 # [Day 18](https://github.com/dsabalete/advent-js-2022/tree/main/day18)
 
 ```js
-
+function dryNumber(dry, numbers) {
+    numbers = Array.from({ length: numbers }, (_, i) => i + 1)
+    return numbers.reduce((acc, curr) => {
+        if (curr.toString().includes(dry.toString())) {
+            acc.push(curr)
+        }
+        return acc
+    }, [])
+}
 ```
 
 # [Day 19](https://github.com/dsabalete/advent-js-2022/tree/main/day19)
