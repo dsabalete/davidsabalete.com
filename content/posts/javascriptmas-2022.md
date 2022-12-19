@@ -29,7 +29,7 @@ And here are my solutions:
 -   [Dec 16th](https://scrimba.com/scrim/co80b44a1a1ef4f0892d6ce3c)
 -   [Dec 17th](https://scrimba.com/scrim/coda449c8aeccddea4e33b267)
 -   [Dec 18th](https://scrimba.com/scrim/cof494581b80a8f4c31310c68)
--   [Dec 19th]()
+-   [Dec 19th](https://scrimba.com/scrim/cof094d1fba2ea89a61fae94b)
 -   [Dec 20th]()
 -   [Dec 21st]()
 -   [Dec 22nd]()

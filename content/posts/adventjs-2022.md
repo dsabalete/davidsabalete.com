@@ -308,7 +308,14 @@ function dryNumber(dry, numbers) {
 # [Day 19](https://github.com/dsabalete/advent-js-2022/tree/main/day19)
 
 ```js
-
+function sortToys(toys, positions) {
+    let temp = []
+    toys.forEach((toy, index) => {
+        const position = positions[index]
+        temp.push([position, toy])
+    })
+    return temp.sort((a, b) => a[0] - b[0]).map((el) => el[1])
+}
 ```
 
 # [Day 20](https://github.com/dsabalete/advent-js-2022/tree/main/day20)
