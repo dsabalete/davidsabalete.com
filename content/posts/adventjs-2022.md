@@ -321,7 +321,38 @@ function sortToys(toys, positions) {
 # [Day 20](https://github.com/dsabalete/advent-js-2022/tree/main/day20)
 
 ```js
+function howManyReindeers(reindeerTypes, gifts) {
+    reindeerTypes.sort((a, b) => a.weightCapacity - b.weightCapacity)
 
+    return gifts.map((gift) => {
+        let cityWeight = gift.weight
+        let reindeers = reindeerTypes.filter(
+            (reindeer) => reindeer.weightCapacity < gift.weight
+        )
+        let team = {}
+        while (cityWeight != 0) {
+            reindeers.map((reindeerType) => {
+                if (cityWeight - reindeerType.weightCapacity >= 0) {
+                    team[reindeerType.type]
+                        ? (team[reindeerType.type] += 1)
+                        : (team[reindeerType.type] = 1)
+                    cityWeight -= reindeerType.weightCapacity
+                }
+            })
+        }
+        return {
+            country: gift.country,
+            reindeers: reindeers
+                .map((y) => {
+                    return {
+                        type: y.type,
+                        num: team[y.type]
+                    }
+                })
+                .reverse()
+        }
+    })
+}
 ```
 
 # [Day 21](https://github.com/dsabalete/advent-js-2022/tree/main/day21)
