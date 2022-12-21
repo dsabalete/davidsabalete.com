@@ -31,7 +31,7 @@ And here are my solutions:
 -   [Dec 18th](https://scrimba.com/scrim/cof494581b80a8f4c31310c68)
 -   [Dec 19th](https://scrimba.com/scrim/cof094d1fba2ea89a61fae94b)
 -   [Dec 20th](https://scrimba.com/scrim/co26545358e1c2114c6ec81af)
--   [Dec 21st]()
+-   [Dec 21st](https://scrimba.com/scrim/co6764eb683dcae0d64e53266)
 -   [Dec 22nd]()
 -   [Dec 23rd]()
 -   [Dec 24th]()
