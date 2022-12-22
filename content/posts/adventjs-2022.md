@@ -391,7 +391,24 @@ function printTable(gifts) {
 # [Day 22](https://github.com/dsabalete/advent-js-2022/tree/main/day22)
 
 ```js
-
+function checkStepNumbers(systemNames, stepNumbers) {
+    const systems = {}
+    systemNames.forEach((systemName, index) => {
+        if (systems[systemName]) {
+            systems[systemName].push(stepNumbers[index])
+        } else {
+            systems[systemName] = [stepNumbers[index]]
+        }
+    })
+    for (const [key, value] of Object.entries(systems)) {
+        for (let i = 0; i < value.length - 1; i++) {
+            if (value[i] >= value[i + 1]) {
+                return false
+            }
+        }
+    }
+    return true
+}
 ```
 
 # [Day 23](https://github.com/dsabalete/advent-js-2022/tree/main/day23)

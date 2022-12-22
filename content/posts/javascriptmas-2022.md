@@ -32,6 +32,6 @@ And here are my solutions:
 -   [Dec 19th](https://scrimba.com/scrim/cof094d1fba2ea89a61fae94b)
 -   [Dec 20th](https://scrimba.com/scrim/co26545358e1c2114c6ec81af)
 -   [Dec 21st](https://scrimba.com/scrim/co6764eb683dcae0d64e53266)
--   [Dec 22nd]()
+-   [Dec 22nd](https://scrimba.com/scrim/co14641e5b85f3850abc7846c)
 -   [Dec 23rd]()
 -   [Dec 24th]()
