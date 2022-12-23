@@ -446,6 +446,7 @@ function executeCommands(commands) {
                 break
             case "ADD":
                 reg[i1] += reg[i2]
+                reg[i1] %= 256
                 break
             case "DEC":
                 if (reg[i1] === 0) {
@@ -466,8 +467,8 @@ function executeCommands(commands) {
                     pointer = i1 - 1
                 }
                 break
-            default:
-                throw new Error(`Unknown instruction: ${instruction}`)
+            // default:
+            //   throw new Error(`Unknown instruction: ${instruction}`)
         }
         pointer += 1
     }
