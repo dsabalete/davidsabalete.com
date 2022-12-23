@@ -414,7 +414,66 @@ function checkStepNumbers(systemNames, stepNumbers) {
 # [Day 23](https://github.com/dsabalete/advent-js-2022/tree/main/day23)
 
 ```js
+function executeCommands(commands) {
+    const reg = [0, 0, 0, 0, 0, 0, 0, 0]
 
+    const getInt = (arg) => {
+        if (arg === undefined) {
+            return undefined
+        }
+        if (arg.startsWith("V")) {
+            return parseInt(arg.slice(-1))
+        } else {
+            return parseInt(arg, 10)
+        }
+    }
+
+    let pointer = 0
+    while (pointer < commands.length) {
+        const command = commands[pointer]
+        const [instruction, args] = command.split(" ")
+        const [arg1, arg2] = args.split(",")
+        const i1 = getInt(arg1)
+        const i2 = getInt(arg2)
+
+        switch (instruction) {
+            case "MOV":
+                if (arg1.startsWith("V") && arg2.startsWith("V")) {
+                    reg[i2] = reg[i1]
+                } else {
+                    reg[i2] = i1
+                }
+                break
+            case "ADD":
+                reg[i1] += reg[i2]
+                break
+            case "DEC":
+                if (reg[i1] === 0) {
+                    reg[i1] = 255
+                } else {
+                    reg[i1] -= 1
+                }
+                break
+            case "INC":
+                if (reg[i1] === 255) {
+                    reg[i1] = 0
+                } else {
+                    reg[i1] += 1
+                }
+                break
+            case "JMP":
+                if (reg[0] !== 0) {
+                    pointer = i1 - 1
+                }
+                break
+            default:
+                throw new Error(`Unknown instruction: ${instruction}`)
+        }
+        pointer += 1
+    }
+
+    return reg
+}
 ```
 
 # [Day 24](https://github.com/dsabalete/advent-js-2022/tree/main/day24)
