@@ -34,4 +34,4 @@ And here are my solutions:
 -   [Dec 21st](https://scrimba.com/scrim/co6764eb683dcae0d64e53266)
 -   [Dec 22nd](https://scrimba.com/scrim/co14641e5b85f3850abc7846c)
 -   [Dec 23rd](https://scrimba.com/scrim/coc174a9dae9baae1f2a00739)
--   [Dec 24th]()
+-   [Dec 24th](https://scrimba.com/scrim/co8424efe93f68f1c49cb976a)
