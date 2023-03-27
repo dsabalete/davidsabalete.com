@@ -70,6 +70,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        ["@nuxtjs/gtm"],
         ["@nuxt/content"],
         ["vue-scrollto/nuxt", { duration: 500 }],
         ["@nuxtjs/i18n", { ...i18n }],
@@ -92,6 +93,16 @@ export default {
             }
         ]
     ],
+
+    gtm: {
+        id: "GTM-KMZWHH6"
+    },
+
+    publicRuntimeConfig: {
+        gtm: {
+            id: process.env.GOOGLE_TAG_MANAGER_ID
+        }
+    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
