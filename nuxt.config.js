@@ -1,10 +1,6 @@
 import i18n from "./i18n"
 
 export default {
-    env: {
-        NUXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NUXT_PUBLIC_GOOGLE_ANALYTICS
-    },
-
     // Target: https://go.nuxtjs.dev/config-target
     target: "static",
 
@@ -35,11 +31,7 @@ export default {
     css: ["@/assets/css/main.css"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [
-        "~/plugins/vue-tooltip.client.js",
-        // "~/plugins/vue-gtag.js",
-        "~/plugins/googleAnalytics.client.js"
-    ],
+    plugins: ["~/plugins/vue-tooltip.client.js", "~/plugins/vue-gtag.js"],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -81,25 +73,13 @@ export default {
         ["@nuxt/content"],
         ["vue-scrollto/nuxt", { duration: 500 }],
         ["@nuxtjs/i18n", { ...i18n }],
-        [
-            "@nuxtjs/google-gtag",
-            {
-                id: "UA-1969234-5", // required
-                config: {
-                    // this are the config options for `gtag
-                    // check out official docs: https://developers.google.com/analytics/devguides/collection/gtagjs/
-                    //anonymize_ip: true, // anonymize IP
-                    //send_page_view: false, // might be necessary to avoid duplicated page track on page reload
-                    // linker: {
-                    //     domains: ["domain.com", "domain.org"]
-                    // }
-                },
-                debug: true, // enable to track in dev mode
-                disableAutoPageTrack: false // disable if you don't want to track each page route with router.afterEach(...)
-                // optional you can add more configuration like [AdWords](https://developers.google.com/adwords-remarketing-tag/#configuring_the_global_site_tag_for_multiple_accounts)
-            }
-        ]
+        "@nuxtjs/google-gtag"
     ],
+
+    // more options: https://www.npmjs.com/package/@nuxtjs/google-gtag
+    "google-gtag": {
+        id: "UA-1969234-5"
+    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
