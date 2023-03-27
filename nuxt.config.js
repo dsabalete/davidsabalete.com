@@ -1,6 +1,10 @@
 import i18n from "./i18n"
 
 export default {
+    env: {
+        NUXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NUXT_PUBLIC_GOOGLE_ANALYTICS
+    },
+
     // Target: https://go.nuxtjs.dev/config-target
     target: "static",
 
@@ -31,7 +35,11 @@ export default {
     css: ["@/assets/css/main.css"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["~/plugins/vue-tooltip.client.js", "~/plugins/vue-gtag.js"],
+    plugins: [
+        "~/plugins/vue-tooltip.client.js",
+        // "~/plugins/vue-gtag.js",
+        "~/plugins/googleAnalytics.client.js"
+    ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
