@@ -73,12 +73,27 @@ export default {
         ["@nuxt/content"],
         ["vue-scrollto/nuxt", { duration: 500 }],
         ["@nuxtjs/i18n", { ...i18n }],
-        "@nuxtjs/google-gtag"
+        "@nuxtjs/google-gtag",
+        // Doc: https://github.com/nuxt-community/gtm-module
+        "@nuxtjs/gtm"
     ],
+
+    gtm: {
+        id: "G-E0XXZ7KMLT"
+    },
 
     // more options: https://www.npmjs.com/package/@nuxtjs/google-gtag
     "google-gtag": {
-        id: "UA-1969234-5"
+        id: "UA-1969234-5",
+        config: {
+            // this are the config options for `gtag
+            // check out official docs: https://developers.google.com/analytics/devguides/collection/gtagjs/
+            anonymize_ip: true, // anonymize IP
+            send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+            linker: {
+                domains: ["davidsabalete.com"]
+            }
+        }
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
