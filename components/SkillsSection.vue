@@ -78,27 +78,6 @@
             </li>
             <li>
                 <img
-                    v-tooltip.bottom="`Drupal`"
-                    src="/icons/drupal.svg"
-                    alt="Drupal"
-                />
-            </li>
-            <li>
-                <img
-                    v-tooltip.bottom="`Gulp`"
-                    src="/icons/gulp.svg"
-                    alt="Gulp"
-                />
-            </li>
-            <li>
-                <img
-                    v-tooltip.bottom="`Grunt`"
-                    src="/icons/grunt.svg"
-                    alt="Grunt"
-                />
-            </li>
-            <li>
-                <img
                     v-tooltip.bottom="`NPM: Node Package Manager`"
                     src="/icons/npm.svg"
                     alt="NPM"
@@ -118,13 +97,13 @@
                     alt="Java"
                 />
             </li>
-            <li>
+            <!-- <li>
                 <img
                     v-tooltip.bottom="`PHP: Programming Language`"
                     src="/icons/php.svg"
                     alt="PHP"
                 />
-            </li>
+            </li> -->
             <li>
                 <img
                     v-tooltip.bottom="`Python: Programming Language`"
