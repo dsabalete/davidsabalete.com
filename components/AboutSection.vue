@@ -1,12 +1,15 @@
 <template>
     <SectionApp class="flex flex-col pt-0 sm:pt-8">
         <div>
-            <p>
-                {{ $t("about_text_1") }}
-            </p>
-            <p>
-                {{ $t("about_text_2") }}
-            </p>
+            {{ $t("about_text_1") }}
+        </div>
+
+        <div>
+            {{ $t("about_text_2") }}
+        </div>
+
+        <div>
+            {{ $t("about_text_3") }}
         </div>
 
         <a
@@ -18,3 +21,9 @@
         >
     </SectionApp>
 </template>
+
+<style lang="postcss" scoped>
+div {
+    margin-bottom: 1rem;
+}
+</style>

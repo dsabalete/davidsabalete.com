@@ -3,6 +3,13 @@
         <template #title>{{ $t("education_title") }}</template>
 
         <ResumeItem
+            position="Google Data Analyst Certificate"
+            company="Coursera"
+            description="Certificate"
+            period="Nove 2022 - June 2023"
+        />
+
+        <ResumeItem
             position="E-business Technologies"
             company="Institut Català de Tecnología"
             description="Master's degree"

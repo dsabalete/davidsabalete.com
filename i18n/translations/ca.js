@@ -10,6 +10,8 @@ const ca = {
         "Tinc experiència en Vue.js i Nuxt.js amb els que produeixo codi d'alta qualitat pels meus clients que tenen un bon rendiment i estan ben provats.",
     about_text_2:
         "Em concentro en resoldre problemes, no només problemes tècnics, sino també en crear una experiència increïble pels usuaris del meu software, tant visual com accesible. La combinació d'eines poderoses i coneixements sobre els usuaris dona vida a les interficies d'usuari visuals i fa que les pàgines web siguin accesibles i útils.",
+    about_text_3:
+        "Sóc un jugador d'equip i m'agrada treballar en equip on podem aprendre els uns dels altres i créixer junts. També sóc un aprenentatge ràpid i sempre estic buscant nous reptes i oportunitats per créixer com a desenvolupador.",
     about_contact_me: "Contacta'm!",
     contact_title: "Pots torbar-me a...",
     contact_back: "Tornar a l'inici",
@@ -50,6 +52,12 @@ const ca = {
     projects_title: "Projectes",
     skills_title: "Habilitats",
     skills_programming_languages: "Llenguatges de programació i eines",
+    skills_data_text_1: "Neteja de dades",
+    skills_data_text_2: "Visualització de dades",
+    skills_data_text_3: "Programació amb R",
+    skills_data_text_4: "Pressa de decissions basades en dades",
+    skills_data_text_5: "Cálcul i anàlisi amb SQL i fulles de càlcul",
+    skills_data_text_6: "Presentacions efectives",
     skills_workflow: "Fluxe de treball",
     skills_workflow_text_1: "Mobile-First, Diseny Responsive",
     skills_workflow_text_2: "Proves multi navegador i Depuración",

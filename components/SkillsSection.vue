@@ -113,6 +113,18 @@
             </li>
         </ul>
 
+        <h3>Data Analysis</h3>
+        <ul class="data-analysis flex flex-col">
+            <li>{{ $t("skills_data_text_1") }}</li>
+            <li>{{ $t("skills_data_text_2") }}</li>
+            <li>{{ $t("skills_data_text_3") }}</li>
+            <li>{{ $t("skills_data_text_4") }}</li>
+            <li>{{ $t("skills_data_text_5") }}</li>
+            <li>{{ $t("skills_data_text_6") }}</li>
+        </ul>
+
+        <br />
+
         <h3>{{ $t("skills_workflow") }}</h3>
         <ul class="workflow flex flex-col">
             <li>{{ $t("skills_workflow_text_1") }}</li>
@@ -136,6 +148,7 @@ export default {
 .langs-n-tools li {
     @apply w-12 mx-4 my-8 hover:scale-150 duration-500;
 }
+.data-analysis li:before,
 .workflow li:before {
     @apply inline-block ml-0 sm:ml-8 w-8;
     content: "✅";
