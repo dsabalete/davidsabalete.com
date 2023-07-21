@@ -23,7 +23,7 @@ export const projects = [
         title: "Kiloday calculator",
         description:
             "Alternative birthday calculator app made with Vue, Vite and Pinia",
-        repo: "",
+        repo: "https://github.com/dsabalete/kiloday",
         live: "https://kiloday.netlify.app"
     },
     {
