@@ -24,14 +24,26 @@ export default {
             },
             { name: "format-detection", content: "telephone=no" }
         ],
-        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        script: [
+            {
+                src: "https://www.googletagmanager.com/gtag/js?id=G-E0XXZ7KMLT",
+                async: true
+            },
+            {
+                src: 'js/gtag.js',
+            }
+        ]
+
+
+
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: ["@/assets/css/main.css"],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["~/plugins/vue-tooltip.client.js", "~/plugins/vue-gtag.js"],
+    plugins: ["~/plugins/vue-tooltip.client.js"],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -73,28 +85,7 @@ export default {
         ["@nuxt/content"],
         ["vue-scrollto/nuxt", { duration: 500 }],
         ["@nuxtjs/i18n", { ...i18n }],
-        "@nuxtjs/google-gtag",
-        // Doc: https://github.com/nuxt-community/gtm-module
-        "@nuxtjs/gtm"
     ],
-
-    gtm: {
-        id: "G-E0XXZ7KMLT"
-    },
-
-    // more options: https://www.npmjs.com/package/@nuxtjs/google-gtag
-    "google-gtag": {
-        id: "UA-1969234-5",
-        config: {
-            // this are the config options for `gtag
-            // check out official docs: https://developers.google.com/analytics/devguides/collection/gtagjs/
-            anonymize_ip: true, // anonymize IP
-            send_page_view: false, // might be necessary to avoid duplicated page track on page reload
-            linker: {
-                domains: ["davidsabalete.com"]
-            }
-        }
-    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
