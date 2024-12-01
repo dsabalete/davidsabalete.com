@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-col md:flex-row" id="about">
-        <NavApp />
-        <nuxt />
-    </div>
+  <div id="about" class="flex flex-col md:flex-row">
+    <NavApp />
+    <slot />
+  </div>
 </template>

@@ -1,29 +1,28 @@
 <template>
-    <SectionApp class="flex flex-col pt-0 sm:pt-8">
-        <div>
-            {{ $t("about_text_1") }}
-        </div>
+  <SectionApp class="flex flex-col pt-0 sm:pt-8">
+    <div>
+      {{ $t("about_text_1") }}
+    </div>
 
-        <div>
-            {{ $t("about_text_2") }}
-        </div>
+    <div>
+      {{ $t("about_text_2") }}
+    </div>
 
-        <div>
-            {{ $t("about_text_3") }}
-        </div>
+    <div>
+      {{ $t("about_text_3") }}
+    </div>
 
-        <a
-            href="#contact"
-            v-scroll-to="'#contact'"
-            class="w-full mt-20 sm:mt-32 bg-blue-100 text-blue-900 px-1 py-2 text-center uppercase font-bold tracking-wide text-xl rounded-xl"
-        >
-            {{ $t("about_contact_me") }}</a
-        >
-    </SectionApp>
+    <a
+      href="#contact"
+      class="w-full mt-20 sm:mt-32 bg-blue-100 text-blue-900 px-1 py-2 text-center uppercase font-bold tracking-wide text-xl rounded-xl"
+    >
+      {{ $t("about_contact_me") }}</a
+    >
+  </SectionApp>
 </template>
 
 <style lang="postcss" scoped>
 div {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 </style>
