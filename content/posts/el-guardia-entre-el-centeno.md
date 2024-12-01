@@ -1,7 +1,7 @@
 ---
 title: El guardián entre el centeno, de J.D. Salinger (spanish)
 description:
-img: first-blog-post.jpg
+img: /first-blog-post.jpg
 alt: my first blog post
 createdAt: apr 23 2022
 updatedAt: apr 23 2022
