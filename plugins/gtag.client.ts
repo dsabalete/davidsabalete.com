@@ -1,11 +1,21 @@
-export default defineNuxtPlugin((nuxtApp) => {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+declare global {
+  interface Window {
+    dataLayer: any[]
+  }
+}
+
+export default defineNuxtPlugin((_) => {
   const { gtagId } = useRuntimeConfig().public
 
-  const gtag = (...args: any[]): void => {
-    ;(window as any).dataLayer.push(args)
+  type GtagArgs = [string, ...any[]]
+
+  const gtag = (...args: GtagArgs): void => {
+    window.dataLayer.push(args)
   }
 
-  ;(window as any).dataLayer = (window as any).dataLayer || []
+  window.dataLayer = window.dataLayer || []
 
   gtag("js", new Date())
   gtag("config", gtagId)
