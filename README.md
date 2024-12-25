@@ -1,4 +1,14 @@
-# Nuxt Minimal Starter
+# Personal web page
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ec9c8b17-46bb-42c0-abaa-3a4b2d3c9961/deploy-status)](https://app.netlify.com/sites/davidsabalete/deploys)
+
+This is my personal web page, built with [Nuxt.js](https://nuxtjs.org/) and deployed with [Netlify](https://www.netlify.com/).
+
+For the moment, it is a simple static page with some information about me and my projects. I plan to add more features in the future.
+
+If you see something that could be improved, please let me know! [Open an issue](https://github.com/dsabalete/davidsabalete.com/issues) or a pull request, I will be happy to receive your feedback. 😀
+
+## Nuxt.js
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
