@@ -68,33 +68,33 @@ console.log(route.hash)
     >
       <ClientOnly>
         <li>
-          <a href="#about" v-smooth-scroll class="nav-entry">{{ $t("about") }} </a>
+          <a v-smooth-scroll href="#about" class="nav-entry">{{ $t("about") }} </a>
         </li>
         <li>
-          <a href="#experience" v-smooth-scroll class="nav-entry">{{ $t("experience") }} </a>
+          <a v-smooth-scroll href="#experience" class="nav-entry">{{ $t("experience") }} </a>
         </li>
         <li>
-          <a href="#education" v-smooth-scroll class="nav-entry">{{ $t("education") }} </a>
+          <a v-smooth-scroll href="#education" class="nav-entry">{{ $t("education") }} </a>
         </li>
         <li>
-          <a href="#skills" v-smooth-scroll class="nav-entry">{{ $t("skills") }} </a>
+          <a v-smooth-scroll href="#skills" class="nav-entry">{{ $t("skills") }} </a>
         </li>
         <li>
-          <a href="#interests" v-smooth-scroll class="nav-entry">{{ $t("interests") }} </a>
+          <a v-smooth-scroll href="#interests" class="nav-entry">{{ $t("interests") }} </a>
         </li>
         <li>
-          <a href="#projects" v-smooth-scroll class="nav-entry">{{ $t("projects") }} </a>
+          <a v-smooth-scroll href="#projects" class="nav-entry">{{ $t("projects") }} </a>
         </li>
         <li>
-          <nuxt-link to="/blog" v-smooth-scroll class="nav-entry">blog</nuxt-link>
+          <nuxt-link v-smooth-scroll to="/blog" class="nav-entry">blog</nuxt-link>
         </li>
         <li>
-          <a href="#contact" v-smooth-scroll class="nav-entry">{{ $t("contact") }} </a>
+          <a v-smooth-scroll href="#contact" class="nav-entry">{{ $t("contact") }} </a>
         </li>
       </ClientOnly>
       <li class="flex justify-center">
-        <nuxt-link v-for="locale in availableLocales" :key="locale.code" :to="`${switchLocalePath(locale.code)}`">
-          <img :src="`/icons/flag-${locale.code}.svg`" :alt="locale.name" />
+        <nuxt-link v-for="loc in availableLocales" :key="loc.code" :to="`${switchLocalePath(loc.code)}`">
+          <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" />
         </nuxt-link>
       </li>
     </ul>
