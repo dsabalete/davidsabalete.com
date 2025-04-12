@@ -1,5 +1,14 @@
 export const projects = [
   {
+    image: "/goat-notes.png",
+    alt: "Goat Notes taking app with AI",
+    title: "Goat Notes taking app with AI",
+    description:
+      "GOAT Notes is a modern note-taking application built with Next.js, Supabase, and Prisma. It allows users to create, edit, delete, and search notes, with additional features like AI-powered insights and a responsive design.",
+    repo: "https://github.com/dsabalete/fcc-goat-notes",
+    live: "https://fcc-goat-notes.vercel.app/"
+  },
+  {
     image: "/qrcode.png",
     alt: "QR Code Generator picture",
     title: "QR Code Generator",
