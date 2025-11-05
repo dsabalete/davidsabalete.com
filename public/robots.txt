@@ -1,0 +1,24 @@
+# robots.txt for davidsabalete.com
+# Allow all crawlers to access all public content
+
+User-agent: *
+Allow: /
+
+# Allow access to blog pages
+Allow: /blog
+Allow: /blog/
+
+# Allow access to static assets
+Allow: /icons/
+Allow: /images/
+Allow: /favicon.ico
+
+# Block admin/internal paths (if any exist in the future)
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /admin/
+
+# Sitemap location
+# Nuxt typically generates sitemaps at /sitemap.xml
+Sitemap: https://www.davidsabalete.com/sitemap.xml
+

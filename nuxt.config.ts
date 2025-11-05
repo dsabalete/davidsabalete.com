@@ -7,6 +7,12 @@ export default defineNuxtConfig({
       gtagId: "G-E0XXZ7KMLT"
     }
   },
+  site: {
+    url:
+      process.env.NUXT_PUBLIC_SITE_URL ||
+      (process.env.NODE_ENV === "production" ? "https://www.davidsabalete.com" : "http://localhost:3000"),
+    name: "David Sabalete Rodríguez home site"
+  },
   app: {
     head: {
       htmlAttrs: {
@@ -16,7 +22,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: "utf-8" },
         {
-          hid: "description",
+          key: "description",
           name: "description",
           content:
             "This is the home site of David Sabalete Rodríguez, personal website and portfolio. I'm a software engineer and web developer."
@@ -28,7 +34,13 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { hid: "canonical", rel: "canonical", href: "https://www.davidsabalete.com" }
+        { key: "canonical", rel: "canonical", href: "https://www.davidsabalete.com" },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Roboto&family=Josefin+Sans&family=Audiowide&family=Lato:wght@100;300&family=Raleway:ital,wght@0,100;0,400;1,100&display=swap"
+        }
       ],
       script: [
         {
@@ -53,7 +65,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "floating-vue/nuxt",
     "@nuxt/content",
-    "@nuxtjs/google-fonts"
+    "nuxt-simple-sitemap"
   ],
   i18n: {
     locales: [
@@ -62,21 +74,24 @@ export default defineNuxtConfig({
       { code: "ca", iso: "ca-ES", name: "Català", file: "ca.json" }
     ],
     defaultLocale: "en",
-    lazy: true,
     langDir: "locales"
   },
   content: {},
-  googleFonts: {
-    families: {
-      Roboto: true,
-      "Josefin+Sans": true,
-      Audiowide: true,
-      Lato: [100, 300],
-      Raleway: {
-        wght: [100, 400],
-        ital: [100]
+  sitemap: {
+    sources: [
+      {
+        context: {
+          name: "Blog Posts",
+          description: "Dynamic blog post routes from Nuxt Content"
+        },
+        fetch: "/api/sitemap-blog-posts"
       }
-    },
-    display: "swap"
+    ]
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ["/sitemap.xml"]
+    }
   }
 })
