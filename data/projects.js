@@ -24,7 +24,7 @@ export const projects = [
     description:
       "A website for a space tourism company. It is a static website with responsive design, plain CSS and a bit of vanilla javascript.",
     repo: "https://github.com/dsabalete/space-tourism",
-    live: "https://sabalete-space-tourism.netlify.app"
+    live: "https://space.davidsabalete.com"
   },
   {
     image: "/kiloday.png",
@@ -32,7 +32,7 @@ export const projects = [
     title: "Kiloday calculator",
     description: "Alternative birthday calculator app made with Vue, Vite and Pinia",
     repo: "https://github.com/dsabalete/kiloday",
-    live: "https://kiloday.netlify.app"
+    live: "https://kiloday.davidsabalete.com"
   },
   {
     image: "https://dsabalete.github.io/images/vue-twitter-clone.png",
