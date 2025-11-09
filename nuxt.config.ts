@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2024-11-01",
+  compatibilityDate: "2025-11-09",
+  compatibilityVersion: 4,
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
@@ -64,34 +65,22 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxt/eslint",
     "floating-vue/nuxt",
-    "@nuxt/content",
-    "nuxt-simple-sitemap"
+    "@nuxt/content"
   ],
   i18n: {
     locales: [
-      { code: "en", iso: "en-US", name: "English", file: "en.json" },
-      { code: "es", iso: "es-ES", name: "Español", file: "es.json" },
-      { code: "ca", iso: "ca-ES", name: "Català", file: "ca.json" }
+      { code: "en", language: "en-US", name: "English", file: "en.json" },
+      { code: "es", language: "es-ES", name: "Español", file: "es.json" },
+      { code: "ca", language: "ca-ES", name: "Català", file: "ca.json" }
     ],
     defaultLocale: "en",
     langDir: "locales"
   },
   content: {},
-  sitemap: {
-    sources: [
-      {
-        context: {
-          name: "Blog Posts",
-          description: "Dynamic blog post routes from Nuxt Content"
-        },
-        fetch: "/api/sitemap-blog-posts"
-      }
-    ]
-  },
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/sitemap_index.xml"]
+      routes: ["/sitemap.xml"]
     }
   }
 })
