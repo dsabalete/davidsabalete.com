@@ -1,10 +1,10 @@
 ---
-title: El guardián entre el centeno, de J.D. Salinger (spanish)
+title: The Catcher in the Rye, de J.D. Salinger (spanish)
 description:
-img: /first-blog-post.jpg
+img: /the-catcher-in-the-rye.png
 alt: my first blog post
 createdAt: apr 23 2022
-updatedAt: apr 23 2022
+updatedAt: nov 9 2025
 ---
 
 It is a novel that describes the experiences of a teenager who does not fit into the world of the time. The action takes place in New York sometime around the 1950s.

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { formatDate } from "~/utils"
+import type { BlogPost } from "~/types/blog"
 
 definePageMeta({
   layout: "blog"
@@ -7,25 +7,46 @@ definePageMeta({
 
 const route = useRoute()
 
-const article = await queryContent(`posts/${route.params.slug}`).findOne()
+// queryCollection is auto-imported by Nuxt Content v3
+const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, async () => {
+  try {
+    if (typeof queryCollection !== "undefined") {
+      const slug = route.params.slug as string
+
+      // Try different ways to find the article
+      return (await queryCollection("posts").path(`/posts/${slug}`).first()) as unknown as BlogPost
+    }
+    console.error("queryCollection is not available")
+    return null
+  } catch (error) {
+    console.error("Error fetching article:", error)
+    return null
+  }
+})
 </script>
 
 <template>
-  <article v-if="article" class="bg-white rounded-xl drop-shadow-xl p-4 sm:p-6 md:p-8 sm:m-8">
-    <h1 class="text-3xl mb-4 font-bold">{{ article.title }}</h1>
-    <p class="text-base mb-2">{{ article.description }}</p>
-    <p class="text-sm mb-8">
-      Article created on {{ formatDate(article.createdAt) }} and updated on
-      {{ formatDate(article.updatedAt) }}
+  <article v-if="post" class="bg-white rounded-xl drop-shadow-xl p-4 sm:p-6 md:p-8 sm:m-8">
+    <h1 class="text-3xl mb-4 font-bold">{{ post.title || "Untitled" }}</h1>
+    <p v-if="post.description" class="text-base mb-2">
+      {{ post.description }}
+    </p>
+    <p v-if="post?.meta?.createdAt || post?.meta?.updatedAt" class="text-sm mb-8">
+      <span v-if="post?.meta?.createdAt"> post created on {{ post?.meta?.createdAt }} </span>
+      <span v-if="post?.meta?.updatedAt"> and updated on {{ post?.meta?.updatedAt }} </span>
     </p>
 
-    <img :src="article.img" :alt="article.alt" class="mx-auto mb-8" />
+    <img
+      v-if="post?.meta?.img"
+      :src="post?.meta?.img as string"
+      :alt="(post?.meta?.alt as string) || ''"
+      class="mx-auto mb-8"
+    />
 
-    <ContentDoc :path="article._path" class="nuxt-content">
-      <template #not-found>
-        <h1>Document not found</h1>
-      </template>
-    </ContentDoc>
+    <ContentRenderer v-if="post" :value="post" class="nuxt-content" />
+    <div v-else>
+      <h1>Document not found</h1>
+    </div>
 
     <div class="w-full text-center">
       <nuxt-link to="/blog" class="underline text-blue-500 text-sm">Back to blog</nuxt-link>
