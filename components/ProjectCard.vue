@@ -10,7 +10,7 @@ defineProps({
 <template>
   <div class="project flex flex-col drop-shadow-2xl">
     <div class="project-image w-full">
-      <a :href="project.repo" target="_blank">
+      <a :href="project.live" target="_blank">
         <img
           :src="project.image"
           :alt="project.alt"

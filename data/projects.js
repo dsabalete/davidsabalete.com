@@ -1,5 +1,14 @@
 export const projects = [
   {
+    image: "/tercerespai.png",
+    alt: "Tercer Espai homepage picture",
+    title: "Tercer Espai website",
+    description:
+      "Tercer Espai is a web built with Nuxt.js, Tailwind and Supabase. It allows users to know about the events organized by the organization Tercer Espai, get in touch with the organization and get the latest news.",
+    repo: "",
+    live: "https://tercerespai.org/"
+  },
+  {
     image: "/goat-notes.png",
     alt: "Goat Notes taking app with AI",
     title: "Goat Notes taking app with AI",

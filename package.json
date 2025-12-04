@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint \"**/*.{js,ts,vue}\"",
     "lint:fix": "eslint \"**/*.{js,ts,vue}\" --fix",
-    "clean": "rm -rf .nuxt node_modules && rm bun.lockb",
+    "clean": "rm -rf .nuxt node_modules && rm bun.lock",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
