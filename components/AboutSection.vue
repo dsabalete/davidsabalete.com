@@ -18,7 +18,7 @@ const { t } = useI18n()
 
     <ClientOnly>
       <div
-        class="w-60 mx-auto mt-20 sm:mt-32 bg-blue-100 text-blue-900 px-1 py-2 text-center uppercase font-bold tracking-wide text-xl rounded-xl shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
+        class="w-60 mx-auto mt-20 sm:mt-32 bg-blue-100 text-green-900 px-1 py-2 text-center uppercase font-bold tracking-wide text-xl rounded-xl shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer"
       >
         <a v-smooth-scroll href="#contact"> {{ t("about_contact_me") }}</a>
       </div>

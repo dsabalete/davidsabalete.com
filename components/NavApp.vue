@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-const { locale, locales } = useI18n()
+const { locale, locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
-const expanded = ref("false")
+const expanded = ref(false)
 const isOpen = ref(false)
 
 const availableLocales = computed(() => {
@@ -11,13 +11,13 @@ const availableLocales = computed(() => {
 
 const toggleMobileNav = () => {
   isOpen.value = !isOpen.value
-  expanded.value = expanded.value === "false" ? "true" : "false"
+  expanded.value = !expanded.value
 }
 
 const close = () => {
   const interval = setInterval(() => {
-    if (expanded.value === "true") {
-      expanded.value = "false"
+    if (expanded.value) {
+      expanded.value = false
       isOpen.value = false
       clearInterval(interval)
     }
@@ -31,7 +31,7 @@ console.log(route.hash)
 <template>
   <nav
     id="sideNav"
-    class="navbar flex flex-col justify-start z-20 md:w-64 md:h-screen md:fixed md:bg-blue-900 items-center"
+    class="navbar flex flex-col justify-start z-20 md:w-64 md:h-screen md:fixed md:bg-green-900 items-center"
   >
     <button
       class="mobile-nav-toggle block fixed z-30 right-0 m-4 sm:hidden bg-transparent w-6 aspect-square border-0 bg-center bg-no-repeat outline-none"
@@ -44,13 +44,13 @@ console.log(route.hash)
     <a href="#">
       <div class="md:w-60 self-center">
         <div
-          class="star-name font-title fixed top-0 w-full text-left uppercase font-bold tracking-wide text-xl bg-blue-900 text-white p-4 md:hidden"
+          class="star-name font-title fixed top-0 w-full text-left uppercase font-bold tracking-wide text-xl bg-green-900 text-white p-4 md:hidden"
         >
           David Sabalete
         </div>
         <div class="mt-20">
           <img
-            class="profile-image rounded-full border-8 border-blue-100 mx-auto my-4 w-1/2"
+            class="profile-image rounded-full border-8 border-green-200 mx-auto my-4 w-1/2"
             alt="Image of David"
             src="../assets/images/profile.jpg"
           />
@@ -68,28 +68,28 @@ console.log(route.hash)
     >
       <ClientOnly>
         <li>
-          <a v-smooth-scroll href="#about" class="nav-entry">{{ $t("about") }} </a>
+          <a v-smooth-scroll href="#about" class="nav-entry">{{ t("about") }} </a>
         </li>
         <li>
-          <a v-smooth-scroll href="#experience" class="nav-entry">{{ $t("experience") }} </a>
+          <a v-smooth-scroll href="#experience" class="nav-entry">{{ t("experience") }} </a>
         </li>
         <li>
-          <a v-smooth-scroll href="#education" class="nav-entry">{{ $t("education") }} </a>
+          <a v-smooth-scroll href="#education" class="nav-entry">{{ t("education") }} </a>
         </li>
         <li>
-          <a v-smooth-scroll href="#skills" class="nav-entry">{{ $t("skills") }} </a>
+          <a v-smooth-scroll href="#skills" class="nav-entry">{{ t("skills") }} </a>
         </li>
         <li>
-          <a v-smooth-scroll href="#interests" class="nav-entry">{{ $t("interests") }} </a>
+          <a v-smooth-scroll href="#interests" class="nav-entry">{{ t("interests") }} </a>
         </li>
         <li>
-          <a v-smooth-scroll href="#projects" class="nav-entry">{{ $t("projects") }} </a>
+          <a v-smooth-scroll href="#projects" class="nav-entry">{{ t("projects") }} </a>
         </li>
         <li>
           <nuxt-link v-smooth-scroll to="/blog" class="nav-entry">blog</nuxt-link>
         </li>
         <li>
-          <a v-smooth-scroll href="#contact" class="nav-entry">{{ $t("contact") }} </a>
+          <a v-smooth-scroll href="#contact" class="nav-entry">{{ t("contact") }} </a>
         </li>
       </ClientOnly>
       <li class="flex justify-center">
@@ -107,7 +107,7 @@ li {
 }
 
 .nav-entry {
-  @apply font-title px-8 md:py-1 my-4 w-full text-center text-blue-900 md:text-blue-100 font-bold text-xl uppercase md:block sm:hover:bg-blue-100 sm:hover:text-blue-900;
+  @apply font-title px-8 md:py-1 my-4 w-full text-center text-green-900 md:text-green-200 font-bold text-xl uppercase md:block sm:hover:bg-green-100 sm:hover:text-green-900;
 }
 
 .mobile-nav-toggle {
