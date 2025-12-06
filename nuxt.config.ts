@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-09",
-  compatibilityVersion: 4,
+
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
@@ -35,13 +35,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { key: "canonical", rel: "canonical", href: "https://www.davidsabalete.com" },
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Roboto&family=Josefin+Sans&family=Audiowide&family=Lato:wght@100;300&family=Raleway:ital,wght@0,100;0,400;1,100&display=swap"
-        }
+        { key: "canonical", rel: "canonical", href: "https://www.davidsabalete.com" }
       ],
       script: [
         {
@@ -60,13 +54,7 @@ export default defineNuxtConfig({
     }
   },
   css: ["@/assets/css/main.css"],
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/i18n",
-    "@nuxt/eslint",
-    "floating-vue/nuxt",
-    "@nuxt/content"
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/eslint", "floating-vue/nuxt", "@nuxt/content", "@nuxtjs/seo"],
   i18n: {
     locales: [
       { code: "en", language: "en-US", name: "English", file: "en.json" },

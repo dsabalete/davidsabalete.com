@@ -4,7 +4,7 @@
       <h3 class="text-2xl font-bold text-green-900 py-6">
         {{ position }}
       </h3>
-      <div class="subheading uppercase text-lg font-semibold mb-2 font-serif">
+      <div class="subheading uppercase text-lg font-semibold mb-2">
         {{ company }}
       </div>
       <div class="resume-date text-sm text-green-900 whitespace-nowrap">

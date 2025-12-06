@@ -1,13 +1,9 @@
 <script lang="ts" setup>
-const { locale, locales, t } = useI18n()
+const { locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 
 const expanded = ref(false)
 const isOpen = ref(false)
-
-const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value)
-})
 
 const toggleMobileNav = () => {
   isOpen.value = !isOpen.value
@@ -44,7 +40,7 @@ console.log(route.hash)
     <a href="#">
       <div class="md:w-60 self-center">
         <div
-          class="star-name font-title fixed top-0 w-full text-left uppercase font-bold tracking-wide text-xl bg-green-900 text-white p-4 md:hidden"
+          class="star-name fixed top-0 w-full text-left uppercase font-bold tracking-wide text-xl bg-green-900 text-white p-4 md:hidden"
         >
           David Sabalete
         </div>
@@ -93,7 +89,7 @@ console.log(route.hash)
         </li>
       </ClientOnly>
       <li class="flex justify-center">
-        <nuxt-link v-for="loc in availableLocales" :key="loc.code" :to="`${switchLocalePath(loc.code)}`">
+        <nuxt-link v-for="loc in locales" :key="loc.code" :to="`${switchLocalePath(loc.code)}`">
           <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" />
         </nuxt-link>
       </li>
@@ -101,13 +97,13 @@ console.log(route.hash)
   </nav>
 </template>
 
-<style lang="postcss" scoped>
+<style lang="css" scoped>
 li {
   @apply py-2 sm:py-0;
 }
 
 .nav-entry {
-  @apply font-title px-8 md:py-1 my-4 w-full text-center text-green-900 md:text-green-200 font-bold text-xl uppercase md:block sm:hover:bg-green-100 sm:hover:text-green-900;
+  @apply px-8 md:py-1 my-4 w-full text-center text-green-900 md:text-green-200 font-bold text-xl uppercase md:block sm:hover:bg-green-100 sm:hover:text-green-900;
 }
 
 .mobile-nav-toggle {
