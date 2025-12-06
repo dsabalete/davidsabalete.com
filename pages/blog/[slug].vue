@@ -49,7 +49,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
     </div>
 
     <div class="w-full text-center">
-      <nuxt-link to="/blog" class="underline text-green-500 text-sm">Back to blog</nuxt-link>
+      <nuxt-link to="/blog" class="underline text-black-500 text-sm">Back to blog</nuxt-link>
     </div>
   </article>
 </template>

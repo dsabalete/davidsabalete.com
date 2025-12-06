@@ -1,8 +1,8 @@
 <template>
-  <SectionApp id="projects" class="lg:pr-32">
+  <SectionApp id="projects">
     <template #title>{{ $t("projects_title") }}</template>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div class="grid grid-cols-2 gap-10">
       <ProjectCard v-for="(project, idx) in projects" :key="idx" :project="project" />
     </div>
   </SectionApp>
