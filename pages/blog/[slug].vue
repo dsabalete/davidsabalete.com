@@ -90,7 +90,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
 }
 
 .icon.icon-link {
-  background-image: url("@/assets/svg/icon-hashtag.svg");
+  background-image: url("@/assets/images/icons/icon-hashtag.svg");
   display: inline-block;
   width: 20px;
   height: 20px;

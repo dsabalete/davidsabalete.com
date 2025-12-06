@@ -25,10 +25,7 @@ console.log(route.hash)
 </script>
 
 <template>
-  <nav
-    id="sideNav"
-    class="navbar flex flex-col justify-start z-20 md:w-64 md:h-screen md:fixed md:bg-green-900 items-center"
-  >
+  <nav id="sideNav" class="navbar flex flex-col justify-start z-20 md:w-64 md:h-screen md:fixed items-center">
     <button
       class="mobile-nav-toggle block fixed z-30 right-0 m-4 sm:hidden bg-transparent w-6 aspect-square border-0 bg-center bg-no-repeat outline-none"
       :class="{ 'mobile-nav-toggle--open': isOpen }"
@@ -46,7 +43,7 @@ console.log(route.hash)
         </div>
         <div class="mt-20">
           <img
-            class="profile-image rounded-full border-8 border-green-200 mx-auto my-4 w-1/2"
+            class="profile-image rounded-lg mx-auto my-4 w-1/2"
             alt="Image of David"
             src="../assets/images/profile.jpg"
           />
@@ -89,9 +86,11 @@ console.log(route.hash)
         </li>
       </ClientOnly>
       <li class="flex justify-center">
-        <nuxt-link v-for="loc in locales" :key="loc.code" :to="`${switchLocalePath(loc.code)}`">
-          <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" />
-        </nuxt-link>
+        <div v-for="loc in locales" :key="loc.code">
+          <nuxt-link :to="`${switchLocalePath(loc.code)}`">
+            <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" />
+          </nuxt-link>
+        </div>
       </li>
     </ul>
   </nav>
@@ -103,7 +102,7 @@ li {
 }
 
 .nav-entry {
-  @apply px-8 md:py-1 my-4 w-full text-center text-green-900 md:text-green-200 font-bold text-xl uppercase md:block sm:hover:bg-green-100 sm:hover:text-green-900;
+  @apply px-8 md:py-1 my-4 w-full text-center text-black text-xl uppercase md:block sm:hover:bg-green-100 sm:hover:text-green-900;
 }
 
 .mobile-nav-toggle {
