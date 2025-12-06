@@ -6,7 +6,8 @@ export const projects = [
     description:
       "Tercer Espai is a web built with Nuxt.js, Tailwind and Supabase. It allows users to know about the events organized by the organization Tercer Espai, get in touch with the organization and get the latest news.",
     repo: "",
-    live: "https://tercerespai.org/"
+    live: "https://tercerespai.org/",
+    tags: ["nuxt", "tailwind", "supabase"]
   },
   {
     image: "/goat-notes.png",
@@ -15,7 +16,8 @@ export const projects = [
     description:
       "GOAT Notes is a modern note-taking application built with Next.js, Supabase, and Prisma. It allows users to create, edit, delete, and search notes, with additional features like AI-powered insights and a responsive design.",
     repo: "https://github.com/dsabalete/fcc-goat-notes",
-    live: "https://fcc-goat-notes.vercel.app/"
+    live: "https://fcc-goat-notes.vercel.app/",
+    tags: ["next", "supabase", "prisma"]
   },
   {
     image: "/qrcode.png",
@@ -24,7 +26,8 @@ export const projects = [
     description:
       "Webapp tool for generating QR Codes from valid URLs. Static Astro website with Cloudfare Worker to generate the image.",
     repo: "https://github.com/dsabalete/qr-code",
-    live: "https://qr-code-e3h.pages.dev/"
+    live: "https://qr-code-e3h.pages.dev/",
+    tags: ["astro", "cloudflare"]
   },
   {
     image: "/space-tourism.png",
@@ -33,7 +36,8 @@ export const projects = [
     description:
       "A website for a space tourism company. It is a static website with responsive design, plain CSS and a bit of vanilla javascript.",
     repo: "https://github.com/dsabalete/space-tourism",
-    live: "https://space.davidsabalete.com"
+    live: "https://space.davidsabalete.com",
+    tags: ["html", "css", "javascript"]
   },
   {
     image: "/kiloday.png",
@@ -41,7 +45,8 @@ export const projects = [
     title: "Kiloday calculator",
     description: "Alternative birthday calculator app made with Vue, Vite and Pinia",
     repo: "https://github.com/dsabalete/kiloday",
-    live: "https://kiloday.davidsabalete.com"
+    live: "https://kiloday.davidsabalete.com",
+    tags: ["vue", "vite", "pinia"]
   },
   {
     image: "https://dsabalete.github.io/images/vue-twitter-clone.png",
@@ -49,7 +54,8 @@ export const projects = [
     title: "Vue twitter clone",
     description: "App that emulates basic functionality of a Twitter app. Made with Vue and deployed on Heroku.",
     repo: "https://github.com/dsabalete/vue-twitter-clone",
-    live: "https://elegant-rosalind-90c586.netlify.app/"
+    live: "https://elegant-rosalind-90c586.netlify.app/",
+    tags: ["vue", "heroku"]
   },
   {
     image: "https://dsabalete.github.io/images/expensify.png",
@@ -57,7 +63,8 @@ export const projects = [
     title: "Expensify App",
     description: "App that helps keep you track of your expenses. Made with React and Firebase.",
     repo: "https://github.com/dsabalete/udemy-expensify-app",
-    live: ""
+    live: "",
+    tags: ["react", "firebase", "heroku"]
   },
   {
     image: "https://dsabalete.github.io/images/indecision.png",
@@ -65,7 +72,8 @@ export const projects = [
     title: "Indecision App",
     description: "Put your live in the hands of a computer. Made with React.",
     repo: "https://github.com/dsabalete/udemy-indecision-app",
-    live: ""
+    live: "",
+    tags: ["react", "heroku"]
   },
   {
     image: "https://dsabalete.github.io/images/portfolio.png",
@@ -73,7 +81,8 @@ export const projects = [
     title: "Gridsome-Portfolio",
     description: "My Portfolio made with Gridsome and ❤️",
     repo: "https://github.com/dsabalete/gridsome-portfolio",
-    live: ""
+    live: "",
+    tags: ["gridsome"]
   },
   {
     image: "https://dsabalete.github.io/images/creualta.png",
@@ -81,7 +90,8 @@ export const projects = [
     title: "Creu Alta website",
     description: `Creu Alta Sabadell Basket website. It is running on Drupal as CMS an it has a VueJS app to register players during summer and christmas campus.`,
     repo: "",
-    live: "https://www.creualtabasquet.cat"
+    live: "https://www.creualtabasquet.cat",
+    tags: ["drupal", "vue"]
   },
   {
     image: "https://dsabalete.github.io/images/my-1-rm.png",
@@ -89,7 +99,8 @@ export const projects = [
     title: "My 1 RM website",
     description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
     repo: "https://github.com/dsabalete/my-1-rm",
-    live: "https://my-1-rm.netlify.app/"
+    live: "https://my-1-rm.netlify.app/",
+    tags: ["nuxt", "netlify"]
   },
   {
     image: "https://dsabalete.github.io/images/calculator.png",
@@ -97,7 +108,8 @@ export const projects = [
     title: "ReactJS Calculator",
     description: `ReactJS Calculator made with React.js. It has a simple calculator with a few functions.`,
     repo: "https://codepen.io/dsabalete/full/yZrxzP",
-    live: ""
+    live: "",
+    tags: ["react", "codepen"]
   },
   {
     image: "https://dsabalete.github.io/images/drum_machine.png",
@@ -105,7 +117,8 @@ export const projects = [
     title: "Drum machine",
     description: `React and Redux Drum machine made with React and Redux.`,
     repo: "https://codepen.io/dsabalete/full/bzQEqQ",
-    live: ""
+    live: "",
+    tags: ["react", "redux", "codepen"]
   },
   {
     image: "https://dsabalete.github.io/images/markdown.png",
@@ -113,7 +126,8 @@ export const projects = [
     title: "Markdown previewer",
     description: `Markdown previewer made with React.js and Redux`,
     repo: "https://codepen.io/dsabalete/full/daqqBQ",
-    live: ""
+    live: "",
+    tags: ["react", "redux", "codepen", "markdown"]
   },
   {
     image: "https://dsabalete.github.io/images/pomodoro.png",
@@ -121,7 +135,8 @@ export const projects = [
     title: "Pomodoro clock",
     description: `Pomodoro clock made with React.js and Redux`,
     repo: "https://codepen.io/dsabalete/full/MLNQvQ",
-    live: ""
+    live: "",
+    tags: ["react", "redux", "codepen"]
   },
   {
     image: "https://dsabalete.github.io/images/quote_machine.png",
@@ -129,7 +144,8 @@ export const projects = [
     title: "Quote Machine",
     description: "Random Quote Machine using external API",
     repo: "https://codepen.io/dsabalete/full/QdYLOZ",
-    live: ""
+    live: "",
+    tags: ["react", "codepen"]
   },
   {
     image: "https://dsabalete.github.io/images/tribute_page.png",
@@ -137,7 +153,8 @@ export const projects = [
     title: "Bruce Lee tribute page",
     description: "Simple Tribute page made with Bootstrap",
     repo: "https://codepen.io/dsabalete/full/aBPxzB",
-    live: ""
+    live: "",
+    tags: ["bootstrap", "codepen"]
   },
   {
     image: "https://dsabalete.github.io/images/weather.png",
@@ -145,7 +162,8 @@ export const projects = [
     title: "Weather app",
     description: "Forecast Weather App using JQuery and OpenWeatherMap API",
     repo: "https://codepen.io/dsabalete/full/RKvqjJ",
-    live: ""
+    live: "",
+    tags: ["jquery", "codepen"]
   },
   {
     image: "https://dsabalete.github.io/images/wikipedia_viewer.png",
@@ -153,6 +171,7 @@ export const projects = [
     title: "Wikipedia viewer",
     description: "Wikipedia Viewer App made with Angular and Wikipedia API",
     repo: "https://codepen.io/dsabalete/full/OpRKEZ",
-    live: ""
+    live: "",
+    tags: ["angular", "codepen", "wikipedia"]
   }
 ]

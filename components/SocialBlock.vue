@@ -21,6 +21,14 @@ defineProps({
       <img src="/icons/email.svg" alt="Email" :class="size" />
     </a>
 
+    <a href="https://codepen.io/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Codepen">
+      <img src="/icons/codepen.svg" alt="Codepen" :class="size" />
+    </a>
+
+    <a href="https://instagram.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <img src="/icons/instagram.svg" alt="Instagram" :class="size" />
+    </a>
+
     <!-- <a href="https://twitter.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
       <img src="/icons/twitter.svg" alt="Twitter" :class="size" />
     </a> -->

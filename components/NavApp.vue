@@ -30,8 +30,8 @@ console.log(route.hash)
     class="navbar flex flex-col justify-center md:items-center z-20 md:w-64 md:h-screen md:fixed items-center"
   >
     <button
-      class="mobile-nav-toggle block fixed z-30 top-5 right-4 sm:hidden bg-transparent w-6 aspect-square border-0 bg-center bg-no-repeat outline-none"
-      :class="{ 'mobile-nav-toggle--open': isOpen }"
+      class="mobile-nav-toggle block fixed z-30 top-5 right-4 sm:hidden rounded-md p-1 w-8 aspect-square border-0 bg-center bg-no-repeat outline-none"
+      :class="{ 'mobile-nav-toggle--open': isOpen, 'bg-white': !isOpen }"
       aria-controls="primary-navigation"
       @click="toggleMobileNav"
     >

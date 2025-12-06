@@ -18,8 +18,11 @@ defineProps({
       /></a>
     </div>
     <div class="project-info justify-center">
-      <h3 class="text-lg font-bold pt-3 pb-0">{{ project.title }}</h3>
-      <p class="mb-4">{{ project.description }}</p>
+      <h3 class="text-xl font-bold pt-3 pb-0 mb-2">{{ project.title }}</h3>
+      <p class="text-base mb-2">{{ project.description }}</p>
+      <div class="flex flex-row gap-2 text-sm mb-2">
+        <div v-for="tag in project.tags" :key="tag" class="bg-gray-200 px-2 rounded">{{ tag }}</div>
+      </div>
       <a :href="project.repo" class="text-base text-blue-600 hover:text-black mr-4" target="_blank">{{
         $t("project_view")
       }}</a>
