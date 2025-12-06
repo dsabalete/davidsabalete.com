@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="page-container sm:ml-64 sm:mt-16">
+  <div class="page-container sm:mx-56 sm:mt-16">
     <DesktopHeader />
     <main>
       <AboutSection />

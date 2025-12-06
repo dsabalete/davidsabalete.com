@@ -20,13 +20,13 @@ defineProps({
     <div class="project-info justify-center">
       <h3 class="text-lg font-bold pt-3 pb-0">{{ project.title }}</h3>
       <p class="mb-4">{{ project.description }}</p>
-      <a :href="project.repo" class="view-project text-green-700 hover:text-green-900 mr-4" target="_blank">{{
+      <a :href="project.repo" class="view-project text-black-700 hover:text-black mr-4" target="_blank">{{
         $t("project_view")
       }}</a>
       <a
         v-if="project.live"
         :href="project.live"
-        class="view-demo text-right text-green-700 hover:text-green-900"
+        class="view-demo text-right text-black-700 hover:text-black"
         target="_blank"
         >{{ $t("project_demo") }}</a
       >
