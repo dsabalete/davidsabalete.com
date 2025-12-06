@@ -2,7 +2,7 @@
   <SectionApp id="skills" class="lg:pr-32">
     <template #title>{{ $t("skills_title") }}</template>
 
-    <h3>{{ $t("skills_programming_languages") }}</h3>
+    <h3 class="text-lg font-bold">{{ $t("skills_programming_languages") }}</h3>
     <ul class="langs-n-tools flex flex-wrap">
       <li>
         <img v-tooltip.bottom="`HTML5`" src="/icons/html5.svg" alt="HTML5" />
@@ -55,7 +55,7 @@
       </li>
     </ul>
 
-    <h3>Data Analysis</h3>
+    <h3 class="text-lg font-bold">Data Analysis</h3>
     <ul class="data-analysis flex flex-col">
       <li>{{ $t("skills_data_text_1") }}</li>
       <li>{{ $t("skills_data_text_2") }}</li>
@@ -67,7 +67,7 @@
 
     <br />
 
-    <h3>{{ $t("skills_workflow") }}</h3>
+    <h3 class="text-lg font-bold">{{ $t("skills_workflow") }}</h3>
     <ul class="workflow flex flex-col">
       <li>{{ $t("skills_workflow_text_1") }}</li>
       <li>{{ $t("skills_workflow_text_2") }}</li>
@@ -188,7 +188,9 @@
 .tooltip[aria-hidden="true"] {
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.15s, visibility 0.15s;
+  transition:
+    opacity 0.15s,
+    visibility 0.15s;
 }
 
 .tooltip[aria-hidden="false"] {
