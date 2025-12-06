@@ -30,22 +30,16 @@ console.log(route.hash)
     class="navbar flex flex-col justify-center md:items-center z-20 md:w-64 md:h-screen md:fixed items-center"
   >
     <button
-      class="mobile-nav-toggle block fixed z-30 right-0 m-4 sm:hidden bg-transparent w-6 aspect-square border-0 bg-center bg-no-repeat outline-none"
+      class="mobile-nav-toggle block fixed z-30 top-5 right-4 sm:hidden bg-transparent w-6 aspect-square border-0 bg-center bg-no-repeat outline-none"
       :class="{ 'mobile-nav-toggle--open': isOpen }"
       aria-controls="primary-navigation"
       @click="toggleMobileNav"
     >
+      <IconHamburger v-if="!expanded" />
+      <IconClose v-else />
       <span class="sr-only" :aria-expanded="expanded">Menu</span>
     </button>
-    <a href="#">
-      <div class="md:w-60 self-center">
-        <div
-          class="star-name fixed top-0 w-full text-left uppercase font-bold tracking-wide text-xl bg-green-900 text-white p-4 md:hidden"
-        >
-          David Sabalete
-        </div>
-      </div>
-    </a>
+    <a href="#"></a>
     <ul
       id="primary-navigation"
       :data-visible="isOpen"
@@ -102,11 +96,11 @@ li {
 }
 
 .mobile-nav-toggle {
-  background-image: url(@/assets/images/icons/icon-hamburger.svg);
+  @apply text-black;
 }
 
 .mobile-nav-toggle--open {
-  background-image: url(@/assets/images/icons/icon-close.svg);
+  @apply text-black;
 }
 
 #primary-navigation[data-visible="true"] {
