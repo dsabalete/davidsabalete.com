@@ -1,13 +1,13 @@
 <template>
   <div class="resume-item flex flex-col md:flex-row justify-between mb-5">
     <div class="resume-content">
-      <h3 class="text-2xl font-bold text-green-900 py-6">
+      <h3 class="text-2xl font-bold text-black py-6">
         {{ position }}
       </h3>
       <div class="subheading uppercase text-lg font-semibold mb-2">
         {{ company }}
       </div>
-      <div class="resume-date text-sm text-green-900 whitespace-nowrap">
+      <div class="resume-date text-sm text-black whitespace-nowrap">
         <span class="text-primary">{{ period }}</span>
       </div>
 

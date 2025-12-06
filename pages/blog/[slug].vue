@@ -49,7 +49,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
     </div>
 
     <div class="w-full text-center">
-      <nuxt-link to="/blog" class="underline text-green-500 text-sm">Back to blog</nuxt-link>
+      <nuxt-link to="/blog" class="underline text-black-500 text-sm">Back to blog</nuxt-link>
     </div>
   </article>
 </template>
@@ -90,7 +90,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
 }
 
 .icon.icon-link {
-  background-image: url("@/assets/svg/icon-hashtag.svg");
+  background-image: url("@/assets/images/icons/icon-hashtag.svg");
   display: inline-block;
   width: 20px;
   height: 20px;
