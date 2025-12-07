@@ -40,6 +40,15 @@ export const projects = [
     tags: ["html", "css", "javascript"]
   },
   {
+    image: "https://dsabalete.github.io/images/creualta.png",
+    alt: "Creualta homepage picture",
+    title: "Creu Alta website",
+    description: `Creu Alta Sabadell Basket website. It is running on Drupal as CMS an it has a VueJS app to register players during summer and christmas campus.`,
+    repo: "",
+    live: "https://www.creualtabasquet.cat",
+    tags: ["drupal", "vue"]
+  },
+  {
     image: "/kiloday.png",
     alt: "Kiloday homepage picture",
     title: "Kiloday calculator",
@@ -47,6 +56,15 @@ export const projects = [
     repo: "https://github.com/dsabalete/kiloday",
     live: "https://kiloday.davidsabalete.com",
     tags: ["vue", "vite", "pinia"]
+  },
+  {
+    image: "https://dsabalete.github.io/images/my-1-rm.png",
+    alt: "My 1 RM homepage picture",
+    title: "My 1 RM website",
+    description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
+    repo: "https://github.com/dsabalete/my-1-rm",
+    live: "https://my-1-rm.netlify.app/",
+    tags: ["nuxt", "netlify"]
   },
   {
     image: "https://dsabalete.github.io/images/vue-twitter-clone.png",
@@ -83,24 +101,6 @@ export const projects = [
     repo: "https://github.com/dsabalete/gridsome-portfolio",
     live: "",
     tags: ["gridsome"]
-  },
-  {
-    image: "https://dsabalete.github.io/images/creualta.png",
-    alt: "Creualta homepage picture",
-    title: "Creu Alta website",
-    description: `Creu Alta Sabadell Basket website. It is running on Drupal as CMS an it has a VueJS app to register players during summer and christmas campus.`,
-    repo: "",
-    live: "https://www.creualtabasquet.cat",
-    tags: ["drupal", "vue"]
-  },
-  {
-    image: "https://dsabalete.github.io/images/my-1-rm.png",
-    alt: "My 1 RM homepage picture",
-    title: "My 1 RM website",
-    description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
-    repo: "https://github.com/dsabalete/my-1-rm",
-    live: "https://my-1-rm.netlify.app/",
-    tags: ["nuxt", "netlify"]
   },
   {
     image: "https://dsabalete.github.io/images/calculator.png",
