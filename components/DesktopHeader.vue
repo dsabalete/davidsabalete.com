@@ -10,7 +10,7 @@
         David Sabalete Rodríguez
       </h1>
       <h2 class="text-xl font-semibold text-black mt-4 mb-2">Senior Fullstack Developer</h2>
-      <h3 class="text-lg my-2">Nuxt.js, Vue.js, React, Node.js, AWS</h3>
+      <h3 class="text-base my-2">Nuxt.js, Vue.js, JS, TS, Node.js, Terraform, AWS, Git, GitHub</h3>
       <p class="text-black text-sm">Based in Barcelona, Spain</p>
     </div>
   </header>

@@ -55,7 +55,7 @@
       </li>
     </ul>
 
-    <h3 class="text-lg font-bold">Data Analysis</h3>
+    <!--<h3 class="text-lg font-bold">Data Analysis</h3>
     <ul class="data-analysis flex flex-col">
       <li>{{ $t("skills_data_text_1") }}</li>
       <li>{{ $t("skills_data_text_2") }}</li>
@@ -65,7 +65,7 @@
       <li>{{ $t("skills_data_text_6") }}</li>
     </ul>
 
-    <br />
+    <br />-->
 
     <h3 class="text-lg font-bold">{{ $t("skills_workflow") }}</h3>
     <ul class="workflow flex flex-col">

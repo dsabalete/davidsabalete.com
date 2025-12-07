@@ -27,8 +27,17 @@ console.log(route.hash)
 <template>
   <nav
     id="sideNav"
-    class="navbar flex flex-col justify-center md:items-center z-20 md:w-64 md:h-screen md:fixed items-center"
+    class="nav-app flex flex-col justify-between md:items-center z-20 md:w-64 md:h-screen md:fixed items-center"
   >
+    <div class="flex justify-center">
+      <div v-for="loc in locales" :key="loc.code" class="mx-3 text-base">
+        <nuxt-link :to="`${switchLocalePath(loc.code)}`">
+          {{ loc.code }}
+          <!-- <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" /> -->
+        </nuxt-link>
+      </div>
+    </div>
+
     <button
       class="mobile-nav-toggle block fixed z-30 top-5 right-4 sm:hidden rounded-md p-1 w-8 aspect-square border-0 bg-center bg-no-repeat outline-none"
       :class="{ 'mobile-nav-toggle--open': isOpen, 'bg-white': !isOpen }"
@@ -39,7 +48,7 @@ console.log(route.hash)
       <IconClose v-else />
       <span class="sr-only" :aria-expanded="expanded">Menu</span>
     </button>
-    <a href="#"></a>
+
     <ul
       id="primary-navigation"
       :data-visible="isOpen"
@@ -50,6 +59,9 @@ console.log(route.hash)
       @click="close"
     >
       <ClientOnly>
+        <li>
+          <a href="#"></a>
+        </li>
         <li>
           <a v-smooth-scroll href="#about" class="nav-entry">{{ t("about") }} </a>
         </li>
@@ -75,18 +87,16 @@ console.log(route.hash)
           <a v-smooth-scroll href="#contact" class="nav-entry">{{ t("contact") }} </a>
         </li>
       </ClientOnly>
-      <li class="flex justify-center">
-        <div v-for="loc in locales" :key="loc.code">
-          <nuxt-link :to="`${switchLocalePath(loc.code)}`">
-            <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" />
-          </nuxt-link>
-        </div>
-      </li>
     </ul>
+    <div><!-- placeholder for contact--></div>
   </nav>
 </template>
 
 <style lang="css" scoped>
+.nav-app {
+  @apply flex flex-col;
+}
+
 li {
   @apply py-2 sm:py-0;
 }
