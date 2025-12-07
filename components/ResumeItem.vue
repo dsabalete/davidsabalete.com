@@ -1,7 +1,9 @@
 <template>
-  <div class="resume-item flex flex-col md:flex-row justify-between mb-5">
+  <div
+    class="resume-item flex flex-col md:flex-row justify-between mb-5 border-gray-200 border-2 sm:border-none rounded-lg p-6"
+  >
     <div class="resume-content">
-      <h3 class="text-2xl font-bold text-black dark:text-gray-100 py-6">
+      <h3 class="text-2xl font-bold text-black dark:text-gray-100 pb-4">
         {{ position }}
       </h3>
       <div class="subheading uppercase text-lg font-semibold mb-2">
@@ -11,7 +13,7 @@
         <span class="text-primary">{{ period }}</span>
       </div>
 
-      <p class="text-justify my-4" v-html="description" />
+      <p class="text-justify mt-4" v-html="description" />
       <!-- eslint-disable-line vue/no-v-html -->
     </div>
   </div>

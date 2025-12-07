@@ -8,7 +8,8 @@ defineProps({
 </script>
 
 <template>
-  <div class="project flex flex-col drop-shadow-2xl">
+  <div class="project flex flex-col drop-shadow-2xl border-2 border-gray-200 rounded-xl p-4">
+    <h3 class="text-xl font-bold pb-0 mb-2">{{ project.title }}</h3>
     <div class="project-image w-full">
       <a :href="project.live || project.repo" target="_blank">
         <img
@@ -18,8 +19,7 @@ defineProps({
       /></a>
     </div>
     <div class="project-info justify-center">
-      <h3 class="text-xl font-bold pt-3 pb-0 mb-2">{{ project.title }}</h3>
-      <p class="text-base mb-2">{{ project.description }}</p>
+      <p class="text-base mt-4 mb-2">{{ project.description }}</p>
       <div class="flex flex-row gap-2 text-sm mb-2">
         <div
           v-for="tag in project.tags"

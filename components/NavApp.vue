@@ -27,7 +27,7 @@ console.log(route.hash)
 <template>
   <nav
     id="sideNav"
-    class="nav-app flex flex-col justify-between md:items-center z-20 md:w-64 md:h-screen md:fixed items-center"
+    class="nav-app flex flex-col justify-between md:items-center z-20 lg:bg-transparent lg:w-40 xl:w-64 md:h-screen md:fixed items-center"
   >
     <div class="flex justify-center items-center">
       <div v-for="loc in locales" :key="loc.code" class="mx-3 text-base">
@@ -53,11 +53,7 @@ console.log(route.hash)
     <ul
       id="primary-navigation"
       :data-visible="isOpen"
-      :class="`fixed px-8 sm:px-0 pt-20 sm:pt-0 top-0 right-0 bottom-0
-                sm:relative translate-x-96 sm:translate-x-0
-                sm:backdrop-blur-none duration-500 ease-in-out
-                 dark:text-black sm:bg-transparent 
-                sm:dark:bg-transparent`"
+      class="nav-app__list"
       style="backdrop-filter: blur(40px)"
       @click="close"
     >
@@ -98,6 +94,10 @@ console.log(route.hash)
 <style lang="css" scoped>
 .nav-app {
   @apply flex flex-col;
+}
+
+.nav-app__list {
+  @apply fixed px-8 sm:px-0 pt-20 sm:pt-0 top-0 right-0 bottom-0 sm:relative translate-x-96 sm:translate-x-0 sm:backdrop-blur-none duration-500 ease-in-out dark:text-black sm:bg-white sm:dark:bg-transparent;
 }
 
 li {
