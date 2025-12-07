@@ -16,19 +16,13 @@ const { t } = useI18n()
       {{ t("about_text_3") }}
     </p>
 
-    <ClientOnly>
-      <div class="button-link">
-        <a v-smooth-scroll href="#contact"> {{ t("about_contact_me") }}</a>
-      </div>
-    </ClientOnly>
+    <ButtonLink>
+      <a v-smooth-scroll href="#contact"> {{ t("about_contact_me") }}</a>
+    </ButtonLink>
   </SectionApp>
 </template>
 
 <style lang="css" scoped>
-.button-link {
-  @apply w-60 mx-auto mt-20 sm:mt-32 bg-black text-white px-1 py-2 text-center uppercase font-bold tracking-wide text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer;
-}
-
 p {
   @apply my-4;
 }

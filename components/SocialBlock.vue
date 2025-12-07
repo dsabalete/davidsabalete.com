@@ -8,21 +8,21 @@ defineProps({
 </script>
 
 <template>
-  <div class="social-icons flex my-10 justify-around">
+  <div class="social-block flex my-10 justify-around">
     <a href="https://linkedin.com/in/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
       <img src="/icons/linkedin.svg" alt="LinkedIn" :class="size" />
     </a>
 
     <a href="https://github.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Github">
-      <img src="/icons/github.svg" alt="Github" :class="size" />
+      <img src="/icons/github.svg" alt="Github" :class="[size, 'dark:invert']" />
     </a>
 
     <a href="mailto:dsabalete@gmail.com" aria-label="Email">
-      <img src="/icons/email.svg" alt="Email" :class="size" />
+      <img src="/icons/email.svg" alt="Email" :class="[size, 'dark:invert']" />
     </a>
 
     <a href="https://codepen.io/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Codepen">
-      <img src="/icons/codepen.svg" alt="Codepen" :class="size" />
+      <img src="/icons/codepen.svg" alt="Codepen" :class="[size, 'dark:invert']" />
     </a>
 
     <a href="https://instagram.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -39,7 +39,7 @@ defineProps({
   </div>
 </template>
 
-<style lang="postcss" scoped>
+<style lang="css" scoped>
 img {
   @apply hover:scale-150 duration-500;
 }

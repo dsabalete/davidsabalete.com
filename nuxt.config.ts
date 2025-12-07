@@ -54,7 +54,18 @@ export default defineNuxtConfig({
     }
   },
   css: ["@/assets/css/main.css"],
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/eslint", "floating-vue/nuxt", "@nuxt/content", "@nuxtjs/seo"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/i18n",
+    "@nuxt/eslint",
+    "floating-vue/nuxt",
+    "@nuxt/content",
+    "@nuxtjs/seo",
+    "@nuxtjs/color-mode"
+  ],
+  colorMode: {
+    classSuffix: ""
+  },
   i18n: {
     locales: [
       { code: "en", language: "en-US", name: "English", file: "en.json" },

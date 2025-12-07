@@ -7,14 +7,8 @@ const { t } = useI18n()
     <template #title>{{ t("contact_title") }}</template>
     <SocialBlock size="lg" class="mt-20 mb-12" />
 
-    <ClientOnly>
-      <a v-smooth-scroll="{ duration: 2000 }" href="#about" class="button-link"> {{ t("contact_back") }}</a>
-    </ClientOnly>
+    <ButtonLink v-smooth-scroll="{ duration: 2000 }" href="#about"> {{ t("contact_back") }}</ButtonLink>
   </SectionApp>
 </template>
 
-<style lang="css" scoped>
-.button-link {
-  @apply w-60 mx-auto mt-20 sm:mt-32 bg-black text-white px-1 py-2 text-center uppercase font-bold tracking-wide text-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer;
-}
-</style>
+<style lang="css" scoped></style>
