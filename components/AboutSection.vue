@@ -16,9 +16,14 @@ const { t } = useI18n()
       {{ t("about_text_3") }}
     </p>
 
-    <ButtonLink>
-      <a v-smooth-scroll href="#contact"> {{ t("about_contact_me") }}</a>
-    </ButtonLink>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 mt-20 sm:mt-32">
+      <ButtonLink class="!mt-0">
+        <a v-smooth-scroll href="#contact"> {{ t("about_contact_me") }}</a>
+      </ButtonLink>
+      <ButtonLink class="!mt-0">
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer"> {{ t("about_download_cv") }}</a>
+      </ButtonLink>
+    </div>
   </SectionApp>
 </template>
 
