@@ -8,7 +8,7 @@
 
     <div v-if="projects.length > 6" class="mt-12 flex justify-center">
       <button
-        class="bg-black text-white dark:bg-white dark:text-black px-6 py-2 uppercase font-bold tracking-wide text-lg shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300 rounded-sm"
+        class="inline-flex items-center px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
         @click="showAll = !showAll"
       >
         {{ showAll ? "Show Less" : "Show More" }}
