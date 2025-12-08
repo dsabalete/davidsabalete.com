@@ -59,7 +59,7 @@ console.log(route.hash)
     >
       <ClientOnly>
         <li>
-          <a href="#"></a>
+          <a href="#"/>
         </li>
         <li>
           <a v-smooth-scroll href="#about" class="nav-entry">{{ t("about") }} </a>

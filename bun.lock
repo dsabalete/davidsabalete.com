@@ -5,6 +5,7 @@
       "name": "personal-website",
       "dependencies": {
         "@nuxt/content": "3.8.0",
+        "@nuxtjs/color-mode": "^4.0.0",
         "@nuxtjs/i18n": "^10.2.0",
         "@nuxtjs/tailwindcss": "^6.13.0",
         "better-sqlite3": "^12.5.0",
@@ -18,7 +19,6 @@
       },
       "devDependencies": {
         "@nuxt/eslint": "^1.10.0",
-        "@nuxtjs/color-mode": "^4.0.0",
         "@nuxtjs/seo": "^3.2.2",
         "@vitejs/plugin-vue": "^6.0.1",
         "@vue/test-utils": "^2.4.6",

@@ -13,8 +13,8 @@
         <span class="text-primary">{{ period }}</span>
       </div>
 
+      <!-- eslint-disable vue/no-v-html -->
       <p class="text-justify mt-4" v-html="description" />
-      <!-- eslint-disable-line vue/no-v-html -->
     </div>
   </div>
 </template>
