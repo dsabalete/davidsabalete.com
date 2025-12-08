@@ -5,45 +5,65 @@ defineProps({
     default: "sm"
   }
 })
+
+const socialLinks = [
+  {
+    name: "Linkedin",
+    url: "https://linkedin.com/in/dsabalete",
+    icon: "/icons/linkedin.svg",
+    color: true
+  },
+  {
+    name: "Github",
+    url: "https://github.com/dsabalete",
+    icon: "/icons/github.svg"
+  },
+  {
+    name: "Email",
+    url: "mailto:info@davidsabalete.com",
+    icon: "/icons/email.svg"
+  },
+  {
+    name: "Codepen",
+    url: "https://codepen.io/dsabalete",
+    icon: "/icons/codepen.svg"
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/dsabalete",
+    icon: "/icons/instagram.svg",
+    color: true
+  }
+]
 </script>
 
 <template>
   <div class="social-block flex my-10 justify-around">
-    <a href="https://linkedin.com/in/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
-      <img src="/icons/linkedin.svg" alt="LinkedIn" :class="size" />
+    <a
+      v-for="link in socialLinks"
+      :key="link.name"
+      :href="link.url"
+      :target="link.url.startsWith('http') ? '_blank' : undefined"
+      :rel="link.url.startsWith('http') ? 'noopener noreferrer' : undefined"
+      :aria-label="link.name"
+      class="social-block__link"
+    >
+      <img :src="link.icon" :alt="link.name" :class="[size, { 'dark:invert': !link.color }]" />
+      <span class="social-block__name">{{ link.name }}</span>
     </a>
-
-    <a href="https://github.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Github">
-      <img src="/icons/github.svg" alt="Github" :class="[size, 'dark:invert']" />
-    </a>
-
-    <a href="mailto:dsabalete@gmail.com" aria-label="Email">
-      <img src="/icons/email.svg" alt="Email" :class="[size, 'dark:invert']" />
-    </a>
-
-    <a href="https://codepen.io/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Codepen">
-      <img src="/icons/codepen.svg" alt="Codepen" :class="[size, 'dark:invert']" />
-    </a>
-
-    <a href="https://instagram.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-      <img src="/icons/instagram.svg" alt="Instagram" :class="size" />
-    </a>
-
-    <!-- <a href="https://twitter.com/dsabalete" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-      <img src="/icons/twitter.svg" alt="Twitter" :class="size" />
-    </a> -->
-
-    <!-- <a href="https://blog.davidsabalete.com" target="_blank" rel="noopener noreferrer" aria-label="Blogger">
-      <img src="/icons/blogger.svg" alt="Blogger" :class="size" />
-    </a> -->
   </div>
 </template>
 
 <style lang="css" scoped>
+.social-block__link {
+  @apply flex flex-col items-center;
+}
+.social-block__name {
+  @apply mt-2 text-center;
+}
 img {
   @apply hover:scale-150 duration-500;
 }
-
 .lg {
   @apply w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20;
 }
