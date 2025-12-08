@@ -7,7 +7,16 @@ const { t } = useI18n()
     <template #title>{{ t("contact_title") }}</template>
     <SocialBlock size="lg" class="mt-20 mb-12" />
 
-    <ButtonLink v-smooth-scroll="{ duration: 2000 }" href="#about"> {{ t("contact_back") }}</ButtonLink>
+    <div class="flex justify-center pt-10">
+      <a
+        v-smooth-scroll="{ duration: 2000 }"
+        href="#about"
+        class="inline-flex items-center px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        aria-label="Go to contact section"
+      >
+        {{ t("contact_back") }}
+      </a>
+    </div>
   </SectionApp>
 </template>
 

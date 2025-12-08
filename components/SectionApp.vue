@@ -1,9 +1,11 @@
 <template>
-  <section>
-    <h2 v-if="hasHeader" class="text-3xl font-bold text-black dark:text-white uppercase pt-8 px-6 pb-16">
+  <section class="content-section">
+    <h2 v-if="hasHeader" class="text-3xl font-bold text-black dark:text-white uppercase pt-8 px-6 pb-16 section-title">
       <slot name="title" />
     </h2>
-    <slot />
+    <div class="section-content">
+      <slot />
+    </div>
   </section>
 </template>
 
