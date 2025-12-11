@@ -1,5 +1,20 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const { trackEvent } = useAnalytics()
+
+const handleContactClick = () => {
+  trackEvent('contact_button_click', {
+    button_location: 'header',
+    button_text: t('header_contact')
+  })
+}
+
+const handleDownloadCvClick = () => {
+  trackEvent('download_cv_click', {
+    button_location: 'header',
+    button_text: t('header_download_cv')
+  })
+}
 
 // SEO structured data for the person
 const personSchema = {
@@ -123,6 +138,7 @@ useHead({
           href="#contact"
           class="inline-flex items-center px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
           aria-label="Go to contact section"
+          @click="handleContactClick"
         >
           {{ t("header_contact") }}
         </a>
@@ -132,6 +148,7 @@ useHead({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Download CV PDF"
+          @click="handleDownloadCvClick"
         >
           {{ t("header_download_cv") }}
         </a>
