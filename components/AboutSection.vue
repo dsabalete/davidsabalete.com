@@ -15,6 +15,10 @@ const { t } = useI18n()
     <p>
       {{ t("about_text_3") }}
     </p>
+
+    <p>
+      {{ t("about_text_4") }}
+    </p>
   </SectionApp>
 </template>
 
