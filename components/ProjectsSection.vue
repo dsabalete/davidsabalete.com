@@ -11,7 +11,7 @@
         class="inline-flex items-center px-3 py-1 text-sm border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
         @click="showAll = !showAll"
       >
-        {{ showAll ? "Show Less" : "Show More" }}
+        {{ showAll ? $t("show_less") : $t("show_more") }}
       </button>
     </div>
   </SectionApp>

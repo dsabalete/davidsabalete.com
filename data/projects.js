@@ -1,5 +1,15 @@
 export const projects = [
   {
+    image: "/gym_tracker.png",
+    alt: "Gym Tracker homepage picture",
+    title: "Gym Tracker",
+    description:
+      "A modern web application for tracking gym workouts, built with Nuxt 4, Vue 3, TailwindCSS, and Firebase",
+    repo: "https://github.com/dsabalete/gym-app",
+    live: "https://gym.davidsabalete.com",
+    tags: ["nuxt", "tailwind", "firebase"]
+  },
+  {
     image: "/tercerespai.png",
     alt: "Tercer Espai homepage picture",
     title: "Tercer Espai website",
