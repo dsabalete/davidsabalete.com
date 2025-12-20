@@ -20,6 +20,16 @@ export const projects = [
     tags: ["nuxt", "tailwind", "supabase"]
   },
   {
+    image: "/system-monitor.png",
+    alt: "System Monitor homepage picture",
+    title: "System Monitor",
+    description:
+      "System Monitor is a web application for monitoring system resources, built with Node, Express and vanilla javascript.",
+    repo: "https://github.com/dsabalete/system-monitor",
+    live: "",
+    tags: ["node", "express", "vanillajs"]
+  },
+  {
     image: "/goat-notes.png",
     alt: "Goat Notes taking app with AI",
     title: "Goat Notes taking app with AI",
