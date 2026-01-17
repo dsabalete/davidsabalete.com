@@ -23,6 +23,9 @@
         <img v-tooltip.bottom="`Jest: Testing Framework`" src="/icons/jest.svg" alt="Jest" />
       </li>
       <li>
+        <img v-tooltip.bottom="`Vitest: Testing Framework`" src="/icons/vitest.svg" alt="Vitest" />
+      </li>
+      <li>
         <img v-tooltip.bottom="`Webpack: Bundler`" src="/icons/webpack.svg" alt="Webpack" />
       </li>
       <li>
