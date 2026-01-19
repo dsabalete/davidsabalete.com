@@ -1,3 +1,20 @@
+<script>
+  import { projects } from "../data/projects.js"
+  export default {
+    data() {
+      return {
+        projects,
+        showAll: false
+      }
+    },
+    computed: {
+      displayedProjects() {
+        return this.showAll ? this.projects : this.projects.slice(0, 6)
+      }
+    }
+  }
+</script>
+  
 <template>
   <SectionApp id="projects">
     <template #title>{{ $t("projects_title") }}</template>
@@ -17,19 +34,4 @@
   </SectionApp>
 </template>
 
-<script>
-import { projects } from "../data/projects.js"
-export default {
-  data() {
-    return {
-      projects,
-      showAll: false
-    }
-  },
-  computed: {
-    displayedProjects() {
-      return this.showAll ? this.projects : this.projects.slice(0, 6)
-    }
-  }
-}
-</script>
+

@@ -105,6 +105,9 @@ definePageMeta({
       <section id="education" aria-labelledby="education-heading">
         <EducationSection />
       </section>
+      <section id="certificates" aria-labelledby="certificates-heading">
+        <CertificatesSection />
+      </section>
       <section id="skills" aria-labelledby="skills-heading">
         <SkillsSection />
       </section>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-100">
+  <div>
     <NuxtLink to="/" class="mt-2 text-2xl uppercase font-bold text-black sticky top-2 left-0">
       <img v-tooltip.right="`Go back home`" src="/icons/home.svg" alt="Home" class="h-8 ml-2" />
     </NuxtLink>

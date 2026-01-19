@@ -71,6 +71,9 @@ console.log(route.hash)
           <a v-smooth-scroll href="#education" class="nav-entry">{{ t("education") }} </a>
         </li>
         <li>
+          <a v-smooth-scroll href="#certificates" class="nav-entry">{{ t("certificates") }} </a>
+        </li>
+        <li>
           <a v-smooth-scroll href="#skills" class="nav-entry">{{ t("skills") }} </a>
         </li>
         <li>
