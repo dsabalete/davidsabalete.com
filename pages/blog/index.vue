@@ -27,18 +27,21 @@ const getPostUrl = (post: BlogPost): string => {
 
 <template>
   <div>
-    <h1 class="text-center text-2xl py-8 uppercase font-bold text-black-900">Blog Entries</h1>
-    <div class="flex flex-col mb-8">
+    <h1 class="text-center text-2xl py-8 uppercase font-bold text-black">Blog Entries</h1>
+    <div class="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-8">
       <NuxtLink
         v-for="post in posts"
         :key="post.id"
         :to="getPostUrl(post)"
-        class="bg-white rounded-xl drop-shadow-xl p-4 text-center mx-8 hover:bg-black-900 hover:text-black-200 mb-8"
+        class="flex flex-col justify-between bg-white text-black rounded-xl border p-4 text-center hover:bg-gray-100"
       >
-        {{ post?.meta?.title || post?.title || "Untitled" }}
-        <span v-if="post?.meta?.updatedAt || post?.meta?.createdAt" class="text-base">
+        <div class="text-lg font-bold">{{ post?.meta?.title || post?.title || "Untitled" }}</div>
+
+        <img :src="post?.meta?.img as string" :alt="post?.meta?.alt as string" class="w-full mx-auto" />
+
+        <div v-if="post?.meta?.updatedAt || post?.meta?.createdAt" class="text-base">
           ({{ formatDate((post?.meta?.updatedAt || post?.meta?.createdAt) as string) }})
-        </span>
+        </div>
       </NuxtLink>
 
       <div v-if="posts.length === 0" class="text-center p-8">

@@ -6,7 +6,7 @@
       :position="$t('experience_job_1')"
       company="LoveToKnow Media Spain"
       :description="$t('experience_job_text_1')"
-      period="November 2019 - Present"
+      period="November 2019 - January 2026"
     />
 
     <ResumeItem
