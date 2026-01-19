@@ -83,7 +83,7 @@ export const projects = [
     title: "My 1 RM website",
     description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
     repo: "https://github.com/dsabalete/my-1-rm",
-    live: "https://my-1-rm.netlify.app/",
+    live: "https://1rm.davidsabalete.com",
     tags: ["nuxt", "netlify"]
   },
   {
