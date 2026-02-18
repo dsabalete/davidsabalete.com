@@ -8,14 +8,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="project flex flex-col drop-shadow-2xl border-2 border-gray-200 rounded-xl p-4">
+  <div class="project flex flex-col drop-shadow-2xl border-2 border-gray-200 rounded-xl p-4 hover:scale-110 transition duration-500 ease-in-out">
     <h3 class="text-xl font-bold pb-0 mb-2">{{ project.title }}</h3>
     <div class="project-image w-full">
       <a :href="project.live || project.repo" target="_blank">
         <img
           :src="project.image"
           :alt="project.alt"
-          class="mx-auto md:mx-0 md:w-80 md:aspect-video rounded-xl hover:scale-110 transition duration-500 ease-in-out"
+          class="mx-auto md:mx-0 md:w-80 md:aspect-video rounded-xl"
       /></a>
     </div>
     <div class="project-info justify-center">
