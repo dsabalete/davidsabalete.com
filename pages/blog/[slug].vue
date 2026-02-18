@@ -38,8 +38,8 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
 
     <img
       v-if="post?.meta?.img"
-      :src="post?.meta?.img as string"
-      :alt="(post?.meta?.alt as string) || ''"
+      :src="post?.meta?.img"
+      :alt="post?.meta?.alt || ''"
       class="mx-auto mb-8"
     />
 
@@ -54,7 +54,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
   </article>
 </template>
 
-<style>
+<style lang="postcss" scoped>
 .nuxt-content h2 {
   font-weight: bold;
   font-size: 28px;
