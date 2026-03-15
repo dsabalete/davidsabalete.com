@@ -6,6 +6,15 @@ defineProps({
   }
 })
 
+const { copiedLink, copyEmailToClipboard } = useCopyEmail()
+
+const handleEmailClick = async (url: string, name: string) => {
+  if (name === "Email") {
+    const email = url.replace("mailto:", "")
+    await copyEmailToClipboard(email, name)
+  }
+}
+
 const socialLinks = [
   {
     name: "Linkedin",
@@ -47,22 +56,25 @@ const socialLinks = [
       :rel="link.url.startsWith('http') ? 'noopener noreferrer' : undefined"
       :aria-label="link.name"
       class="social-block__link"
+      @click="link.name === 'Email' ? ($event.preventDefault(), handleEmailClick(link.url, link.name)) : null"
     >
       <img :src="link.icon" :alt="link.name" :class="[size, { 'dark:invert': !link.color }]" />
-      <span class="social-block__name">{{ link.name }}</span>
+      <span class="social-block__name">
+        {{ copiedLink === link.name ? "Copied!" : link.name }}
+      </span>
     </a>
   </div>
 </template>
 
-<style lang="css" scoped>
+<style lang="postcss" scoped>
 .social-block__link {
   @apply flex flex-col items-center;
 }
 .social-block__name {
-  @apply mt-2 text-center;
+  @apply mt-2 text-center text-sm;
 }
 img {
-  @apply hover:scale-150 duration-500;
+  @apply hover:scale-110 duration-500;
 }
 .lg {
   @apply w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20;

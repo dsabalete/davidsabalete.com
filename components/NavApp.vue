@@ -1,6 +1,9 @@
 <script lang="ts" setup>
+type LocaleCode = "en" | "es" | "ca"
+
 const { locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
+const getLocalePath = (code: string) => switchLocalePath(code as LocaleCode).split("#")[0]
 
 const expanded = ref(false)
 const isOpen = ref(false)
@@ -19,9 +22,6 @@ const close = () => {
     }
   }, 200)
 }
-
-const route = useRoute()
-console.log(route.hash)
 </script>
 
 <template>
@@ -31,7 +31,7 @@ console.log(route.hash)
   >
     <div class="flex justify-center items-center">
       <div v-for="loc in locales" :key="loc.code" class="mx-3 text-base">
-        <nuxt-link :to="`${switchLocalePath(loc.code)}`">
+        <nuxt-link :to="getLocalePath(loc.code)">
           {{ loc.code }}
           <!-- <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" /> -->
         </nuxt-link>
@@ -59,7 +59,7 @@ console.log(route.hash)
     >
       <ClientOnly>
         <li>
-          <a href="#"/>
+          <a href="#" />
         </li>
         <li>
           <a v-smooth-scroll href="#about" class="nav-entry">{{ t("about") }} </a>

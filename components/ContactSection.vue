@@ -5,7 +5,7 @@ const { t } = useI18n()
 <template>
   <SectionApp id="contact" class="pb-40 md:pb-16 flex flex-col">
     <template #title>{{ t("contact_title") }}</template>
-    <SocialBlock size="lg" class="mt-20 mb-12" />
+    <SocialBlock size="sm" class="mt-20 mb-12" />
 
     <div class="flex justify-center pt-10">
       <a
