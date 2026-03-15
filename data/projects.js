@@ -6,8 +6,9 @@ export const projects = [
     description:
       "A modern web application for tracking gym workouts, built with Nuxt 4, Vue 3, TailwindCSS, and Firebase",
     repo: "https://github.com/dsabalete/gym-app",
-    live: "https://gym.davidsabalete.com",
-    tags: ["nuxt", "tailwind", "firebase"]
+    live: "https://gym.davidsabalete.com/login/index.html",
+    tags: ["nuxt", "tailwind", "firebase"],
+    metrics: { performance: 98, accessibility: 100 }
   },
   {
     image: "/tercerespai.png",
@@ -17,7 +18,8 @@ export const projects = [
       "Tercer Espai is a web built with Nuxt.js, Tailwind and Supabase. It allows users to know about the events organized by the organization Tercer Espai, get in touch with the organization and get the latest news.",
     repo: "",
     live: "https://tercerespai.org/",
-    tags: ["nuxt", "tailwind", "supabase"]
+    tags: ["nuxt", "tailwind", "supabase"],
+    metrics: { performance: 95, accessibility: 97 }
   },
   {
     image: "/system-monitor.png",
@@ -37,7 +39,8 @@ export const projects = [
       "GOAT Notes is a modern note-taking application built with Next.js, Supabase, and Prisma. It allows users to create, edit, delete, and search notes, with additional features like AI-powered insights and a responsive design.",
     repo: "https://github.com/dsabalete/fcc-goat-notes",
     live: "https://fcc-goat-notes.vercel.app/",
-    tags: ["next", "supabase", "prisma"]
+    tags: ["next", "supabase", "prisma"],
+    metrics: { performance: 92, accessibility: 95 }
   },
   {
     image: "/qrcode.png",
@@ -47,7 +50,8 @@ export const projects = [
       "Webapp tool for generating QR Codes from valid URLs. Static Astro website with Cloudfare Worker to generate the image.",
     repo: "https://github.com/dsabalete/qr-code",
     live: "https://qr-code-e3h.pages.dev/",
-    tags: ["astro", "cloudflare"]
+    tags: ["astro", "cloudflare"],
+    metrics: { performance: 99, accessibility: 100 }
   },
   {
     image: "/space-tourism.png",
