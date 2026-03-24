@@ -1,5 +1,16 @@
 export const projects = [
   {
+    image: "/foto-uploader.png",
+    alt: "Foto Uploader homepage picture",
+    title: "Foto Uploader",
+    description:
+      "A web application for uploading photos to a cloud storage, built with Vanilla JS, CSS and Netlify functions",
+    repo: "https://github.com/dsabalete/foto-uploader",
+    live: "https://foto-uploader.netlify.app/",
+    tags: ["javascript", "netlify"],
+    metrics: { performance: 99, accessibility: 100 }
+  },
+  {
     image: "/gym_tracker.png",
     alt: "Gym Tracker homepage picture",
     title: "Gym Tracker",
@@ -64,7 +75,7 @@ export const projects = [
     tags: ["html", "css", "javascript"]
   },
   {
-    image: "https://dsabalete.github.io/images/creualta.png",
+    image: "/creualta.png",
     alt: "Creualta homepage picture",
     title: "Creu Alta website",
     description: `Creu Alta Sabadell Basket website. It is running on Drupal as CMS an it has a VueJS app to register players during summer and christmas campus.`,
@@ -82,7 +93,7 @@ export const projects = [
     tags: ["vue", "vite", "pinia"]
   },
   {
-    image: "https://dsabalete.github.io/images/my-1-rm.png",
+    image: "/1rm.png",
     alt: "My 1 RM homepage picture",
     title: "My 1 RM website",
     description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
@@ -91,7 +102,7 @@ export const projects = [
     tags: ["nuxt", "netlify"]
   },
   {
-    image: "https://dsabalete.github.io/images/vue-twitter-clone.png",
+    image: "/vue-twitter-clone.png",
     alt: "Vue twitter clone homepage picture",
     title: "Vue twitter clone",
     description: "App that emulates basic functionality of a Twitter app. Made with Vue and deployed on Heroku.",
@@ -127,7 +138,7 @@ export const projects = [
     tags: ["gridsome"]
   },
   {
-    image: "https://dsabalete.github.io/images/calculator.png",
+    image: "/calculator.png",
     alt: "ReactJS Calculator picture",
     title: "ReactJS Calculator",
     description: `ReactJS Calculator made with React.js. It has a simple calculator with a few functions.`,
@@ -136,7 +147,7 @@ export const projects = [
     tags: ["react", "codepen"]
   },
   {
-    image: "https://dsabalete.github.io/images/drum_machine.png",
+    image: "/drum_machine.png",
     alt: "React and Redux Drum machine picture",
     title: "Drum machine",
     description: `React and Redux Drum machine made with React and Redux.`,
@@ -145,7 +156,7 @@ export const projects = [
     tags: ["react", "redux", "codepen"]
   },
   {
-    image: "https://dsabalete.github.io/images/markdown.png",
+    image: "/markdown.png",
     alt: "Markdown previewer picture",
     title: "Markdown previewer",
     description: `Markdown previewer made with React.js and Redux`,
@@ -154,7 +165,7 @@ export const projects = [
     tags: ["react", "redux", "codepen", "markdown"]
   },
   {
-    image: "https://dsabalete.github.io/images/pomodoro.png",
+    image: "/pomodoro.png",
     alt: "Pomodoro clock picture",
     title: "Pomodoro clock",
     description: `Pomodoro clock made with React.js and Redux`,
@@ -163,7 +174,7 @@ export const projects = [
     tags: ["react", "redux", "codepen"]
   },
   {
-    image: "https://dsabalete.github.io/images/quote_machine.png",
+    image: "/quote_machine.png",
     alt: "Quote Machine picture",
     title: "Quote Machine",
     description: "Random Quote Machine using external API",
@@ -172,7 +183,7 @@ export const projects = [
     tags: ["react", "codepen"]
   },
   {
-    image: "https://dsabalete.github.io/images/tribute_page.png",
+    image: "/tribute_page.png",
     alt: "Bruce Lee tribute page",
     title: "Bruce Lee tribute page",
     description: "Simple Tribute page made with Bootstrap",
@@ -181,7 +192,7 @@ export const projects = [
     tags: ["bootstrap", "codepen"]
   },
   {
-    image: "https://dsabalete.github.io/images/weather.png",
+    image: "/weather.png",
     alt: "Weather app picture",
     title: "Weather app",
     description: "Forecast Weather App using JQuery and OpenWeatherMap API",
@@ -190,7 +201,7 @@ export const projects = [
     tags: ["jquery", "codepen"]
   },
   {
-    image: "https://dsabalete.github.io/images/wikipedia_viewer.png",
+    image: "/wikipedia_viewer.png",
     alt: "Wikipedia viewer picture",
     title: "Wikipedia viewer",
     description: "Wikipedia Viewer App made with Angular and Wikipedia API",
