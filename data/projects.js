@@ -111,25 +111,25 @@ export const projects = [
     tags: ["vue", "heroku"]
   },
   {
-    image: "https://dsabalete.github.io/images/expensify.png",
+    image: "/expensify.png",
     alt: "Expensify homepage picture",
     title: "Expensify App",
     description: "App that helps keep you track of your expenses. Made with React and Firebase.",
     repo: "https://github.com/dsabalete/udemy-expensify-app",
     live: "",
-    tags: ["react", "firebase", "heroku"]
+    tags: ["react", "firebase"]
   },
   {
-    image: "https://dsabalete.github.io/images/indecision.png",
+    image: "/indecision.png",
     alt: "Indecision homepage picture",
     title: "Indecision App",
     description: "Put your live in the hands of a computer. Made with React.",
     repo: "https://github.com/dsabalete/udemy-indecision-app",
     live: "",
-    tags: ["react", "heroku"]
+    tags: ["react"]
   },
   {
-    image: "https://dsabalete.github.io/images/portfolio.png",
+    image: "/gridsome-portfolio.png",
     alt: "Portfolio on Github",
     title: "Gridsome-Portfolio",
     description: "My Portfolio made with Gridsome and ❤️",
