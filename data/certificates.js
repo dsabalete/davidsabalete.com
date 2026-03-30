@@ -1,5 +1,10 @@
 export const certificates = [
   {
+    name: "Certificate of Completion - Continuous Integration",
+    image: "/certificates/certificate-continuous-integration.png",
+    pdf: "/certificates/certificate-continuous-integration.png"
+  },
+  {
     name: "Certificate of Completion - React Native",
     image: "/certificates/certificate-reactnative.png",
     pdf: "/certificates/certificate-reactnative.png"
