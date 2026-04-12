@@ -15,7 +15,7 @@ export const certificates = [
     pdf: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-react-native-2020/en/8e2bcfce62001b6caa33a4c2678b9df5"
   },
   {
-    name: "Certificate of Completion - Graphql",
+    name: "Certificate of Completion - GraphQL",
     image: "/certificates/certificate-graphql.png",
     pdf: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/11606e18e2809a34952d95a6b8989e24"
   },
@@ -27,17 +27,17 @@ export const certificates = [
   {
     name: "Mastering TypeScript - 2024 Edition",
     image: "/certificates/mastering-ts-2024.png",
-    pdf: "/docs/UC-45ee6ac5-5b5c-49dd-a396-80325b6b2f0c.pdf"
+    pdf: "https://www.udemy.com/certificate/UC-45ee6ac5-5b5c-49dd-a396-80325b6b2f0c"
   },
   {
     name: "Google Data Analytics Certificate",
     image: "/certificates/google-data-analytics-2023.png",
-    pdf: "/docs/GoogleDataAnalyticsCertificate_Badge20230610-28-p2cy08.pdf"
+    pdf: "https://www.credly.com/badges/90bc40eb-6264-4380-b68e-99d6ac9dde5a"
   },
   {
     name: "Test Driven Development using Javascript and Jest",
     image: "/certificates/test-driven-dev-js.png",
-    pdf: "/docs/UC-89c975f7-f72d-442f-8c9c-ca00ddf123ec.pdf"
+    pdf: "https://www.udemy.com/certificate/UC-89c975f7-f72d-442f-8c9c-ca00ddf123ec"
   },
 
   {
@@ -58,7 +58,7 @@ export const certificates = [
   {
     name: "edX - The Software Architect Code",
     image: "/certificates/software-architect-code.png",
-    pdf: "/docs/EDX UC3Mx INF The Software Architect Code.pdf"
+    pdf: "https://courses.edx.org/certificates/7bc768b18bda46588cccc124c89b46f1"
   },
   {
     name: "Deutsch Lernen Zertifikat Nicos Weg (A1)",
@@ -68,22 +68,22 @@ export const certificates = [
   {
     name: "edX - Bootstrap",
     image: "/certificates/intro-bootstrap.png",
-    pdf: "/docs/EDX Bootstrap 2015_certificate.pdf"
+    pdf: "https://verify.edx.org/cert/ac064b517dcc44a5aac27868695d4346"
   },
   {
     name: "edX - Linux Foundation LFS101x",
     image: "/certificates/intro-linux.png",
-    pdf: "/docs/EDX LinuxFoundation LFS101x2 Certificate.pdf"
+    pdf: "https://verify.edx.org/cert/0c03d6e4772b4409b98d075576670396"
   },
   {
-    name: "edX - HTML5.1x",
+    name: "edX - HTML5 Part1: Coding Essentials and Best Practices",
     image: "/certificates/html51.png",
-    pdf: "/docs/EDX W3Cx HTML5.1x Certificate _ edX.pdf"
+    pdf: "https://courses.edx.org/certificates/828a0d47ca5a441c87cae5ba5e7eaa74"
   },
   {
-    name: "edX - HTML5.2x",
+    name: "edX - HTML5 Part2: Advanced Techniques and Best Practices",
     image: "/certificates/html52.png",
-    pdf: "/docs/EDX W3Cx HTML5.2x Certificate _ edX.pdf"
+    pdf: "https://courses.edx.org/certificates/a593a5cfca14461bbb547562c9eeeff8"
   },
   {
     name: "MiriadaX - Programación Javascript",
