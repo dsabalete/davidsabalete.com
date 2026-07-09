@@ -23,6 +23,7 @@ const { t } = useI18n()
 </template>
 
 <style lang="css" scoped>
+@reference "tailwindcss";
 p {
   @apply my-4 px-4 sm:px-0;
 }

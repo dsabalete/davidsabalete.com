@@ -67,6 +67,7 @@ const socialLinks = [
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .social-block__link {
   @apply flex flex-col items-center;
 }

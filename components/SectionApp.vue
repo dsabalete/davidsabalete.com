@@ -20,6 +20,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@reference "tailwindcss";
 section {
   @apply sm:max-w-sm md:max-w-xl lg:max-w-2xl xl:max-w-4xl mx-auto border-b border-gray-300 py-10 px-4 sm:min-h-screen;
 }

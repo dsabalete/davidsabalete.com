@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcssPostcss from '@tailwindcss/postcss'
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-09",
   vite: {
@@ -9,6 +11,11 @@ export default defineNuxtConfig({
         "vue3-smooth-scroll", // CJS
         "@unhead/schema-org/vue"
       ]
+    },
+    css: {
+      postcss: {
+        plugins: [tailwindcssPostcss()]
+      }
     }
   },
   devtools: { enabled: true },
@@ -248,7 +255,6 @@ export default defineNuxtConfig({
   },
   css: ["@/assets/css/main.css"],
   modules: [
-    "@nuxtjs/tailwindcss",
     "@nuxtjs/i18n",
     "@nuxt/eslint",
     "floating-vue/nuxt",
