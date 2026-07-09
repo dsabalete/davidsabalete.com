@@ -83,6 +83,7 @@
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .langs-n-tools li {
   @apply w-12 mx-4 my-8 hover:scale-150 duration-500;
 }

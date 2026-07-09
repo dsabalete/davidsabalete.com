@@ -55,6 +55,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
 </template>
 
 <style lang="postcss" scoped>
+@reference "tailwindcss";
 .nuxt-content h2 {
   font-weight: bold;
   font-size: 28px;
@@ -83,7 +84,7 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
   padding-left: 20px;
   margin: 20px 0;
   font-style: italic;
-  @apply dark:border-blue-400 dark:text-gray-300 dark:bg-gray-800 dark:bg-opacity-50 dark:px-4 dark:py-2;
+  @apply dark:border-blue-400 dark:text-gray-300 dark:bg-gray-800/50 dark:px-4 dark:py-2;
 }
 
 .nuxt-content em {

@@ -95,6 +95,7 @@ const close = () => {
 </template>
 
 <style lang="css" scoped>
+@reference "tailwindcss";
 .nav-app {
   @apply flex flex-col;
 }
