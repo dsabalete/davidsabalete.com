@@ -1,0 +1,42 @@
+[
+  {
+    "id": "allianz",
+    "company": "Allianz Technology",
+    "period": "April 2026 - July 2026"
+  },
+  {
+    "id": "lovetoknow",
+    "company": "LoveToKnow Media Spain",
+    "period": "November 2019 - January 2026"
+  },
+  {
+    "id": "edreams",
+    "company": "EDREAMS Odigeo",
+    "period": "April 2018 - October 2019"
+  },
+  {
+    "id": "capitole",
+    "company": "CAPITOLE CONSULTING",
+    "period": "April 2018 - October 2019",
+    "descriptionKeys": [
+      "experience_job_text_capitole_1",
+      "experience_job_text_capitole_2",
+      "experience_job_text_capitole_3"
+    ]
+  },
+  {
+    "id": "fiatc",
+    "company": "FIATC Seguros",
+    "period": "June 2003 - July 2016"
+  },
+  {
+    "id": "ict",
+    "company": "Institut Català de Tecnologia",
+    "period": "June 2001 - May 2003"
+  },
+  {
+    "id": "secretariaplus",
+    "company": "Secretariaplus.com",
+    "period": "April 2000 - May 2001"
+  }
+]

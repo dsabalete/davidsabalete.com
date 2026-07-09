@@ -3,58 +3,33 @@
     <template #title>{{ $t("experience_title") }}</template>
 
     <ResumeItem
-      :position="$t('experience_job_0')"
-      company="Allianz Technology"
-      :description="$t('experience_job_text_0')"
-      period="April 2026 - July 2026"
-    />
-
-    <ResumeItem
-      :position="$t('experience_job_1')"
-      company="LoveToKnow Media Spain"
-      :description="$t('experience_job_text_1')"
-      period="November 2019 - January 2026"
-    />
-
-    <ResumeItem
-      :position="$t('experience_job_2')"
-      company="EDREAMS Odigeo"
-      :description="$t('experience_job_text_2')"
-      period="April 2018 - October 2019"
-    />
-
-    <ResumeItem
-      :position="$t('experience_job_3')"
-      company="CAPITOLE CONSULTING"
-      :description="
-        $t('experience_job_text_3_1') +
-        '<br/>' +
-        $t('experience_job_text_3_2') +
-        '<br/>' +
-        $t('experience_job_text_3_3')
-      "
-      period="April 2018 - October 2019"
-    />
-
-    <ResumeItem
-      :position="$t('experience_job_4')"
-      company="FIATC Seguros"
-      :description="$t('experience_job_text_4')"
-      period="June 2003 - July 2016"
-    />
-
-    <ResumeItem
-      :position="$t('experience_job_5')"
-      company="Institut Català de Tecnologia"
-      :description="$t('experience_job_text_5')"
-      period="June 2001 - May 2003"
-    />
-
-    <ResumeItem
-      :position="$t('experience_job_6')"
-      company="Secretariaplus.com"
-      :description="$t('experience_job_text_6')"
-      period="April 2000 - May 2001"
+      v-for="job in experienceData"
+      :key="job.id"
+      :position="$t(`experience_job_${job.id}`)"
+      :company="job.company"
+      :description="getDescription(job)"
+      :period="job.period"
     />
   </SectionApp>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from "vue-i18n"
+import experienceData from "~/data/experience.json"
+
+interface ExperienceItem {
+  id: string
+  company: string
+  period: string
+  descriptionKeys?: string[]
+}
+
+const { t } = useI18n()
+
+function getDescription(job: ExperienceItem): string {
+  if ("descriptionKeys" in job) {
+    return job.descriptionKeys?.map((key) => t(key)).join("<br/>") || ""
+  }
+  return t(`experience_job_text_${job.id}`)
+}
+</script>
