@@ -3,6 +3,13 @@
     <template #title>{{ $t("experience_title") }}</template>
 
     <ResumeItem
+      :position="$t('experience_job_0')"
+      company="Allianz Technology"
+      :description="$t('experience_job_text_0')"
+      period="April 2026 - July 2026"
+    />
+
+    <ResumeItem
       :position="$t('experience_job_1')"
       company="LoveToKnow Media Spain"
       :description="$t('experience_job_text_1')"
