@@ -16,67 +16,6 @@ const handleDownloadCvClick = () => {
     button_text: t("header_download_cv")
   })
 }
-
-// SEO structured data for the person
-const personSchema = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "David Sabalete Rodríguez",
-  alternateName: "David Sabalete",
-  jobTitle: "Senior Fullstack Developer",
-  description: "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS",
-  url: "https://www.davidsabalete.com",
-  image: "https://www.davidsabalete.com/assets/images/profile.jpg",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Barcelona",
-    addressRegion: "Catalonia",
-    addressCountry: "Spain"
-  },
-  knowsAbout: [
-    "Vue.js",
-    "Nuxt.js",
-    "JavaScript",
-    "TypeScript",
-    "Node.js",
-    "Terraform",
-    "AWS",
-    "Git",
-    "GitHub",
-    "React",
-    // "Angular",
-    "PHP",
-    "Drupal",
-    "WordPress",
-    "Docker",
-    "Kubernetes",
-    "MongoDB",
-    "PostgreSQL",
-    "MySQL",
-    "REST API",
-    "GraphQL",
-    "Agile Development",
-    "Scrum",
-    "Test Automation",
-    "SEO",
-    "Performance Optimization"
-  ],
-  sameAs: [
-    "https://www.linkedin.com/in/dsabalete",
-    "https://github.com/dsabalete",
-    "https://codepen.io/dsabalete",
-    "https://instagram.com/dsabalete"
-  ]
-}
-
-useHead({
-  script: [
-    {
-      type: "application/ld+json",
-      innerHTML: JSON.stringify(personSchema)
-    }
-  ]
-})
 </script>
 
 <template>
@@ -136,7 +75,7 @@ useHead({
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
           </svg>
-          {{ emailCopied ? 'Copied!' : t("header_hire_me") }}
+          {{ emailCopied ? "Copied!" : t("header_hire_me") }}
         </a>
         <a
           v-smooth-scroll

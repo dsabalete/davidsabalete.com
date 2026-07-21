@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import tailwindcssPostcss from '@tailwindcss/postcss'
+import tailwindcssPostcss from "@tailwindcss/postcss"
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-11-09",
@@ -182,86 +182,12 @@ export default defineNuxtConfig({
             gtag('js', new Date());
             gtag('config', 'G-E0XXZ7KMLT');
           `
-        },
-        // Structured Data
-        {
-          type: "application/ld+json",
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "David Sabalete Rodríguez",
-            alternateName: "David Sabalete",
-            url: "https://www.davidsabalete.com",
-            image: "https://www.davidsabalete.com/assets/images/profile.jpg",
-            jobTitle: "Senior Fullstack Developer",
-            description:
-              "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Barcelona",
-              addressRegion: "Catalonia",
-              addressCountry: "Spain"
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 41.3851,
-              longitude: 2.1734
-            },
-            sameAs: [
-              "https://www.linkedin.com/in/dsabalete",
-              "https://github.com/dsabalete",
-              "https://codepen.io/dsabalete",
-              "https://instagram.com/dsabalete"
-            ],
-            knowsAbout: [
-              "Vue.js",
-              "Nuxt.js",
-              "JavaScript",
-              "TypeScript",
-              "Node.js",
-              "AWS",
-              "React",
-              "Angular",
-              "PHP",
-              "Drupal",
-              "WordPress",
-              "Docker",
-              "Kubernetes",
-              "Terraform",
-              "Git",
-              "GitHub",
-              "CI/CD",
-              "DevOps",
-              "MongoDB",
-              "PostgreSQL",
-              "MySQL",
-              "REST API",
-              "GraphQL",
-              "Agile Development",
-              "Scrum",
-              "Test Automation",
-              "SEO",
-              "Performance Optimization"
-            ],
-            offers: {
-              "@type": "Offer",
-              description: "Available for remote fullstack development projects",
-              availability: "https://schema.org/InStock"
-            }
-          })
         }
       ]
     }
   },
   css: ["@/assets/css/main.css"],
-  modules: [
-    "@nuxtjs/i18n",
-    "@nuxt/eslint",
-    "floating-vue/nuxt",
-    "@nuxt/content",
-    "@nuxtjs/seo",
-    "@nuxtjs/color-mode"
-  ],
+  modules: ["@nuxtjs/i18n", "@nuxt/eslint", "floating-vue/nuxt", "@nuxt/content", "@nuxtjs/seo", "@nuxtjs/color-mode"],
   colorMode: {
     classSuffix: ""
   },
