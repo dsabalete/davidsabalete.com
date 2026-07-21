@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@custom-variant light (&:where(.light, .light *));
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");

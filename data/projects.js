@@ -100,7 +100,8 @@ export const projects = [
     repo: "https://github.com/dsabalete/my-1-rm",
     live: "https://my-1-rm.netlify.app/",
     tags: ["nuxt", "netlify"]
-  },
+  }
+  /*
   {
     image: "/vue-twitter-clone.png",
     alt: "Vue twitter clone homepage picture",
@@ -209,4 +210,5 @@ export const projects = [
     live: "",
     tags: ["angular", "codepen", "wikipedia"]
   }
+    */
 ]

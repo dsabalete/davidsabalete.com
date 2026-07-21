@@ -33,7 +33,6 @@ const close = () => {
       <div v-for="loc in locales" :key="loc.code" class="mx-3 text-base">
         <nuxt-link :to="getLocalePath(loc.code)">
           {{ loc.code }}
-          <!-- <img :src="`/icons/flag-${loc.code}.svg`" :alt="loc.name" /> -->
         </nuxt-link>
       </div>
       <ThemeToggle class="ml-4" />
@@ -90,18 +89,18 @@ const close = () => {
         </li>
       </ClientOnly>
     </ul>
-    <div><!-- placeholder for contact--></div>
   </nav>
 </template>
 
 <style lang="css" scoped>
 @reference "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 .nav-app {
   @apply flex flex-col;
 }
 
 .nav-app__list {
-  @apply fixed px-8 sm:px-0 pt-20 sm:pt-0 top-0 right-0 bottom-0 sm:relative translate-x-96 sm:translate-x-0 sm:backdrop-blur-none duration-500 ease-in-out dark:text-black sm:bg-white sm:dark:bg-transparent;
+  @apply fixed px-8 sm:px-0 pt-20 sm:pt-0 top-0 right-0 bottom-0 sm:relative translate-x-96 sm:translate-x-0 sm:backdrop-blur-none duration-500 ease-in-out bg-white/90 dark:bg-gray-900/90 sm:bg-white sm:dark:bg-transparent;
 }
 
 li {
@@ -109,7 +108,7 @@ li {
 }
 
 .nav-entry {
-  @apply px-8 md:py-1 my-4 w-full text-center text-black dark:text-gray-200 text-sm uppercase md:block sm:hover:bg-black sm:hover:text-white sm:dark:hover:bg-white sm:dark:hover:text-black;
+  @apply px-8 md:py-1 my-4 w-full text-center text-gray-800 dark:text-gray-200 text-sm uppercase md:block sm:hover:bg-black sm:hover:text-white sm:dark:hover:bg-white sm:dark:hover:text-black;
 }
 
 .mobile-nav-toggle {

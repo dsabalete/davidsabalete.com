@@ -100,6 +100,9 @@ useHead({
       <h2 class="self-center text-xl font-semibold text-black dark:text-gray-200 mt-4 mb-2" itemprop="jobTitle">
         Senior Fullstack Developer
       </h2>
+      <p class="text-base text-gray-600 dark:text-gray-400 mb-3 max-w-2xl leading-relaxed">
+        {{ t("header_value_proposition") }}
+      </p>
       <div class="text-base my-2 text-gray-700 dark:text-gray-300" itemprop="knowsAbout">
         <span class="font-semibold">{{ t("header_expertise") }}</span
         >&nbsp; <span class="inline-block"> Vue.js </span>, <span class="inline-block"> Nuxt.js </span>,
