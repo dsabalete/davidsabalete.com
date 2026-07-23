@@ -6,6 +6,7 @@ definePageMeta({
 })
 
 const route = useRoute()
+const { public: { siteUrl } } = useRuntimeConfig()
 
 // queryCollection is auto-imported by Nuxt Content v3
 const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, async () => {
@@ -22,6 +23,21 @@ const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, asyn
     console.error("Error fetching article:", error)
     return null
   }
+})
+
+const postTitle = computed(() => post.value?.meta?.title || post.value?.title || "Untitled")
+const postDescription = computed(() => post.value?.meta?.description || post.value?.description || "")
+const postImage = computed(() => post.value?.meta?.img || "")
+
+useSeoMeta({
+  title: postTitle,
+  ogTitle: postTitle,
+  description: postDescription,
+  ogDescription: postDescription,
+  ogImage: computed(() => postImage.value ? `${siteUrl}${postImage.value}` : undefined),
+  twitterCard: "summary_large_image",
+  twitterTitle: postTitle,
+  twitterDescription: postDescription
 })
 </script>
 

@@ -1,22 +1,22 @@
 <script lang="ts" setup>
 // SEO metadata for the home page
 useSeoMeta({
-  title: "David Sabalete | Senior Fullstack Developer | Vue.js Expert | Barcelona",
+  title: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   description:
-    "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks. Remote developer available for hire.",
+    "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks. Remote developer available for hire.",
   keywords:
-    "fullstack developer Barcelona, Vue.js expert, Nuxt.js developer, Senior fullstack developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, JavaScript, TypeScript, Vue.js, Nuxt.js, Node.js, React, Frontend Development, Full-Stack Development, AWS, Cloud Computing, REST API, HTML5, CSS3, Unit Testing, CI/CD, Agile, Scrum, Software Architecture, Web Performance, Responsive Design, Git, DevOps, Technical Leadership, AI, Generative AI, LLM Integration.",
+    "full Stack developer Barcelona, Vue.js expert, Nuxt.js developer, Senior full Stack developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, JavaScript, TypeScript, Vue.js, Nuxt.js, Node.js, React, Frontend Development, Full-Stack Development, AWS, Cloud Computing, REST API, HTML5, CSS3, Unit Testing, CI/CD, Agile, Scrum, Software Architecture, Web Performance, Responsive Design, Git, DevOps, Technical Leadership, AI, Generative AI, LLM Integration.",
   author: "David Sabalete Rodríguez",
-  ogTitle: "David Sabalete | Senior Fullstack Developer | Vue.js Expert | Barcelona",
+  ogTitle: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   ogDescription:
-    "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",
+    "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",
   ogImage: "/assets/images/profile.jpg",
   ogUrl: "https://www.davidsabalete.com",
   ogType: "website",
   twitterCard: "summary_large_image",
-  twitterTitle: "David Sabalete | Senior Fullstack Developer | Vue.js Expert | Barcelona",
+  twitterTitle: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   twitterDescription:
-    "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications.",
+    "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications.",
   twitterImage: "/assets/images/profile.jpg"
 })
 
@@ -27,9 +27,9 @@ useSchemaOrg([
     alternateName: "David Sabalete",
     url: "https://www.davidsabalete.com",
     image: "https://www.davidsabalete.com/assets/images/profile.jpg",
-    jobTitle: "Senior Fullstack Developer",
+    jobTitle: "Senior Full Stack Developer",
     description:
-      "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",
+      "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Barcelona",
@@ -50,12 +50,10 @@ useSchemaOrg([
       "Node.js",
       "AWS",
       "React",
-      "Angular",
+      "Svelte",
       "PHP",
       "Drupal",
-      "WordPress",
       "Docker",
-      "Kubernetes",
       "Terraform",
       "Git",
       "GitHub",
@@ -76,7 +74,7 @@ useSchemaOrg([
   defineWebPage({
     name: "David Sabalete Rodríguez - Portfolio",
     description:
-      "Senior Fullstack Developer portfolio showcasing expertise in Vue.js, Nuxt.js, Node.js, and AWS development.",
+      "Senior Full Stack Developer portfolio showcasing expertise in Vue.js, Nuxt.js, Node.js, and AWS development.",
     url: "https://www.davidsabalete.com",
     inLanguage: "en",
     isPartOf: {
