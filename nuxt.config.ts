@@ -20,9 +20,6 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   runtimeConfig: {
-    sendgridApiKey: process.env.SENDGRID_API_KEY || "",
-    contactEmailTo: "dsabalete@gmail.com",
-    contactEmailFrom: "noreply@davidsabalete.com",
     public: {
       gtagId: "G-E0XXZ7KMLT"
     }

@@ -22,14 +22,15 @@ export default defineEventHandler(async (event) => {
   }
 
   const { name, email, message } = result.data
-  const config = useRuntimeConfig(event)
 
-  sgMail.setApiKey(config.sendgridApiKey)
+  console.log("SENDGRID_API_KEY:", process.env.SENDGRID_API_KEY ? "SET" : "NOT SET")
+
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY || "")
   // sgMail.setDataResidency('eu');
 
   const msg = {
-    to: config.contactEmailTo,
-    from: config.contactEmailFrom,
+    to: "info@davidsabalete.com",
+    from: "noreply@davidsabalete.com",
     subject: `New contact from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Message:</strong></p><p>${message.replace(/\n/g, "<br>")}</p>`

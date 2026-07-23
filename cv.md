@@ -22,13 +22,13 @@ Built and led frontend initiatives that increased test coverage from 45% to over
 
 | Category           | Skills                                                                                                                    |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **Frontend**       | Vue.js, Nuxt.js, React, Svelte, AngularJS, JavaScript, TypeScript, HTML5, CSS3, Sass                                      |
-| **Backend**        | Node.js, Express, PHP, ASP, Java, Python, REST API, GraphQL                                                               |
-| **Testing**        | Jest, Vitest, Karma, Gherkin, TestComplete, TDD                                                                           |
-| **Cloud & DevOps** | AWS, Docker, Kubernetes, Terraform, Cloudflare, Netlify, CI/CD                                                            |
+| **Frontend**       | Vue.js, Nuxt.js, React, Svelte, JavaScript, TypeScript, HTML5, CSS3, TailwindCSS                                          |
+| **Backend**        | Node.js, Express, REST API, API Gateway, GraphQL                                                                          |
+| **Testing**        | Jest, Vue Test Utils, Vitest, Testing Libray, Cypress, Playwright, Storybook                                              |
+| **Cloud & DevOps** | AWS (Lambda, API Gateway, CloudWatch, S3, ECS, DynamoDB), Docker, Terraform, Cloudflare, Netlify, CI/CD                   |
 | **Databases**      | MongoDB, PostgreSQL, MySQL, SQL Server, Supabase, Firebase, Prisma                                                        |
-| **Tools**          | Git, GitHub, Webpack, Vite, NPM, Yarn, Drupal, WordPress, Agile/Scrum                                                     |
-| **Expertise**      | Performance Optimization, SEO, Web Accessibility, Mobile-First Design, Technical Leadership, Micro-frontends, A/B Testing |
+| **Tools**          | Git, GitHub, Webpack, Vite, NPN, Bun, Agile/Scrum Methodologies                                                           |
+| **Expertise**      | Performance Optimization, SEO, Web Accessibility, Mobile-First Design, Technical Leadership, Micro-frontends, A/B Testing, AI-Assisted Development |
 
 ---
 
@@ -38,11 +38,13 @@ Built and led frontend initiatives that increased test coverage from 45% to over
 
 **LoveToKnow Media Spain** — November 2019 – January 2026
 
-- Led frontend architecture for YourDictionary.com (45M+ monthly visitors) using Vue.js and Nuxt.js
+- Led frontend architecture for YourDictionary.com (45M+ monthly visitors) using Vue.js and Nuxt.js + AWS serverless stack with AWS Lambdas, API Gateway, and DynamoDB. Helped monitor performance and system health with AWS CloudWatch and Grafana dashboards.
 - Improved Lighthouse performance scores from 55 to 92+, reducing Largest Contentful Paint by 60% through code splitting, lazy loading, and image optimization
 - Built a shared component library of 40+ reusable Vue components adopted by 3 product teams
-- Increased automated test coverage from 30% to 78%, catching 95% of regressions before deployment
+- Increased automated unit testing coverage from 30% to 78%, catching 95% of regressions before deployment
+- Collaborated with the team to build a Cypress E2E test suite covering 40+ critical user journeys, reducing manual QA regression time by 70%
 - Drove Nuxt 2 to Nuxt 3 migration across 5 micro-frontends with zero downtime
+- Championed the adoption of CodeRabbitAI for automated PR reviews, reducing code review turnaround time by 40% and catching issues earlier in the development cycle
 
 ### Senior Frontend Developer
 
@@ -50,6 +52,7 @@ Built and led frontend initiatives that increased test coverage from 45% to over
 
 - Developed Svelte-based frontend modules for Meine Allianz, serving 2M+ insurance customers across Germany
 - Reduced feature delivery cycle by 30% through improved component architecture and code review processes in a cross-functional international team
+- Leveraged Claude AI as a coding accelerator to implement features and auto-generate Vitest unit tests, achieving 85%+ coverage on critical user flows while shipping changes 2x faster
 
 ### Frontend Developer
 
@@ -59,6 +62,7 @@ Built and led frontend initiatives that increased test coverage from 45% to over
 - Built automated testing pipeline (Karma unit tests + Gherkin E2E) running on Jenkins, reducing production bugs by 40%
 - Maintained 85%+ test coverage across Backbone and React codebases
 - Led A/B testing framework implementation, shipping 20+ experiments that improved conversion by 12%
+- Introduced visual regression testing with Percy, catching 30+ visual defects before each release
 - Reviewed code across 6 frontend teams ensuring consistent best practices
 
 ### Senior Frontend Developer & Test Automation Engineer

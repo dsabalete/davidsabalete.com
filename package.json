@@ -14,7 +14,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "cv:pdf": "node tools/generate-cv-pdf.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.15.0",
