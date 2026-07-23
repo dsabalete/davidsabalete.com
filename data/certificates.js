@@ -1,6 +1,6 @@
 export const certificates = [
   {
-    name: "Certificate of Completion - Fullstack Open Containers",
+    name: "Certificate of Completion - Full Stack Open Containers",
     image: "/certificates/certificate-containers.png",
     pdf: "https://courses.mooc.fi/certificates/validate/jwv5i2ujicnypzm"
   },

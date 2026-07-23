@@ -20,6 +20,9 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   runtimeConfig: {
+    sendgridApiKey: process.env.SENDGRID_API_KEY || "",
+    contactEmailTo: "dsabalete@gmail.com",
+    contactEmailFrom: "noreply@davidsabalete.com",
     public: {
       gtagId: "G-E0XXZ7KMLT"
     }
@@ -35,7 +38,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en"
       },
-      title: "David Sabalete | Senior Fullstack Developer | Vue.js Expert | Barcelona",
+      title: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
       titleTemplate: "%s | David Sabalete Rodríguez",
       meta: [
         { charset: "utf-8" },
@@ -43,12 +46,12 @@ export default defineNuxtConfig({
           key: "description",
           name: "description",
           content:
-            "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks. Remote developer available for hire."
+            "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks. Remote developer available for hire."
         },
         {
           name: "keywords",
           content:
-            "fullstack developer Barcelona, Vue.js expert, Nuxt.js developer, senior web developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, full-stack JavaScript, React developer, Angular developer, PHP developer, Drupal developer, WordPress developer, web application development, e-commerce development, responsive design, mobile-first development, SEO optimization, performance optimization, test automation, agile development, Scrum, Git, GitHub, CI/CD, DevOps, cloud computing, serverless, microservices, API development, REST API, GraphQL, MongoDB, PostgreSQL, MySQL, Docker, Kubernetes, Terraform, infrastructure as code, Barcelona developer, Spain developer, European developer, remote work, freelance developer, contract developer, full-time developer, senior developer, lead developer, tech lead, software architect"
+            "Full Stack developer Barcelona, Vue.js expert, Nuxt.js developer, senior web developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, full-stack JavaScript, React developer, Angular developer, PHP developer, Drupal developer, WordPress developer, web application development, e-commerce development, responsive design, mobile-first development, SEO optimization, performance optimization, test automation, agile development, Scrum, Git, GitHub, CI/CD, DevOps, cloud computing, serverless, microservices, API development, REST API, GraphQL, MongoDB, PostgreSQL, MySQL, Docker, Kubernetes, Terraform, infrastructure as code, Barcelona developer, Spain developer, European developer, remote work, freelance developer, contract developer, full-time developer, senior developer, lead developer, tech lead, software architect"
         },
         {
           name: "author",
@@ -69,12 +72,12 @@ export default defineNuxtConfig({
         },
         {
           property: "og:title",
-          content: "David Sabalete | Senior Fullstack Developer | Vue.js Expert | Barcelona"
+          content: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona"
         },
         {
           property: "og:description",
           content:
-            "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks."
+            "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks."
         },
         {
           property: "og:image",
@@ -82,7 +85,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image:alt",
-          content: "David Sabalete Rodríguez - Senior Fullstack Developer"
+          content: "David Sabalete Rodríguez - Senior Full Stack Developer"
         },
         {
           property: "og:site_name",
@@ -103,12 +106,12 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:title",
-          content: "David Sabalete | Senior Fullstack Developer | Vue.js Expert | Barcelona"
+          content: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona"
         },
         {
           name: "twitter:description",
           content:
-            "Senior Fullstack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications."
+            "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications."
         },
         {
           name: "twitter:image",
@@ -116,7 +119,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image:alt",
-          content: "David Sabalete Rodríguez - Senior Fullstack Developer"
+          content: "David Sabalete Rodríguez - Senior Full Stack Developer"
         },
         // LinkedIn specific
         {
@@ -139,7 +142,7 @@ export default defineNuxtConfig({
         // Professional
         {
           name: "professional-title",
-          content: "Senior Fullstack Developer"
+          content: "Senior Full Stack Developer"
         },
         {
           name: "specialization",

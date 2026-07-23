@@ -16,14 +16,18 @@ const handleDownloadCvClick = () => {
     button_text: t("header_download_cv")
   })
 }
+
+const handleCopyEmailClick = async () => {
+  await copyEmailToClipboard()
+}
 </script>
 
 <template>
   <header class="flex gap-x-8 mt-16 m-8" role="banner" aria-label="Profile header">
-    <div class="flex-shrink-0">
+    <div class="shrink-0">
       <img
         class="profile-image rounded-lg w-24 md:w-40 h-auto object-cover aspect-square shadow-2xl"
-        alt="David Sabalete Rodríguez - Senior Fullstack Developer in Barcelona"
+        alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
         src="/assets/images/profile.jpg"
         loading="eager"
         decoding="async"
@@ -37,9 +41,9 @@ const handleDownloadCvClick = () => {
         David Sabalete Rodríguez
       </h1>
       <h2 class="self-center text-xl font-semibold text-black dark:text-gray-200 mt-4 mb-2" itemprop="jobTitle">
-        Senior Fullstack Developer
+        Senior Full Stack Developer
       </h2>
-      <p class="text-base text-gray-600 dark:text-gray-400 mb-3 max-w-2xl leading-relaxed">
+      <p class="text-base text-gray-600 dark:text-gray-400 my-5 max-w-2xl leading-relaxed">
         {{ t("header_value_proposition") }}
       </p>
       <div class="text-base my-2 text-gray-700 dark:text-gray-300" itemprop="knowsAbout">
@@ -69,7 +73,7 @@ const handleDownloadCvClick = () => {
           href="#"
           class="inline-flex items-center px-3 py-1 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors cursor-pointer"
           aria-label="Email David Sabalete"
-          @click.prevent="copyEmailToClipboard"
+          @click.prevent="handleCopyEmailClick"
         >
           <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
