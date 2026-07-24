@@ -29,16 +29,40 @@ const postTitle = computed(() => post.value?.meta?.title || post.value?.title ||
 const postDescription = computed(() => post.value?.meta?.description || post.value?.description || "")
 const postImage = computed(() => post.value?.meta?.img || "")
 
+const canonicalUrl = computed(() => `${siteUrl}/blog/${route.params.slug}`)
+
 useSeoMeta({
   title: postTitle,
   ogTitle: postTitle,
   description: postDescription,
   ogDescription: postDescription,
+  ogUrl: canonicalUrl,
   ogImage: computed(() => postImage.value ? `${siteUrl}${postImage.value}` : undefined),
   twitterCard: "summary_large_image",
   twitterTitle: postTitle,
   twitterDescription: postDescription
 })
+
+useHead({
+  link: [
+    { rel: "canonical", href: canonicalUrl.value }
+  ]
+})
+
+useSchemaOrg([
+  defineArticle({
+    headline: postTitle,
+    description: postDescription,
+    image: computed(() => postImage.value ? `${siteUrl}${postImage.value}` : undefined),
+    datePublished: computed(() => post.value?.meta?.createdAt || undefined),
+    dateModified: computed(() => post.value?.meta?.updatedAt || undefined),
+    author: {
+      "@type": "Person",
+      name: "David Sabalete Rodríguez",
+      url: "https://www.davidsabalete.com"
+    }
+  })
+])
 </script>
 
 <template>

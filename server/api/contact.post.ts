@@ -24,7 +24,6 @@ export default defineEventHandler(async (event) => {
   const { name, email, message } = result.data
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY || "")
-  // sgMail.setDataResidency('eu');
 
   const msg = {
     to: "info@davidsabalete.com",

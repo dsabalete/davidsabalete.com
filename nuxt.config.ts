@@ -164,7 +164,7 @@ export default defineNuxtConfig({
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
         { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
         { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
-        { key: "canonical", rel: "canonical", href: "https://www.davidsabalete.com" },
+
         { rel: "alternate", hreflang: "en", href: "https://www.davidsabalete.com" },
         { rel: "alternate", hreflang: "es", href: "https://www.davidsabalete.com/es" },
         { rel: "alternate", hreflang: "ca", href: "https://www.davidsabalete.com/ca" },
@@ -203,6 +203,11 @@ export default defineNuxtConfig({
       preload: true
     }
   },
+  robots: {
+    disallow: ["/_nuxt/", "/api/"],
+    sitemap: "https://www.davidsabalete.com/sitemap.xml"
+  },
+  sitemap: false,
   content: {},
   nitro: {
     prerender: {

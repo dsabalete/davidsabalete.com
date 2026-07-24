@@ -20,6 +20,12 @@ useSeoMeta({
   twitterImage: "/assets/images/profile.jpg"
 })
 
+useHead({
+  link: [
+    { rel: "canonical", href: "https://www.davidsabalete.com" }
+  ]
+})
+
 // Structured data for the home page
 useSchemaOrg([
   definePerson({
