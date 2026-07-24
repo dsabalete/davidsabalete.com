@@ -24,3 +24,7 @@ logs
 !.env.example
 
 PLAN.md
+
+# Local Netlify folder
+.netlify
+deno.lock

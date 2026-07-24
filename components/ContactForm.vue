@@ -7,6 +7,10 @@ const message = ref("")
 const status = ref<"idle" | "sending" | "success" | "error">("idle")
 const errorMessage = ref("")
 
+interface EmailSendResponse {
+  success: boolean
+}
+
 const submitForm = async () => {
   if (!name.value || !email.value || !message.value) {
     status.value = "error"
@@ -17,7 +21,7 @@ const submitForm = async () => {
   status.value = "sending"
 
   try {
-    const res = await $fetch("/api/contact", {
+    const res = await $fetch<EmailSendResponse>("/.netlify/functions/send-email", {
       method: "POST",
       body: { name: name.value, email: email.value, message: message.value }
     })
