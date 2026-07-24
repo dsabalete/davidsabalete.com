@@ -10,7 +10,7 @@ globalThis.reactive = reactive
 
 globalThis.readBody = vi.fn()
 
-globalThis.defineEventHandler = <T extends (...args: never[]) => unknown>(handler: T): T => handler
+globalThis.defineEventHandler = <T extends (...args: unknown[]) => unknown>(handler: T): T => handler
 globalThis.createError = (opts: { statusCode: number; statusMessage: string; data?: unknown }) => {
   const err = new Error(opts.statusMessage) as Error & {
     statusCode: number

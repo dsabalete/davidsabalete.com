@@ -4,8 +4,10 @@ import ContactForm from "./ContactForm.vue"
 
 const tMock = vi.fn((key: string) => key)
 
-vi.stubGlobal("useI18n", () => ({ t: tMock }))
-vi.stubGlobal("$fetch", vi.fn())
+beforeEach(() => {
+  globalThis.useI18n = vi.fn(() => ({ t: tMock }))
+  globalThis.$fetch = vi.fn()
+})
 
 describe("ContactForm", () => {
   beforeEach(() => {
