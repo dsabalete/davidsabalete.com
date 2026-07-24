@@ -1,21 +1,21 @@
 import { describe, it, expect, vi, beforeEach } from "vitest"
 import { mount } from "@vue/test-utils"
+import ContactForm from "./ContactForm.vue"
 
 const tMock = vi.fn((key: string) => key)
 
 vi.stubGlobal("useI18n", () => ({ t: tMock }))
 vi.stubGlobal("$fetch", vi.fn())
 
-import ContactForm from "./ContactForm.vue"
-
 describe("ContactForm", () => {
   beforeEach(() => {
     vi.clearAllMocks()
   })
 
-  const mountForm = () => mount(ContactForm, {
-    attachTo: document.body
-  })
+  const mountForm = () =>
+    mount(ContactForm, {
+      attachTo: document.body
+    })
 
   it("renders all form fields", () => {
     const wrapper = mountForm()
