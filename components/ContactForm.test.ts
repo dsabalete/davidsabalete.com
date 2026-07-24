@@ -1,4 +1,3 @@
-import { describe, it, expect, vi, beforeEach } from "vitest"
 import { mount } from "@vue/test-utils"
 import ContactForm from "./ContactForm.vue"
 
@@ -35,8 +34,7 @@ describe("ContactForm", () => {
   })
 
   it("shows sending state while submitting", async () => {
-    const mockFetch = vi.fn(() => new Promise(() => {}))
-    vi.stubGlobal("$fetch", mockFetch)
+    globalThis.$fetch = vi.fn(() => new Promise(() => {}))
 
     const wrapper = mountForm()
     await wrapper.find("#contact-name").setValue("Test")
@@ -48,8 +46,7 @@ describe("ContactForm", () => {
   })
 
   it("shows success message on successful submission", async () => {
-    const mockFetch = vi.fn().mockResolvedValue({ success: true })
-    vi.stubGlobal("$fetch", mockFetch)
+    globalThis.$fetch = vi.fn().mockResolvedValue({ success: true })
 
     const wrapper = mountForm()
     await wrapper.find("#contact-name").setValue("Test")
@@ -64,8 +61,7 @@ describe("ContactForm", () => {
   })
 
   it("clears form fields on successful submission", async () => {
-    const mockFetch = vi.fn().mockResolvedValue({ success: true })
-    vi.stubGlobal("$fetch", mockFetch)
+    globalThis.$fetch = vi.fn().mockResolvedValue({ success: true })
 
     const wrapper = mountForm()
     await wrapper.find("#contact-name").setValue("Test")
@@ -81,10 +77,9 @@ describe("ContactForm", () => {
   })
 
   it("shows error message on failed submission", async () => {
-    const mockFetch = vi.fn().mockRejectedValue({
+    globalThis.$fetch = vi.fn().mockRejectedValue({
       data: { statusMessage: "Server error" }
     })
-    vi.stubGlobal("$fetch", mockFetch)
 
     const wrapper = mountForm()
     await wrapper.find("#contact-name").setValue("Test")
@@ -99,8 +94,7 @@ describe("ContactForm", () => {
   })
 
   it("shows generic error when server returns no statusMessage", async () => {
-    const mockFetch = vi.fn().mockRejectedValue({ data: {} })
-    vi.stubGlobal("$fetch", mockFetch)
+    globalThis.$fetch = vi.fn().mockRejectedValue({ data: {} })
 
     const wrapper = mountForm()
     await wrapper.find("#contact-name").setValue("Test")
