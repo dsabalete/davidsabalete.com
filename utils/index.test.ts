@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { formatDate } from "@/utils/index"
+import { formatDate } from "./index"
 
 describe("formatDate", () => {
   it("should format a valid date string correctly", () => {

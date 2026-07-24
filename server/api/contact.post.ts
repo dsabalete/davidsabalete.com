@@ -23,8 +23,6 @@ export default defineEventHandler(async (event) => {
 
   const { name, email, message } = result.data
 
-  console.log("SENDGRID_API_KEY:", process.env.SENDGRID_API_KEY ? "SET" : "NOT SET")
-
   sgMail.setApiKey(process.env.SENDGRID_API_KEY || "")
   // sgMail.setDataResidency('eu');
 

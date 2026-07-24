@@ -1,10 +1,26 @@
-// import { vi } from "vitest"
 import { config } from "@vue/test-utils"
+import { ref, computed, watch, onMounted, nextTick, reactive } from "vue"
 
-// Mock Nuxt auto-imports if needed
-// This file can be used to set up global test configuration
+globalThis.ref = ref
+globalThis.computed = computed
+globalThis.watch = watch
+globalThis.onMounted = onMounted
+globalThis.nextTick = nextTick
+globalThis.reactive = reactive
 
-// Configure Vue Test Utils to prevent auto-stubbing issues with WeakMap
-// This prevents the "WeakMap keys must be objects" error when components
-// are resolved as strings instead of component objects
+globalThis.readBody = vi.fn()
+
+globalThis.defineEventHandler = (handler: Function) => handler
+globalThis.createError = (opts: {
+  statusCode: number; statusMessage: string; data?: unknown
+}) => {
+  const err = new Error(opts.statusMessage) as Error & {
+    statusCode: number; statusMessage: string; data: unknown
+  }
+  err.statusCode = opts.statusCode
+  err.statusMessage = opts.statusMessage
+  err.data = opts.data
+  throw err
+}
+
 config.global.stubs = {}

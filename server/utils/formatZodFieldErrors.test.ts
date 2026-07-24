@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest"
 import { z } from "zod"
 
-import { formatZodFieldErrors } from "../../../server/utils/formatZodFieldErrors"
+import { formatZodFieldErrors } from "./formatZodFieldErrors"
 
 describe("formatZodFieldErrors", () => {
   it("groups validation errors by field name", () => {
