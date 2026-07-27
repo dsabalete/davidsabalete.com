@@ -4,6 +4,7 @@ const { t } = useI18n()
 const name = ref("")
 const email = ref("")
 const message = ref("")
+const honeypot = ref("")
 const status = ref<"idle" | "sending" | "success" | "error">("idle")
 const errorMessage = ref("")
 
@@ -12,6 +13,11 @@ interface EmailSendResponse {
 }
 
 const submitForm = async () => {
+  if (honeypot.value) {
+    // If the honeypot field is filled, it's likely a bot submission, so we ignore it.
+    return
+  }
+
   if (!name.value || !email.value || !message.value) {
     status.value = "error"
     errorMessage.value = t("contact_form_error_required")
@@ -42,6 +48,8 @@ const submitForm = async () => {
 
 <template>
   <form class="w-full max-w-lg mx-auto mt-8 space-y-4" @submit.prevent="submitForm">
+    <input id="website" v-model="honeypot" type="text" style="display: none" />
+
     <div>
       <label for="contact-name" class="block text-sm font-medium text-black dark:text-gray-200 mb-1">
         {{ t("contact_form_name") }}
