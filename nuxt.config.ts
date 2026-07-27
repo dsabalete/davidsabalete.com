@@ -205,6 +205,9 @@ export default defineNuxtConfig({
     sitemap: "https://www.davidsabalete.com/sitemap.xml"
   },
   sitemap: false,
+  ogImage: {
+    zeroRuntime: true
+  },
   content: {},
   nitro: {
     preset: "netlify",
