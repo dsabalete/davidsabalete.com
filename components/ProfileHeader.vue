@@ -23,8 +23,25 @@ const handleCopyEmailClick = async () => {
 </script>
 
 <template>
-  <header class="flex gap-x-8 mt-16 m-8" role="banner" aria-label="Profile header">
-    <div class="shrink-0">
+  <header class="flex flex-col md:flex-row gap-x-8 mt-16 m-8" role="banner" aria-label="Profile header">
+    <div class="flex flex-row gap-4 items-center mb-6 md:hidden">
+      <div class="shrink-0">
+        <img
+          class="profile-image rounded-lg w-24 h-auto object-cover aspect-square shadow-2xl"
+          alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
+          src="/assets/images/profile.jpg"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <h1
+        class="font-sans text-left text-2xl uppercase font-extrabold text-black dark:text-white"
+        itemprop="name"
+      >
+        David Sabalete Rodríguez
+      </h1>
+    </div>
+    <div class="shrink-0 hidden md:block">
       <img
         class="profile-image rounded-lg w-24 md:w-40 h-auto object-cover aspect-square shadow-2xl"
         alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
@@ -35,7 +52,7 @@ const handleCopyEmailClick = async () => {
     </div>
     <div class="flex flex-col justify-center">
       <h1
-        class="self-center font-sans text-left text-2xl md:text-4xl uppercase font-extrabold text-black dark:text-white"
+        class="hidden md:block self-center font-sans text-left text-2xl md:text-4xl uppercase font-extrabold text-black dark:text-white"
         itemprop="name"
       >
         David Sabalete Rodríguez

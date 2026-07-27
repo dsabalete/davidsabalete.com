@@ -94,7 +94,7 @@ definePageMeta({
 
 <template>
   <div class="page-index sm:mx-auto sm:mt-16">
-    <DesktopHeader />
+    <ProfileHeader />
     <main role="main" aria-label="Main content">
       <section id="about" aria-labelledby="about-heading">
         <AboutSection />
