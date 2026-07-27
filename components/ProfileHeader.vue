@@ -34,13 +34,11 @@ const handleCopyEmailClick = async () => {
           decoding="async"
         />
       </div>
-      <h1
-        class="font-sans text-left text-2xl uppercase font-extrabold text-black dark:text-white"
-        itemprop="name"
-      >
+      <h1 class="font-sans text-left text-2xl uppercase font-extrabold text-black dark:text-white" itemprop="name">
         David Sabalete Rodríguez
       </h1>
     </div>
+
     <div class="shrink-0 hidden md:block">
       <img
         class="profile-image rounded-lg w-24 md:w-40 h-auto object-cover aspect-square shadow-2xl"
@@ -50,6 +48,7 @@ const handleCopyEmailClick = async () => {
         decoding="async"
       />
     </div>
+
     <div class="flex flex-col justify-center">
       <h1
         class="hidden md:block self-center font-sans text-left text-2xl md:text-4xl uppercase font-extrabold text-black dark:text-white"
@@ -57,20 +56,15 @@ const handleCopyEmailClick = async () => {
       >
         David Sabalete Rodríguez
       </h1>
+
       <h2 class="self-center text-xl font-semibold text-black dark:text-gray-200 mt-4 mb-2" itemprop="jobTitle">
         Senior Full Stack Developer
       </h2>
+
       <p class="text-base text-gray-600 dark:text-gray-400 my-5 max-w-2xl leading-relaxed">
         {{ t("header_value_proposition") }}
       </p>
-      <div class="text-base my-2 text-gray-700 dark:text-gray-300" itemprop="knowsAbout">
-        <span class="font-semibold">{{ t("header_expertise") }}</span
-        >&nbsp; <span class="inline-block"> Vue.js </span>, <span class="inline-block"> Nuxt.js </span>,
-        <span class="inline-block"> React </span>, <span class="inline-block"> JavaScript </span>,
-        <span class="inline-block"> TypeScript </span>, <span class="inline-block"> Node.js </span>,
-        <span class="inline-block"> Docker </span>, <span class="inline-block"> AWS </span>,
-        <span class="inline-block"> Terraform </span>
-      </div>
+
       <p
         class="text-black dark:text-gray-400 text-sm"
         itemprop="address"
@@ -79,12 +73,9 @@ const handleCopyEmailClick = async () => {
       >
         <span class="font-semibold">{{ t("header_location_label") }} </span>
         <span itemprop="addressLocality"> Barcelona</span>,
-        <span itemprop="addressCountry">{{
-          $i18n.locale === "es" ? "España" : $i18n.locale === "ca" ? "Espanya" : "Spain"
-        }}</span
-        >&nbsp;
-        <span class="text-green-600 dark:text-green-400">{{ t("header_available") }}</span>
+        <span itemprop="addressCountry">{{ t("header_location_country") }}</span>
       </p>
+      <div class="text-sm text-green-600 dark:text-green-400">{{ t("header_available") }}</div>
       <div class="mt-3 flex flex-wrap gap-2" aria-label="Quick contact and social links">
         <a
           href="#"
