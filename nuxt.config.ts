@@ -207,6 +207,7 @@ export default defineNuxtConfig({
   sitemap: false,
   content: {},
   nitro: {
+    preset: "netlify",
     prerender: {
       crawlLinks: true,
       routes: ["/sitemap.xml"]
