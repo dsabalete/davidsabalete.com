@@ -108,13 +108,31 @@ li {
 }
 
 .nav-entry {
-  @apply px-8 md:py-1 my-4 w-full text-center text-gray-800 dark:text-gray-200 text-sm uppercase md:block sm:hover:bg-black sm:hover:text-white sm:dark:hover:bg-white sm:dark:hover:text-black rounded-r-2xl transition-colors duration-300;
+  @apply relative px-8 md:py-1 my-4 w-full text-center text-gray-800 dark:text-gray-200 text-sm uppercase md:block sm:hover:bg-black sm:hover:text-white sm:dark:hover:bg-white sm:dark:hover:text-black transition-colors duration-300;
+  clip-path: polygon(0% 0%, 88% 0%, 100% 50%, 88% 100%, 0% 100%);
 }
 
-.mobile-nav-toggle {
-  @apply text-black dark:text-white;
+.nav-entry::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 24px;
+  clip-path: polygon(0 0, 0 100%, 75% 50%);
+  background: transparent;
+  transition: background 300ms;
 }
 
+.nav-entry:hover::before {
+  background: white;
+}
+
+.dark .nav-entry:hover::before {
+  background: black;
+}
+
+.mobile-nav-toggle,
 .mobile-nav-toggle--open {
   @apply text-black dark:text-white;
 }
