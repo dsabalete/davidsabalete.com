@@ -108,7 +108,7 @@ li {
 }
 
 .nav-entry {
-  @apply px-8 md:py-1 my-4 w-full text-center text-gray-800 dark:text-gray-200 text-sm uppercase md:block sm:hover:bg-black sm:hover:text-white sm:dark:hover:bg-white sm:dark:hover:text-black;
+  @apply px-8 md:py-1 my-4 w-full text-center text-gray-800 dark:text-gray-200 text-sm uppercase md:block sm:hover:bg-black sm:hover:text-white sm:dark:hover:bg-white sm:dark:hover:text-black rounded-r-2xl transition-colors duration-300;
 }
 
 .mobile-nav-toggle {
