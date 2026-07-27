@@ -165,6 +165,8 @@ export default defineNuxtConfig({
         { rel: "alternate", hreflang: "en", href: "https://www.davidsabalete.com" },
         { rel: "alternate", hreflang: "es", href: "https://www.davidsabalete.com/es" },
         { rel: "alternate", hreflang: "ca", href: "https://www.davidsabalete.com/ca" },
+        { rel: "alternate", hreflang: "de", href: "https://www.davidsabalete.com/de" },
+        { rel: "alternate", hreflang: "fr", href: "https://www.davidsabalete.com/fr" },
         { rel: "alternate", hreflang: "x-default", href: "https://www.davidsabalete.com" }
       ],
       script: [
@@ -200,7 +202,9 @@ export default defineNuxtConfig({
     locales: [
       { code: "en", language: "en-US", name: "English", file: "en.json" },
       { code: "es", language: "es-ES", name: "Español", file: "es.json" },
-      { code: "ca", language: "ca-ES", name: "Català", file: "ca.json" }
+      { code: "ca", language: "ca-ES", name: "Català", file: "ca.json" },
+      { code: "de", language: "de-DE", name: "Deutsch", file: "de.json" },
+      { code: "fr", language: "fr-FR", name: "Français", file: "fr.json" }
     ],
     defaultLocale: "en",
     langDir: "locales",

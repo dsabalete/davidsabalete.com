@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-type LocaleCode = "en" | "es" | "ca"
+type LocaleCode = "en" | "es" | "ca" | "de" | "fr"
 
 const { locales, t } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
