@@ -6,7 +6,9 @@ definePageMeta({
 })
 
 const route = useRoute()
-const { public: { siteUrl } } = useRuntimeConfig()
+const {
+  public: { siteUrl }
+} = useRuntimeConfig()
 
 // queryCollection is auto-imported by Nuxt Content v3
 const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, async () => {
@@ -37,23 +39,21 @@ useSeoMeta({
   description: postDescription,
   ogDescription: postDescription,
   ogUrl: canonicalUrl,
-  ogImage: computed(() => postImage.value ? `${siteUrl}${postImage.value}` : undefined),
+  ogImage: computed(() => (postImage.value ? `${siteUrl}${postImage.value}` : undefined)),
   twitterCard: "summary_large_image",
   twitterTitle: postTitle,
   twitterDescription: postDescription
 })
 
 useHead({
-  link: [
-    { rel: "canonical", href: canonicalUrl.value }
-  ]
+  link: [{ rel: "canonical", href: canonicalUrl.value }]
 })
 
 useSchemaOrg([
   defineArticle({
     headline: postTitle,
     description: postDescription,
-    image: computed(() => postImage.value ? `${siteUrl}${postImage.value}` : undefined),
+    image: computed(() => (postImage.value ? `${siteUrl}${postImage.value}` : undefined)),
     datePublished: computed(() => post.value?.meta?.createdAt || undefined),
     dateModified: computed(() => post.value?.meta?.updatedAt || undefined),
     author: {
@@ -66,7 +66,10 @@ useSchemaOrg([
 </script>
 
 <template>
-  <article v-if="post" class="bg-white dark:bg-gray-900 rounded-xl drop-shadow-xl p-4 sm:p-6 md:p-8 sm:m-8 text-black dark:text-gray-100">
+  <article
+    v-if="post"
+    class="bg-white dark:bg-gray-900 rounded-xl drop-shadow-xl p-4 sm:p-6 md:p-8 sm:m-8 text-black dark:text-gray-100"
+  >
     <h1 class="text-3xl mb-4 font-bold">{{ post.title || "Untitled" }}</h1>
     <p v-if="post.description" class="text-base mb-2 dark:text-gray-300">
       {{ post.description }}
@@ -76,12 +79,7 @@ useSchemaOrg([
       <span v-if="post?.meta?.updatedAt"> and updated on {{ post?.meta?.updatedAt }} </span>
     </p>
 
-    <img
-      v-if="post?.meta?.img"
-      :src="post?.meta?.img"
-      :alt="post?.meta?.alt || ''"
-      class="mx-auto mb-8"
-    />
+    <nuxt-img v-if="post?.meta?.img" :src="post?.meta?.img" :alt="post?.meta?.alt || ''" class="mx-auto mb-8" />
 
     <ContentRenderer v-if="post" :value="post" class="nuxt-content" />
     <div v-else>
@@ -89,7 +87,11 @@ useSchemaOrg([
     </div>
 
     <div class="w-full text-center">
-      <nuxt-link to="/blog" class="underline text-blue-500 dark:text-blue-400 text-sm hover:text-blue-600 dark:hover:text-blue-300">Back to blog</nuxt-link>
+      <nuxt-link
+        to="/blog"
+        class="underline text-blue-500 dark:text-blue-400 text-sm hover:text-blue-600 dark:hover:text-blue-300"
+        >Back to blog</nuxt-link
+      >
     </div>
   </article>
 </template>

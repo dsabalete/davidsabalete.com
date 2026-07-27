@@ -14,7 +14,7 @@ defineProps({
     <h3 class="text-xl font-bold pb-0">{{ certificate.name }}</h3>
     <div class="certificate-image w-full">
       <a :href="certificate.pdf" target="_blank" rel="noopener noreferrer">
-        <img
+        <nuxt-img
           :src="certificate.image"
           :alt="certificate.name"
           class="mx-auto md:mx-0 w-full md:w-80 md:aspect-video rounded-xl hover:scale-110 transition duration-500 ease-in-out object-cover"
