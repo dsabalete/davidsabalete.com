@@ -2,7 +2,7 @@
 
 **Senior Full Stack Developer** | Barcelona, Spain · Remote
 
-[LinkedIn](https://linkedin.com/in/dsabalete) · [GitHub](https://github.com/dsabalete) · [Portfolio](https://www.davidsabalete.com) · [CodePen](https://codepen.io/dsabalete)
+[LinkedIn](https://linkedin.com/in/dsabalete) · [GitHub](https://github.com/dsabalete) · [Portfolio](https://www.davidsabalete.com)
 
 **Email:** info@davidsabalete.com
 
@@ -20,14 +20,14 @@ Built and led frontend initiatives that increased test coverage from 45% to over
 
 ## Skills
 
-| Category           | Skills                                                                                                                    |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **Frontend**       | Vue.js, Nuxt.js, React, Svelte, JavaScript, TypeScript, HTML5, CSS3, TailwindCSS                                          |
-| **Backend**        | Node.js, Express, REST API, API Gateway, GraphQL                                                                          |
-| **Testing**        | Jest, Vue Test Utils, Vitest, Testing Libray, Cypress, Playwright, Storybook                                              |
-| **Cloud & DevOps** | AWS (Lambda, API Gateway, CloudWatch, S3, ECS, DynamoDB), Docker, Terraform, Cloudflare, Netlify, CI/CD                   |
-| **Databases**      | MongoDB, PostgreSQL, MySQL, SQL Server, Supabase, Firebase, Prisma                                                        |
-| **Tools**          | Git, GitHub, Webpack, Vite, NPN, Bun, Agile/Scrum Methodologies                                                           |
+| Category           | Skills                                                                                                                                             |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Frontend**       | Vue.js, Nuxt.js, React, Svelte, JavaScript, TypeScript, HTML5, CSS3, TailwindCSS                                                                   |
+| **Backend**        | Node.js, Express, REST API, API Gateway, GraphQL                                                                                                   |
+| **Testing**        | Jest, Vue Test Utils, Vitest, Testing Libray, Cypress, Playwright, Storybook                                                                       |
+| **Cloud & DevOps** | AWS (Lambda, API Gateway, CloudWatch, S3, ECS), Docker, Terraform, Cloudflare, Netlify, CI/CD                                                      |
+| **Databases**      | MongoDB, DynamoDB, PostgreSQL, MySQL, SQL Server, Supabase, Firebase, Redis                                                                        |
+| **Tools**          | Git, GitHub, Webpack, Vite, NPN, Bun, Agile/Scrum Methodologies                                                                                    |
 | **Expertise**      | Performance Optimization, SEO, Web Accessibility, Mobile-First Design, Technical Leadership, Micro-frontends, A/B Testing, AI-Assisted Development |
 
 ---
@@ -62,7 +62,7 @@ Built and led frontend initiatives that increased test coverage from 45% to over
 - Built automated testing pipeline (Karma unit tests + Gherkin E2E) running on Jenkins, reducing production bugs by 40%
 - Maintained 85%+ test coverage across Backbone and React codebases
 - Led A/B testing framework implementation, shipping 20+ experiments that improved conversion by 12%
-- Introduced visual regression testing with Percy, catching 30+ visual defects before each release
+- Introduced visual regression testing with BrowserStack, catching 30+ visual defects before each release
 - Reviewed code across 6 frontend teams ensuring consistent best practices
 
 ### Senior Frontend Developer & Test Automation Engineer
