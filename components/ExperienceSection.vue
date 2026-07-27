@@ -3,7 +3,7 @@
     <template #title>{{ $t("experience_title") }}</template>
 
     <ResumeItem
-      v-for="job in experienceData"
+      v-for="job in experiences"
       :key="job.id"
       :position="$t(`experience_job_${job.id}`)"
       :company="job.company"
@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
-import experienceData from "~/data/experience.json"
+import { experiences } from "~/data/experience.js"
 
 interface ExperienceItem {
   id: string
