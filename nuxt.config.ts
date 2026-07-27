@@ -184,7 +184,7 @@ export default defineNuxtConfig({
     }
   },
   css: ["@/assets/css/main.css"],
-  modules: ["@nuxtjs/i18n", "@nuxt/eslint", "floating-vue/nuxt", "@nuxt/content", "@nuxtjs/seo", "@nuxtjs/color-mode"],
+  modules: ["@nuxtjs/i18n", "@nuxt/eslint", "floating-vue/nuxt", "@nuxt/content", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxt/image"],
   colorMode: {
     classSuffix: ""
   },
