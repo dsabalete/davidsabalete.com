@@ -1,11 +1,4 @@
 <script lang="ts" setup>
-defineProps({
-  size: {
-    type: String,
-    default: "sm"
-  }
-})
-
 const { copiedLink, copyEmailToClipboard } = useCopyEmail()
 
 const handleEmailClick = async (url: string, name: string) => {
@@ -15,15 +8,22 @@ const handleEmailClick = async (url: string, name: string) => {
   }
 }
 
-const socialLinks = [
+interface SocialLink {
+  name: string
+  url: string
+  icon: string
+  color?: boolean
+}
+
+const socialLinks: SocialLink[] = [
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     url: "https://linkedin.com/in/dsabalete",
     icon: "/icons/linkedin.svg",
     color: true
   },
   {
-    name: "Github",
+    name: "GitHub",
     url: "https://github.com/dsabalete",
     icon: "/icons/github.svg"
   },
@@ -31,23 +31,12 @@ const socialLinks = [
     name: "Email",
     url: "mailto:info@davidsabalete.com",
     icon: "/icons/email.svg"
-  },
-  {
-    name: "Codepen",
-    url: "https://codepen.io/dsabalete",
-    icon: "/icons/codepen.svg"
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com/dsabalete",
-    icon: "/icons/instagram.svg",
-    color: true
   }
 ]
 </script>
 
 <template>
-  <div class="social-block flex my-10 justify-around">
+  <div class="flex flex-wrap justify-center gap-3">
     <a
       v-for="link in socialLinks"
       :key="link.name"
@@ -55,35 +44,13 @@ const socialLinks = [
       :target="link.url.startsWith('http') ? '_blank' : undefined"
       :rel="link.url.startsWith('http') ? 'noopener noreferrer' : undefined"
       :aria-label="link.name"
-      class="social-block__link"
+      class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 hover:scale-105 transition-all duration-300"
       @click="link.name === 'Email' ? ($event.preventDefault(), handleEmailClick(link.url, link.name)) : null"
     >
-      <img :src="link.icon" :alt="link.name" :class="[size, { 'dark:invert': !link.color }]" />
-      <span class="social-block__name">
+      <img :src="link.icon" :alt="link.name" class="w-5 h-5" :class="{ 'dark:invert': !link.color }" />
+      <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {{ copiedLink === link.name ? "Copied!" : link.name }}
       </span>
     </a>
   </div>
 </template>
-
-<style lang="postcss" scoped>
-@reference "tailwindcss";
-.social-block__link {
-  @apply flex flex-col items-center;
-}
-.social-block__name {
-  @apply mt-2 text-center text-sm;
-}
-img {
-  @apply hover:scale-110 duration-500;
-}
-.lg {
-  @apply w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20;
-}
-.md {
-  @apply w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16;
-}
-.sm {
-  @apply w-4 h-4 sm:w-8 sm:h-8 md:w-12 md:h-12;
-}
-</style>

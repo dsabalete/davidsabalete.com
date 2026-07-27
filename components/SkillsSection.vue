@@ -1,60 +1,15 @@
+<script setup lang="ts">
+import { skills } from "../data/skills.js"
+</script>
+
 <template>
   <SectionApp id="skills" class="lg:pr-32">
     <template #title>{{ $t("skills_title") }}</template>
 
     <h3 class="text-lg font-bold">{{ $t("skills_programming_languages") }}</h3>
     <ul class="langs-n-tools flex flex-wrap">
-      <li>
-        <img v-tooltip.bottom="`HTML5`" src="/icons/html5.svg" alt="HTML5" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`CSS3`" src="/icons/css3.svg" alt="CSS3" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Javascript`" src="/icons/javascript-js.svg" alt="Javascript" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Vue.js`" src="/icons/vue.svg" alt="Vue.js" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Nuxt.js: Vue.js Framework`" src="/icons/nuxt.svg" alt="Nuxt.js" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Jest: Testing Framework`" src="/icons/jest.svg" alt="Jest" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Vitest: Testing Framework`" src="/icons/vitest.svg" alt="Vitest" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Webpack: Bundler`" src="/icons/webpack.svg" alt="Webpack" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`React.js &amp; Redux`" src="/icons/react.svg" alt="React" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Node.js &amp; Express`" src="/icons/node.svg" alt="Node.js" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Sass: Syntactically Awesome Style Sheets`" src="/icons/sass.svg" alt="Sass" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`NPM: Node Package Manager`" src="/icons/npm.svg" alt="NPM" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Yarn: Node Package Manager`" src="/icons/yarn.svg" alt="Yarn" />
-      </li>
-      <li>
-        <img v-tooltip.bottom="`Java: Programming Language`" src="/icons/java.svg" alt="Java" />
-      </li>
-      <!-- <li>
-                <img
-                    v-tooltip.bottom="`PHP: Programming Language`"
-                    src="/icons/php.svg"
-                    alt="PHP"
-                />
-            </li> -->
-      <li>
-        <img v-tooltip.bottom="`Python: Programming Language`" src="/icons/python.svg" alt="Python" />
+      <li v-for="skill in skills" :key="skill.name" class="mx-4 my-8 hover:scale-150 duration-500">
+        <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" class="w-12 h-12" />
       </li>
     </ul>
 
@@ -82,19 +37,15 @@
   </SectionApp>
 </template>
 
-<style lang="postcss" scoped>
-@reference "tailwindcss";
-.langs-n-tools li {
-  @apply w-12 mx-4 my-8 hover:scale-150 duration-500;
-}
+<style scoped>
 .data-analysis li:before,
 .workflow li:before {
-  @apply inline-block ml-0 sm:ml-8 w-8;
   content: "✅";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
 }
-</style>
 
-<style scoped>
 .tooltip {
   display: block !important;
   z-index: 100;

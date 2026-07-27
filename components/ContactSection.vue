@@ -3,9 +3,10 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <SectionApp id="contact" class="pb-40 md:pb-16 flex flex-col">
+  <SectionApp id="contact" class="flex flex-col">
     <template #title>{{ t("contact_title") }}</template>
-    <SocialBlock size="sm" class="mt-12 mb-8" />
+
+    <SocialBlock class="mb-8" />
 
     <ContactForm />
 
