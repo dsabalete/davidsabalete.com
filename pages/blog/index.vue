@@ -27,13 +27,13 @@ const getPostUrl = (post: BlogPost): string => {
 
 <template>
   <div>
-    <h1 class="text-center text-2xl py-8 uppercase font-bold text-black">Blog Entries</h1>
+    <h1 class="text-center text-2xl py-8 uppercase font-bold text-black dark:text-gray-100">Blog Entries</h1>
     <div class="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-8">
       <NuxtLink
         v-for="post in posts"
         :key="post.id"
         :to="getPostUrl(post)"
-        class="flex flex-col justify-between bg-white text-black rounded-xl border p-4 text-center hover:bg-gray-100"
+        class="flex flex-col justify-between bg-white dark:bg-gray-800 text-black dark:text-gray-100 rounded-xl border p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-700"
       >
         <div class="text-lg font-bold">{{ post?.meta?.title || post?.title || "Untitled" }}</div>
 
@@ -47,7 +47,7 @@ const getPostUrl = (post: BlogPost): string => {
       <div v-if="posts.length === 0" class="text-center p-8">
         <p>No posts found. Make sure queryContent is available and content/posts contains markdown files.</p>
       </div>
-      <NuxtLink to="/" class="underline text-black-900 text-sm text-center p-4">Back to home</NuxtLink>
+      <NuxtLink to="/" class="underline text-gray-900 dark:text-gray-400 text-sm text-center p-4">Back to home</NuxtLink>
     </div>
   </div>
 </template>
