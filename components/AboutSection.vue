@@ -25,6 +25,6 @@ const { t } = useI18n()
 <style lang="css" scoped>
 @reference "tailwindcss";
 p {
-  @apply my-4 px-4 sm:px-0;
+  @apply my-8 px-4 sm:px-0;
 }
 </style>

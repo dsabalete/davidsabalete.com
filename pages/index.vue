@@ -4,8 +4,6 @@ useSeoMeta({
   title: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   description:
     "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks. Remote developer available for hire.",
-  keywords:
-    "full Stack developer Barcelona, Vue.js expert, Nuxt.js developer, Senior full Stack developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, JavaScript, TypeScript, Vue.js, Nuxt.js, Node.js, React, Frontend Development, Full-Stack Development, AWS, Cloud Computing, REST API, HTML5, CSS3, Unit Testing, CI/CD, Agile, Scrum, Software Architecture, Web Performance, Responsive Design, Git, DevOps, Technical Leadership, AI, Generative AI, LLM Integration.",
   author: "David Sabalete Rodríguez",
   ogTitle: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   ogDescription:
@@ -21,9 +19,7 @@ useSeoMeta({
 })
 
 useHead({
-  link: [
-    { rel: "canonical", href: "https://www.davidsabalete.com" }
-  ]
+  link: [{ rel: "canonical", href: "https://www.davidsabalete.com" }]
 })
 
 // Structured data for the home page

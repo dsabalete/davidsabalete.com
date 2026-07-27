@@ -45,7 +45,7 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "Full Stack developer Barcelona, Vue.js expert, Nuxt.js developer, senior web developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, full-stack JavaScript, React developer, Angular developer, PHP developer, Drupal developer, WordPress developer, web application development, e-commerce development, responsive design, mobile-first development, SEO optimization, performance optimization, test automation, agile development, Scrum, Git, GitHub, CI/CD, DevOps, cloud computing, serverless, microservices, API development, REST API, GraphQL, MongoDB, PostgreSQL, MySQL, Docker, Kubernetes, Terraform, infrastructure as code, Barcelona developer, Spain developer, European developer, remote work, freelance developer, contract developer, full-time developer, senior developer, lead developer, tech lead, software architect"
+            "Full Stack developer Barcelona, Vue.js expert, Nuxt.js developer, Senior full Stack developer, JavaScript developer, TypeScript, Node.js, AWS, remote developer, frontend developer, backend developer, web development Barcelona, software engineer, Vue.js specialist, JavaScript, TypeScript, Vue.js, Nuxt.js, Node.js, React, Frontend Development, Full-Stack Development, AWS, Cloud Computing, REST API, HTML5, CSS3, Unit Testing, CI/CD, Agile, Scrum, Software Architecture, Web Performance, Responsive Design, Git, DevOps, Technical Leadership, AI, Generative AI, LLM Integration, web application development, e-commerce development, responsive design, mobile-first development, SEO optimization, performance optimization, test automation, agile development, Scrum, Git, GitHub, CI/CD, DevOps, cloud computing, serverless, microservices, API development, REST API, GraphQL, MongoDB, PostgreSQL, MySQL, Docker, Terraform, infrastructure as code, Barcelona developer, Spain developer, European developer, remote work, freelance developer, contract developer, full-time developer, senior developer, lead developer, tech lead, software architect"
         },
         {
           name: "author",
@@ -184,7 +184,15 @@ export default defineNuxtConfig({
     }
   },
   css: ["@/assets/css/main.css"],
-  modules: ["@nuxtjs/i18n", "@nuxt/eslint", "floating-vue/nuxt", "@nuxt/content", "@nuxtjs/seo", "@nuxtjs/color-mode", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/i18n",
+    "@nuxt/eslint",
+    "floating-vue/nuxt",
+    "@nuxt/content",
+    "@nuxtjs/seo",
+    "@nuxtjs/color-mode",
+    "@nuxt/image"
+  ],
   colorMode: {
     classSuffix: ""
   },
