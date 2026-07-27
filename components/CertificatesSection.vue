@@ -1,17 +1,17 @@
 <script setup lang="ts">
-    import { certificates } from "../data/certificates.js"
+import { certificates } from "../data/certificates.js"
 
-    const showAll = ref(false)
-    const displayedCertificates = computed(() => {
-      return showAll.value ? certificates : certificates.slice(0, 6)
-    })
+const showAll = ref(false)
+const displayedCertificates = computed(() => {
+  return showAll.value ? certificates : certificates.slice(0, 6)
+})
 </script>
-    
+
 <template>
   <SectionApp id="certificates">
     <template #title>{{ $t("certificates_title") }}</template>
 
-    <div class="grid md:grid-cols-3 gap-10">
+    <div class="grid md:grid-cols-3 gap-10 px-6">
       <CertificateCard
         v-for="certificate in displayedCertificates"
         :key="certificate.name"
@@ -29,5 +29,3 @@
     </div>
   </SectionApp>
 </template>
-
-

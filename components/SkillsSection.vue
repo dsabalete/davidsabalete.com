@@ -7,7 +7,7 @@ import { skills } from "../data/skills.js"
     <template #title>{{ $t("skills_title") }}</template>
 
     <h3 class="text-lg font-bold">{{ $t("skills_programming_languages") }}</h3>
-    <ul class="langs-n-tools flex flex-wrap">
+    <ul class="langs-n-tools flex flex-wrap mb-16 py-4">
       <li v-for="skill in skills" :key="skill.name" class="mx-4 my-8 hover:scale-150 duration-500">
         <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" class="w-12 h-12" />
       </li>
@@ -26,7 +26,7 @@ import { skills } from "../data/skills.js"
     <br />-->
 
     <h3 class="text-lg font-bold">{{ $t("skills_workflow") }}</h3>
-    <ul class="workflow flex flex-col">
+    <ul class="workflow flex flex-col py-4">
       <li>{{ $t("skills_workflow_text_1") }}</li>
       <li>{{ $t("skills_workflow_text_2") }}</li>
       <li>{{ $t("skills_workflow_text_3") }}</li>
@@ -43,7 +43,7 @@ import { skills } from "../data/skills.js"
   content: "✅";
   font-weight: bold;
   display: inline-block;
-  width: 1em;
+  width: 1.75em;
 }
 
 .tooltip {

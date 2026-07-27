@@ -1,26 +1,26 @@
 export const certificates = [
   {
-    name: "Certificate of Completion - Full Stack Open Containers",
+    name: "University of Helsinki - Full Stack Open Containers",
     image: "/certificates/certificate-containers.png",
     pdf: "https://courses.mooc.fi/certificates/validate/jwv5i2ujicnypzm"
   },
   {
-    name: "Certificate of Completion - Continuous Integration",
+    name: "University of Helsinki - Continuous Integration",
     image: "/certificates/certificate-continuous-integration.png",
     pdf: "https://courses.mooc.fi/certificates/validate/n2qdqm8tt5rgjc5"
   },
   {
-    name: "Certificate of Completion - React Native",
+    name: "University of Helsinki - React Native",
     image: "/certificates/certificate-reactnative.png",
     pdf: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-react-native-2020/en/8e2bcfce62001b6caa33a4c2678b9df5"
   },
   {
-    name: "Certificate of Completion - GraphQL",
+    name: "University of Helsinki - GraphQL",
     image: "/certificates/certificate-graphql.png",
     pdf: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-graphql/en/11606e18e2809a34952d95a6b8989e24"
   },
   {
-    name: "Certificate of Completion - Typescript",
+    name: "University of Helsinki - Typescript",
     image: "/certificates/certificate-typescript.png",
     pdf: "https://studies.cs.helsinki.fi/stats/api/certificate/fs-typescript/en/8c46fac425e25833e82b9e2b93de0174"
   },
