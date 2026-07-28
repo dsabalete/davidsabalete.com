@@ -1,6 +1,6 @@
 export const projects = [
   {
-    image: "/foto-uploader.png",
+    image: "/foto-uploader.webp",
     alt: "Foto Uploader homepage picture",
     title: "Foto Uploader",
     description:
@@ -11,7 +11,7 @@ export const projects = [
     metrics: { performance: 99, accessibility: 100 }
   },
   {
-    image: "/gym_tracker.png",
+    image: "/gym_tracker.webp",
     alt: "Gym Tracker homepage picture",
     title: "Gym Tracker",
     description:
@@ -22,7 +22,7 @@ export const projects = [
     metrics: { performance: 98, accessibility: 100 }
   },
   {
-    image: "/tercerespai.png",
+    image: "/tercerespai.webp",
     alt: "Tercer Espai homepage picture",
     title: "Tercer Espai website",
     description:
@@ -33,7 +33,7 @@ export const projects = [
     metrics: { performance: 95, accessibility: 97 }
   },
   {
-    image: "/system-monitor.png",
+    image: "/system-monitor.webp",
     alt: "System Monitor homepage picture",
     title: "System Monitor",
     description:
@@ -43,7 +43,7 @@ export const projects = [
     tags: ["node", "express", "vanillajs"]
   },
   {
-    image: "/goat-notes.png",
+    image: "/goat-notes.webp",
     alt: "Goat Notes taking app with AI",
     title: "Goat Notes taking app with AI",
     description:
@@ -54,7 +54,7 @@ export const projects = [
     metrics: { performance: 92, accessibility: 95 }
   },
   {
-    image: "/qrcode.png",
+    image: "/qrcode.webp",
     alt: "QR Code Generator picture",
     title: "QR Code Generator",
     description:
@@ -65,7 +65,7 @@ export const projects = [
     metrics: { performance: 99, accessibility: 100 }
   },
   {
-    image: "/space-tourism.png",
+    image: "/space-tourism.webp",
     alt: "Space tourism homepage picture",
     title: "Space tourism",
     description:
@@ -75,7 +75,7 @@ export const projects = [
     tags: ["html", "css", "javascript"]
   },
   {
-    image: "/creualta.png",
+    image: "/creualta.webp",
     alt: "Creualta homepage picture",
     title: "Creu Alta website",
     description: `Creu Alta Sabadell Basket website. It is running on Drupal as CMS an it has a VueJS app to register players during summer and christmas campus.`,
@@ -84,7 +84,7 @@ export const projects = [
     tags: ["drupal", "vue"]
   },
   {
-    image: "/kiloday.png",
+    image: "/kiloday.webp",
     alt: "Kiloday homepage picture",
     title: "Kiloday calculator",
     description: "Alternative birthday calculator app made with Vue, Vite and Pinia",
@@ -93,7 +93,7 @@ export const projects = [
     tags: ["vue", "vite", "pinia"]
   },
   {
-    image: "/1rm.png",
+    image: "/1rm.webp",
     alt: "My 1 RM homepage picture",
     title: "My 1 RM website",
     description: `App that calculates the 1RM of any training session. Made with Vuejs and hosted in Netlify.`,
@@ -103,7 +103,7 @@ export const projects = [
   }
   /*
   {
-    image: "/vue-twitter-clone.png",
+    image: "/vue-twitter-clone.webp",
     alt: "Vue twitter clone homepage picture",
     title: "Vue twitter clone",
     description: "App that emulates basic functionality of a Twitter app. Made with Vue and deployed on Heroku.",
@@ -112,7 +112,7 @@ export const projects = [
     tags: ["vue", "heroku"]
   },
   {
-    image: "/expensify.png",
+    image: "/expensify.webp",
     alt: "Expensify homepage picture",
     title: "Expensify App",
     description: "App that helps keep you track of your expenses. Made with React and Firebase.",
@@ -121,7 +121,7 @@ export const projects = [
     tags: ["react", "firebase"]
   },
   {
-    image: "/indecision.png",
+    image: "/indecision.webp",
     alt: "Indecision homepage picture",
     title: "Indecision App",
     description: "Put your live in the hands of a computer. Made with React.",
@@ -130,7 +130,7 @@ export const projects = [
     tags: ["react"]
   },
   {
-    image: "/gridsome-portfolio.png",
+    image: "/gridsome-portfolio.webp",
     alt: "Portfolio on Github",
     title: "Gridsome-Portfolio",
     description: "My Portfolio made with Gridsome and ❤️",
@@ -139,7 +139,7 @@ export const projects = [
     tags: ["gridsome"]
   },
   {
-    image: "/calculator.png",
+    image: "/calculator.webp",
     alt: "ReactJS Calculator picture",
     title: "ReactJS Calculator",
     description: `ReactJS Calculator made with React.js. It has a simple calculator with a few functions.`,
@@ -148,7 +148,7 @@ export const projects = [
     tags: ["react", "codepen"]
   },
   {
-    image: "/drum_machine.png",
+    image: "/drum_machine.webp",
     alt: "React and Redux Drum machine picture",
     title: "Drum machine",
     description: `React and Redux Drum machine made with React and Redux.`,
@@ -157,7 +157,7 @@ export const projects = [
     tags: ["react", "redux", "codepen"]
   },
   {
-    image: "/markdown.png",
+    image: "/markdown.webp",
     alt: "Markdown previewer picture",
     title: "Markdown previewer",
     description: `Markdown previewer made with React.js and Redux`,
@@ -166,7 +166,7 @@ export const projects = [
     tags: ["react", "redux", "codepen", "markdown"]
   },
   {
-    image: "/pomodoro.png",
+    image: "/pomodoro.webp",
     alt: "Pomodoro clock picture",
     title: "Pomodoro clock",
     description: `Pomodoro clock made with React.js and Redux`,
@@ -175,7 +175,7 @@ export const projects = [
     tags: ["react", "redux", "codepen"]
   },
   {
-    image: "/quote_machine.png",
+    image: "/quote_machine.webp",
     alt: "Quote Machine picture",
     title: "Quote Machine",
     description: "Random Quote Machine using external API",
@@ -184,7 +184,7 @@ export const projects = [
     tags: ["react", "codepen"]
   },
   {
-    image: "/tribute_page.png",
+    image: "/tribute_page.webp",
     alt: "Bruce Lee tribute page",
     title: "Bruce Lee tribute page",
     description: "Simple Tribute page made with Bootstrap",
@@ -193,7 +193,7 @@ export const projects = [
     tags: ["bootstrap", "codepen"]
   },
   {
-    image: "/weather.png",
+    image: "/weather.webp",
     alt: "Weather app picture",
     title: "Weather app",
     description: "Forecast Weather App using JQuery and OpenWeatherMap API",
@@ -202,7 +202,7 @@ export const projects = [
     tags: ["jquery", "codepen"]
   },
   {
-    image: "/wikipedia_viewer.png",
+    image: "/wikipedia_viewer.webp",
     alt: "Wikipedia viewer picture",
     title: "Wikipedia viewer",
     description: "Wikipedia Viewer App made with Angular and Wikipedia API",

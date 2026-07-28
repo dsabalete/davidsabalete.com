@@ -1,7 +1,7 @@
 ---
 title: Programmed obsolescence
 description:
-img: /obsolescence.png
+img: /obsolescence.webp
 alt: blackboard with sticy notes
 createdAt: dec 30 2020
 updatedAt: dec 30 2020

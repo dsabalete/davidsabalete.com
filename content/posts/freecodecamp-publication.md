@@ -1,7 +1,7 @@
 ---
 title: Publications in freecodecamp
 description:
-img: /freecodecamp.png
+img: /freecodecamp.webp
 alt: freecodecamp
 createdAt: dic 1 2022
 updatedAt: dic 4 2022

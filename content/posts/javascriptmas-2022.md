@@ -1,7 +1,7 @@
 ---
 title: JavaScriptmas 2022
 description:
-img: /scrimba_javascriptmas.png
+img: /scrimba_javascriptmas.webp
 alt: Javascriptmas 2022
 createdAt: dec 1 2022
 updatedAt: dec 2 2022

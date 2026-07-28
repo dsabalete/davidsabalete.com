@@ -1,7 +1,7 @@
 ---
 title: Advent of Docker 2024
 description:
-img: /advent-docker.png
+img: /advent-docker.webp
 alt: Advent of Docker 2024
 createdAt: dec 25 2024
 updatedAt: dec 25 2024

@@ -1,7 +1,7 @@
 ---
 title: The Catcher in the Rye, de J.D. Salinger (spanish)
 description:
-img: /the-catcher-in-the-rye.png
+img: /the-catcher-in-the-rye.webp
 alt: my first blog post
 createdAt: apr 23 2022
 updatedAt: nov 9 2025

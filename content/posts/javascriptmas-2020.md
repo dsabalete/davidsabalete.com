@@ -1,7 +1,7 @@
 ---
 title: JavaScriptmas 2020
 description:
-img: /scrimba_javascriptmas.png
+img: /scrimba_javascriptmas.webp
 alt: Javascriptmas 2020
 createdAt: dec 17 2020
 updatedAt: dec 17 2020

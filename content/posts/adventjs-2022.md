@@ -1,7 +1,7 @@
 ---
 title: AdventJs 2022
 description: Solutions to the AdventJs 2022 challenge
-img: /adventjs.png
+img: /adventjs.webp
 alt: AdventJs 2022
 createdAt: dec 1 2022
 updatedAt: dec 7 2022

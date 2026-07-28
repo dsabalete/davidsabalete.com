@@ -1,5 +1,13 @@
 <script lang="ts" setup>
-// SEO metadata for the home page
+import { defineAsyncComponent } from "vue"
+
+const EducationSection = defineAsyncComponent(() => import("@/components/EducationSection.vue"))
+const CertificatesSection = defineAsyncComponent(() => import("@/components/CertificatesSection.vue"))
+const SkillsSection = defineAsyncComponent(() => import("@/components/SkillsSection.vue"))
+const InterestsSection = defineAsyncComponent(() => import("@/components/InterestsSection.vue"))
+const ProjectsSection = defineAsyncComponent(() => import("@/components/ProjectsSection.vue"))
+const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"))
+
 useSeoMeta({
   title: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   description:

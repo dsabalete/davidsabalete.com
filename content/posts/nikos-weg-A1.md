@@ -1,7 +1,7 @@
 ---
 title: Nico's Weg A1
 description:
-img: /nicos_weg_a1.png
+img: /nicos_weg_a1.webp
 alt: Nico's Weg A1
 createdAt: dec 28 2024
 updatedAt: dec 28 2024

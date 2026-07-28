@@ -1,7 +1,7 @@
 ---
 title: Energy focus and work optimization
 description:
-img: /energy-focus.png
+img: /energy-focus.webp
 alt: blackboard with sticy notes
 createdAt: may 7 2021
 updatedAt: may 7 2021

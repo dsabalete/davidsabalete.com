@@ -1,7 +1,7 @@
 ---
 title: JavaScriptmas 2021
 description:
-img: /scrimba_javascriptmas.png
+img: /scrimba_javascriptmas.webp
 alt: Javascriptmas 2021
 createdAt: dec 1 2021
 updatedAt: dec 1 2021
