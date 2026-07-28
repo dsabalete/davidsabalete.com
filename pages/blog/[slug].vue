@@ -79,7 +79,7 @@ useSchemaOrg([
       <span v-if="post?.meta?.updatedAt"> and updated on {{ post?.meta?.updatedAt }} </span>
     </p>
 
-    <nuxt-img v-if="post?.meta?.img" :src="post?.meta?.img" :alt="post?.meta?.alt || ''" class="mx-auto mb-8" />
+    <nuxt-img v-if="post?.meta?.img" :src="post?.meta?.img" :alt="post?.meta?.alt || ''" width="1200" height="675" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px" class="mx-auto mb-8" />
 
     <ContentRenderer v-if="post" :value="post" class="nuxt-content" />
     <div v-else>

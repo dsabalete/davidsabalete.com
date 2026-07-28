@@ -26,10 +26,13 @@ const handleCopyEmailClick = async () => {
   <header class="flex flex-col md:flex-row gap-x-8 mt-16 m-8" role="banner" aria-label="Profile header">
     <div class="flex flex-row gap-4 items-center mb-6 md:hidden">
       <div class="shrink-0">
-        <img
+        <nuxt-img
           class="profile-image rounded-lg w-24 h-auto object-cover aspect-square shadow-2xl"
           alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
-          src="/assets/images/profile.jpg"
+          src="/profile.jpg"
+          width="160"
+          height="160"
+          sizes="96px"
           loading="eager"
           decoding="async"
         />
@@ -40,10 +43,13 @@ const handleCopyEmailClick = async () => {
     </div>
 
     <div class="shrink-0 hidden md:block">
-      <img
+      <nuxt-img
         class="profile-image rounded-lg w-24 md:w-40 h-auto object-cover aspect-square shadow-2xl"
         alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
-        src="/assets/images/profile.jpg"
+        src="/profile.jpg"
+        width="160"
+        height="160"
+        sizes="160px"
         loading="eager"
         decoding="async"
       />

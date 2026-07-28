@@ -37,7 +37,7 @@ const getPostUrl = (post: BlogPost): string => {
       >
         <div class="text-lg font-bold">{{ post?.meta?.title || post?.title || "Untitled" }}</div>
 
-        <nuxt-img :src="post?.meta?.img as string" :alt="post?.meta?.alt as string" />
+        <nuxt-img :src="post?.meta?.img as string" :alt="post?.meta?.alt as string" width="350" height="197" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 350px" loading="lazy" />
 
         <div v-if="post?.meta?.updatedAt || post?.meta?.createdAt" class="text-base">
           ({{ formatDate((post?.meta?.updatedAt || post?.meta?.createdAt) as string) }})

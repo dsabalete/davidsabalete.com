@@ -47,7 +47,7 @@ const socialLinks: SocialLink[] = [
       class="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 hover:scale-105 transition-all duration-300"
       @click="link.name === 'Email' ? ($event.preventDefault(), handleEmailClick(link.url, link.name)) : null"
     >
-      <img :src="link.icon" :alt="link.name" class="w-5 h-5" :class="{ 'dark:invert': !link.color }" />
+      <img :src="link.icon" :alt="link.name" width="20" height="20" class="w-5 h-5" :class="{ 'dark:invert': !link.color }" />
       <span class="text-sm font-medium text-gray-700 dark:text-gray-300">
         {{ copiedLink === link.name ? "Copied!" : link.name }}
       </span>

@@ -75,7 +75,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://www.davidsabalete.com/assets/images/profile.jpg"
+          content: "https://www.davidsabalete.com/profile.jpg"
         },
         {
           property: "og:image:alt",
@@ -109,7 +109,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://www.davidsabalete.com/assets/images/profile.jpg"
+          content: "https://www.davidsabalete.com/profile.jpg"
         },
         {
           name: "twitter:image:alt",
@@ -227,5 +227,8 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ["/sitemap.xml"]
     }
+  },
+  image: {
+    provider: "netlify"
   }
 })
