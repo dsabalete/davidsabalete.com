@@ -20,7 +20,7 @@ defineProps({
           width="320"
           height="180"
           sizes="(max-width: 768px) 100vw, 320px"
-          class="mx-auto md:mx-0 w-full md:w-80 md:aspect-video rounded-xl hover:scale-110 transition duration-500 ease-in-out object-cover"
+          class="mx-auto md:mx-0 w-full md:w-80 aspect-video rounded-xl hover:scale-110 transition duration-500 ease-in-out object-cover"
         />
       </a>
     </div>

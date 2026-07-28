@@ -9,7 +9,7 @@ import { skills } from "../data/skills.js"
     <h3 class="text-lg font-bold">{{ $t("skills_programming_languages") }}</h3>
     <ul class="langs-n-tools flex flex-wrap mb-16 py-4">
       <li v-for="skill in skills" :key="skill.name" class="mx-4 my-8 hover:scale-150 duration-500">
-        <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" class="w-12 h-12" />
+        <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" width="48" height="48" class="w-12 h-12" />
       </li>
     </ul>
 
