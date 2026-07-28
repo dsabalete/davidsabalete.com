@@ -58,9 +58,6 @@ const close = () => {
     >
       <ClientOnly>
         <li>
-          <a href="#" />
-        </li>
-        <li>
           <a v-smooth-scroll href="#about" class="nav-entry">{{ t("about") }} </a>
         </li>
         <li>

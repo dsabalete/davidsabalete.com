@@ -81,7 +81,7 @@ const handleCopyEmailClick = async () => {
         <span itemprop="addressLocality"> Barcelona</span>,
         <span itemprop="addressCountry">{{ t("header_location_country") }}</span>
       </p>
-      <div class="text-sm text-green-600 dark:text-green-400">{{ t("header_available") }}</div>
+      <div class="text-sm text-green-700 dark:text-green-300">{{ t("header_available") }}</div>
       <div class="mt-3 flex flex-wrap gap-2" aria-label="Quick contact and social links">
         <a
           href="#"
