@@ -7,5 +7,6 @@ import "floating-vue/dist/style.css"
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <ChatBot />
   </div>
 </template>
