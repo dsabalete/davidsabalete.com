@@ -18,7 +18,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      gtagId: "G-E0XXZ7KMLT"
+      gtagId: "G-E0XXZ7KMLT",
+      chatbotApiUrl: process.env.NUXT_PUBLIC_CHATBOT_API_URL || ""
     }
   },
   site: {
