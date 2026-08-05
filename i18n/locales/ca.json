@@ -98,9 +98,5 @@
   "chatbot_reply_salary": "No tinc detalls de salari o tarifes a la meva base de coneixement. Contacta directament amb David a info{'@'}davidsabalete.com per a xifres concretes.",
   "chatbot_reply_fallback_1": "No he pogut trobar una resposta per això. Prova de preguntar sobre experiència, habilitats, projectes o contacte.",
   "chatbot_reply_fallback_2": "Hmm, no n'estic segur. Pots preguntar-me sobre l'experiència, habilitats o projectes de David, o com contactar-hi.",
-  "chatbot_reply_fallback_3": "Encara no tinc informació sobre aquest tema. Prova alguna cosa com 'Quines tecnologies utilitza David?'.",
-  "chatbot_suggestion_experience": "Quina és la teva experiència?",
-  "chatbot_suggestion_skills": "Quines tecnologies utilitzes?",
-  "chatbot_suggestion_projects": "Quins projectes has construït?",
-  "chatbot_suggestion_contact": "Com puc contactar-te?"
+  "chatbot_reply_fallback_3": "Encara no tinc informació sobre aquest tema. Prova alguna cosa com 'Quines tecnologies utilitza David?'."
 }

@@ -98,9 +98,5 @@
   "chatbot_reply_salary": "I don't have salary or rate details in my knowledge base. Contact David directly at info{'@'}davidsabalete.com for specific figures.",
   "chatbot_reply_fallback_1": "I couldn't find an answer for that. Try asking about experience, skills, projects, or contact details.",
   "chatbot_reply_fallback_2": "Hmm, I'm not sure about that one. You can ask me about David's experience, skills, projects, or how to get in touch.",
-  "chatbot_reply_fallback_3": "I don't have information on that topic yet. Try something like 'What technologies does David use?'.",
-  "chatbot_suggestion_experience": "What's your experience?",
-  "chatbot_suggestion_skills": "What technologies do you use?",
-  "chatbot_suggestion_projects": "What projects have you built?",
-  "chatbot_suggestion_contact": "How can I contact you?"
+  "chatbot_reply_fallback_3": "I don't have information on that topic yet. Try something like 'What technologies does David use?'."
 }

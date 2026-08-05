@@ -1,13 +1,6 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { isOpen, isTyping, messages, input, error, toggle, sendMessage, sendSuggestion, reset } = useChatbot()
-
-const suggestions = computed(() => [
-  t("chatbot_suggestion_experience"),
-  t("chatbot_suggestion_skills"),
-  t("chatbot_suggestion_projects"),
-  t("chatbot_suggestion_contact")
-])
+const { isOpen, isTyping, messages, input, error, toggle, sendMessage, reset } = useChatbot()
 </script>
 
 <template>
@@ -60,7 +53,10 @@ const suggestions = computed(() => [
             class="chatbot-message"
             :class="message.role === 'user' ? 'chatbot-message--user' : 'chatbot-message--assistant'"
           >
-            <p class="chatbot-bubble">{{ message.content }}</p>
+            <div class="chatbot-bubble">
+              <MDC v-if="message.role === 'assistant'" :value="message.content" />
+              <p v-else>{{ message.content }}</p>
+            </div>
           </div>
 
           <div v-if="isTyping" class="chatbot-message chatbot-message--assistant">
@@ -73,18 +69,6 @@ const suggestions = computed(() => [
         </div>
 
         <p v-if="error" class="px-4 pb-1 text-xs text-amber-600 dark:text-amber-400">{{ error }}</p>
-
-        <div class="flex flex-wrap gap-2 px-4 pb-3">
-          <button
-            v-for="suggestion in suggestions"
-            :key="suggestion"
-            type="button"
-            class="chatbot-suggestion"
-            @click="sendSuggestion(suggestion)"
-          >
-            {{ suggestion }}
-          </button>
-        </div>
 
         <form class="flex items-center gap-2 px-4 py-3 border-t border-gray-200 dark:border-gray-700" @submit.prevent="sendMessage">
           <input
@@ -172,6 +156,58 @@ const suggestions = computed(() => [
   @apply bg-gray-100 dark:bg-gray-700 text-black dark:text-gray-100 rounded-bl-sm;
 }
 
+.chatbot-bubble :deep(p) {
+  @apply mb-2 last:mb-0;
+}
+
+.chatbot-bubble :deep(ul) {
+  @apply list-disc pl-5 mb-2;
+}
+
+.chatbot-bubble :deep(ol) {
+  @apply list-decimal pl-5 mb-2;
+}
+
+.chatbot-bubble :deep(li) {
+  @apply mb-1;
+}
+
+.chatbot-bubble :deep(code) {
+  @apply bg-gray-200 dark:bg-gray-600 px-1 py-0.5 rounded text-xs font-mono;
+}
+
+.chatbot-bubble :deep(pre) {
+  @apply bg-gray-900 dark:bg-gray-950 p-2 rounded overflow-x-auto text-xs mb-2;
+}
+
+.chatbot-bubble :deep(pre code) {
+  @apply bg-transparent p-0 text-inherit;
+}
+
+.chatbot-bubble :deep(a) {
+  @apply text-blue-600 dark:text-blue-400 underline hover:text-blue-800 dark:hover:text-blue-300;
+}
+
+.chatbot-bubble :deep(strong) {
+  @apply font-semibold;
+}
+
+.chatbot-bubble :deep(em) {
+  @apply italic;
+}
+
+.chatbot-bubble :deep(blockquote) {
+  @apply border-l-4 border-blue-500 pl-3 italic text-gray-600 dark:text-gray-300 my-2;
+}
+
+.chatbot-bubble :deep(h1, h2, h3, h4, h5, h6) {
+  @apply font-semibold mb-1 mt-2;
+}
+
+.chatbot-bubble :deep(hr) {
+  @apply border-t border-gray-300 dark:border-gray-600 my-3;
+}
+
 .chatbot-typing {
   @apply inline-flex items-center gap-1;
 }
@@ -198,10 +234,6 @@ const suggestions = computed(() => [
   30% {
     transform: translateY(-4px);
   }
-}
-
-.chatbot-suggestion {
-  @apply px-3 py-1 text-xs text-blue-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/40 border border-blue-200 dark:border-blue-800 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900/60 transition-colors duration-200;
 }
 
 .chatbot-input {
