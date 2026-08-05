@@ -13,7 +13,12 @@ export interface ChatApiRequest {
   locale: string
 }
 
+export interface ConversationHistoryItem {
+  role: ChatRole
+  content: string
+}
+
 export interface ChatApiResponse {
-  reply: string
-  suggestions?: string[]
+  response: string
+  conversationHistory: ConversationHistoryItem[]
 }

@@ -43,7 +43,7 @@ export const useChatbot = () => {
 
   const simulateTyping = (): Promise<void> => new Promise((resolve) => setTimeout(resolve, 500 + Math.random() * 700))
 
-  const fetchApiReply = async (message: string): Promise<string> => {
+  const fetchApiReply = async (message: string): Promise<ChatApiResponse> => {
     const body: ChatApiRequest = {
       message,
       sessionId,
@@ -53,10 +53,10 @@ export const useChatbot = () => {
       method: "POST",
       body
     })
-    if (!response.reply) {
-      throw new Error("Chat API returned an empty reply")
+    if (!response.response || !response.conversationHistory) {
+      throw new Error("Chat API returned an invalid response")
     }
-    return response.reply
+    return response
   }
 
   const sendMessage = async (): Promise<void> => {
@@ -69,19 +69,25 @@ export const useChatbot = () => {
     isTyping.value = true
 
     try {
-      let reply: string
       if (apiUrl) {
         try {
-          reply = await fetchApiReply(text)
+          const apiResponse = await fetchApiReply(text)
+          messages.value = apiResponse.conversationHistory.map((item, index) => ({
+            id: `${item.role}-${Date.now()}-${index}`,
+            role: item.role,
+            content: item.content,
+            timestamp: Date.now()
+          }))
         } catch {
           error.value = t("chatbot_error")
-          reply = mockReply(text)
+          const reply = mockReply(text)
+          addMessage("assistant", reply)
         }
       } else {
         await simulateTyping()
-        reply = mockReply(text)
+        const reply = mockReply(text)
+        addMessage("assistant", reply)
       }
-      addMessage("assistant", reply)
     } finally {
       isTyping.value = false
       await scrollToBottom()
