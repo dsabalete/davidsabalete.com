@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   runtimeConfig: {
     public: {
-      gtagId: "G-E0XXZ7KMLT",
+      gtmId: process.env.NUXT_PUBLIC_GTM_ID || "",
       chatbotApiUrl: process.env.NUXT_PUBLIC_CHATBOT_API_URL || ""
     }
   },
@@ -169,20 +169,6 @@ export default defineNuxtConfig({
         { rel: "alternate", hreflang: "de", href: "https://www.davidsabalete.com/de" },
         { rel: "alternate", hreflang: "fr", href: "https://www.davidsabalete.com/fr" },
         { rel: "alternate", hreflang: "x-default", href: "https://www.davidsabalete.com" }
-      ],
-      script: [
-        {
-          src: "https://www.googletagmanager.com/gtag/js?id=G-E0XXZ7KMLT",
-          async: true
-        },
-        {
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-E0XXZ7KMLT');
-          `
-        }
       ]
     }
   },

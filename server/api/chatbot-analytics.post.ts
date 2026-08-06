@@ -1,4 +1,4 @@
-import { defineEventHandler, readBody, createError } from "h3"
+import { defineEventHandler, readBody, createError, getRequestIP, getRequestHeader } from "h3"
 import { appendFile } from "node:fs/promises"
 import { join } from "node:path"
 
