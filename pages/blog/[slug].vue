@@ -79,7 +79,15 @@ useSchemaOrg([
       <span v-if="post?.meta?.updatedAt"> and updated on {{ post?.meta?.updatedAt }} </span>
     </p>
 
-    <nuxt-img v-if="post?.meta?.img" :src="post?.meta?.img" :alt="post?.meta?.alt || ''" width="1200" height="675" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px" class="mx-auto mb-8" />
+    <nuxt-img
+      v-if="post?.meta?.img"
+      :src="post?.meta?.img"
+      :alt="post?.meta?.alt || ''"
+      width="1200"
+      height="675"
+      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
+      class="mx-auto mb-8"
+    />
 
     <ContentRenderer v-if="post" :value="post" class="nuxt-content" />
     <div v-else>
@@ -98,30 +106,31 @@ useSchemaOrg([
 
 <style lang="postcss" scoped>
 @reference "tailwindcss";
-.nuxt-content h2 {
+.nuxt-content :deep(h2) {
   font-weight: bold;
   font-size: 28px;
+  margin: 20px 0;
   @apply dark:text-gray-100;
 }
 
-.nuxt-content h3 {
+.nuxt-content :deep(h3) {
   font-weight: bold;
   font-size: 22px;
   @apply dark:text-gray-100;
 }
 
-.nuxt-content p {
+.nuxt-content :deep(p) {
   margin-bottom: 20px;
   @apply dark:text-gray-200;
 }
 
-.nuxt-content a {
+.nuxt-content :deep(a) {
   color: rgb(59, 130, 246);
   text-decoration: underline;
   @apply dark:text-blue-400 dark:hover:text-blue-300;
 }
 
-.nuxt-content blockquote {
+.nuxt-content :deep(blockquote) {
   border-left: 4px solid rgb(59, 130, 246);
   padding-left: 20px;
   margin: 20px 0;
@@ -129,30 +138,21 @@ useSchemaOrg([
   @apply dark:border-blue-400 dark:text-gray-300 dark:bg-gray-800/50 dark:px-4 dark:py-2;
 }
 
-.nuxt-content em {
+.nuxt-content :deep(em) {
   font-style: italic;
   @apply dark:text-gray-200;
 }
 
-.nuxt-content strong {
+.nuxt-content :deep(strong) {
   font-weight: bold;
   @apply dark:text-gray-100;
 }
 
-.nuxt-content code {
+.nuxt-content :deep(code) {
   @apply dark:bg-gray-800 dark:text-gray-100;
 }
 
-.nuxt-content pre {
+.nuxt-content :deep(pre) {
   @apply dark:bg-gray-800 dark:text-gray-100;
-}
-
-.icon.icon-link {
-  background-image: url("@/assets/images/icons/icon-hashtag.svg");
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
-  margin-right: 5px;
 }
 </style>
