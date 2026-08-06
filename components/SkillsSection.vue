@@ -6,24 +6,14 @@ import { skills } from "../data/skills.js"
   <SectionApp id="skills" class="lg:pr-32">
     <template #title>{{ $t("skills_title") }}</template>
 
-    <h3 class="text-lg font-bold">{{ $t("skills_programming_languages") }}</h3>
-    <ul class="langs-n-tools flex flex-wrap mb-16 py-4">
-      <li v-for="skill in skills" :key="skill.name" class="mx-4 my-8 hover:scale-150 duration-500">
-        <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" width="48" height="48" class="w-12 h-12" />
-      </li>
-    </ul>
-
-    <!--<h3 class="text-lg font-bold">Data Analysis</h3>
-    <ul class="data-analysis flex flex-col">
-      <li>{{ $t("skills_data_text_1") }}</li>
-      <li>{{ $t("skills_data_text_2") }}</li>
-      <li>{{ $t("skills_data_text_3") }}</li>
-      <li>{{ $t("skills_data_text_4") }}</li>
-      <li>{{ $t("skills_data_text_5") }}</li>
-      <li>{{ $t("skills_data_text_6") }}</li>
-    </ul>
-
-    <br />-->
+    <div v-for="group in skills" :key="group.category" class="mb-12">
+      <h3 class="text-lg font-bold mb-4">{{ group.category }}</h3>
+      <ul class="flex flex-wrap py-4">
+        <li v-for="skill in group.items" :key="skill.name" class="mx-4 my-8 hover:scale-150 duration-500">
+          <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" width="48" height="48" class="w-12 h-12" />
+        </li>
+      </ul>
+    </div>
 
     <h3 class="text-lg font-bold">{{ $t("skills_workflow") }}</h3>
     <ul class="workflow flex flex-col py-4">
