@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 type LocaleCode = "en" | "es" | "ca" | "de" | "fr"
 
-const { locales, t } = useI18n()
+const { locales, t, locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const getLocalePath = (code: string) => switchLocalePath(code as LocaleCode).split("#")[0]
 
@@ -27,15 +27,33 @@ const close = () => {
 <template>
   <nav
     id="sideNav"
-    class="nav-app flex flex-col justify-between md:items-center z-20 lg:bg-transparent lg:w-40 xl:w-64 md:h-screen md:fixed items-center"
+    class="nav-app flex flex-col justify-between md:items-center z-20 lg:bg-transparent md:w-40 xl:w-64 md:h-screen md:fixed items-center"
   >
-    <div class="flex justify-center items-center">
-      <div v-for="loc in locales" :key="loc.code" class="mx-3 text-base">
-        <nuxt-link :to="getLocalePath(loc.code)">
-          {{ loc.code }}
-        </nuxt-link>
-      </div>
-      <ThemeToggle class="ml-4" />
+    <div class="flex justify-center items-center gap-2">
+      <VDropdown>
+        <button
+          class="flex items-center gap-1 px-2 py-1 rounded-md text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+        >
+          <span>{{ locale }}</span>
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <template #popper>
+          <div class="bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[5rem]">
+            <nuxt-link
+              v-for="loc in locales"
+              :key="loc.code"
+              :to="getLocalePath(loc.code)"
+              class="block px-3 py-1.5 text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+              :class="{ 'font-bold': locale === loc.code }"
+            >
+              {{ loc.code }}
+            </nuxt-link>
+          </div>
+        </template>
+      </VDropdown>
+      <ThemeToggle />
     </div>
 
     <button
