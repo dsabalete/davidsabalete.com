@@ -1,7 +1,7 @@
 ---
 title: La Sombra del Viento, de Carlos Ruiz Zafon (spanish)
 description:
-img: /la-sombra-del-viento.jpeg
+img: /la-sombra-del-viento.webp
 alt: la sombra del viento
 createdAt: dec 30 2020
 updatedAt: dec 30 2020

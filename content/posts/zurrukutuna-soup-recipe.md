@@ -1,7 +1,7 @@
 ---
 title: Zurrukutuna Soup recipe
 description:
-img: /zurrukutuna-recipe.jpeg
+img: /zurrukutuna-recipe.webp
 alt: zurrukutuna recipe
 createdAt: jan 30 2021
 updatedAt: jan 30 2021
