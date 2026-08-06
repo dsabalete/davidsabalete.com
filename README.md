@@ -48,6 +48,20 @@ yarn dev
 bun run dev
 ```
 
+## Netlify
+
+To test Netlify capabilities (server functions, redirects, etc.) locally, you need to have [netlify-cli](https://docs.netlify.com/cli/get-started/) installed globally:
+
+```bash
+npm install -g netlify-cli
+```
+
+Then run:
+
+```bash
+netlify dev
+```
+
 ## Production
 
 Build the application for production:

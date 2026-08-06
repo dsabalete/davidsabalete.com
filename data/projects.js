@@ -1,5 +1,25 @@
 export const projects = [
   {
+    image: "/chatbot.webp",
+    alt: "AI Portfolio Assistant chatbot interface",
+    title: "AI Portfolio Assistant",
+    description:
+      "An AI chatbot assistant built into this portfolio that answers questions about my experience, skills, projects and availability in multiple languages, with topic matching and analytics.",
+    repo: "https://github.com/dsabalete/chatbot",
+    live: "",
+    tags: ["nuxt", "vue", "ai", "typescript"]
+  },
+  {
+    image: "/alex-sabalete.webp",
+    alt: "Alex Sabalete video portfolio homepage",
+    title: "Alex Sabalete portfolio",
+    description:
+      "Video portfolio of Alex Sabalete, a young audiovisual director, editor and DOP.",
+    repo: "",
+    live: "https://alexsabalete.site/",
+    tags: ["portfolio", "video"]
+  },
+  {
     image: "/foto-uploader.webp",
     alt: "Foto Uploader homepage picture",
     title: "Foto Uploader",
