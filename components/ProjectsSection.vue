@@ -1,5 +1,5 @@
 <script>
-  import { projects } from "../data/projects.js"
+  import { projects } from "../data/projects"
   export default {
     data() {
       return {

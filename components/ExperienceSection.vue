@@ -15,7 +15,7 @@
 
 <script setup lang="ts">
 import { useI18n } from "vue-i18n"
-import { experiences } from "~/data/experience.js"
+import { experiences } from "~/data/experience"
 
 interface ExperienceItem {
   id: string

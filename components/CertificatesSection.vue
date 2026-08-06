@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { certificates } from "../data/certificates.js"
+import { certificates } from "../data/certificates"
 
 const showAll = ref(false)
 const displayedCertificates = computed(() => {

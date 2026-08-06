@@ -1,4 +1,10 @@
-export const certificates = [
+export interface Certificate {
+  name: string
+  image: string
+  pdf: string
+}
+
+export const certificates: Certificate[] = [
   {
     name: "University of Helsinki - Full Stack Open Containers",
     image: "/certificates/certificate-containers.webp",

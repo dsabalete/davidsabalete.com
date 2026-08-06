@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue"
-import { skills } from "../data/skills.js"
+import { skills } from "../data/skills"
 
 const expandedCategory = ref<string | null>(null)
 

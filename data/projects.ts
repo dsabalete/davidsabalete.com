@@ -1,4 +1,18 @@
-export const projects = [
+export interface Project {
+  image: string
+  alt: string
+  title: string
+  description: string
+  repo: string
+  live: string
+  tags: string[]
+  metrics?: {
+    performance: number
+    accessibility: number
+  }
+}
+
+export const projects: Project[] = [
   {
     image: "/chatbot.webp",
     alt: "AI Portfolio Assistant chatbot interface",
@@ -121,114 +135,4 @@ export const projects = [
     live: "https://my-1-rm.netlify.app/",
     tags: ["nuxt", "netlify"]
   }
-  /*
-  {
-    image: "/vue-twitter-clone.webp",
-    alt: "Vue twitter clone homepage picture",
-    title: "Vue twitter clone",
-    description: "App that emulates basic functionality of a Twitter app. Made with Vue and deployed on Heroku.",
-    repo: "https://github.com/dsabalete/vue-twitter-clone",
-    live: "https://elegant-rosalind-90c586.netlify.app/",
-    tags: ["vue", "heroku"]
-  },
-  {
-    image: "/expensify.webp",
-    alt: "Expensify homepage picture",
-    title: "Expensify App",
-    description: "App that helps keep you track of your expenses. Made with React and Firebase.",
-    repo: "https://github.com/dsabalete/udemy-expensify-app",
-    live: "",
-    tags: ["react", "firebase"]
-  },
-  {
-    image: "/indecision.webp",
-    alt: "Indecision homepage picture",
-    title: "Indecision App",
-    description: "Put your live in the hands of a computer. Made with React.",
-    repo: "https://github.com/dsabalete/udemy-indecision-app",
-    live: "",
-    tags: ["react"]
-  },
-  {
-    image: "/gridsome-portfolio.webp",
-    alt: "Portfolio on Github",
-    title: "Gridsome-Portfolio",
-    description: "My Portfolio made with Gridsome and ❤️",
-    repo: "https://github.com/dsabalete/gridsome-portfolio",
-    live: "",
-    tags: ["gridsome"]
-  },
-  {
-    image: "/calculator.webp",
-    alt: "ReactJS Calculator picture",
-    title: "ReactJS Calculator",
-    description: `ReactJS Calculator made with React.js. It has a simple calculator with a few functions.`,
-    repo: "https://codepen.io/dsabalete/full/yZrxzP",
-    live: "",
-    tags: ["react", "codepen"]
-  },
-  {
-    image: "/drum_machine.webp",
-    alt: "React and Redux Drum machine picture",
-    title: "Drum machine",
-    description: `React and Redux Drum machine made with React and Redux.`,
-    repo: "https://codepen.io/dsabalete/full/bzQEqQ",
-    live: "",
-    tags: ["react", "redux", "codepen"]
-  },
-  {
-    image: "/markdown.webp",
-    alt: "Markdown previewer picture",
-    title: "Markdown previewer",
-    description: `Markdown previewer made with React.js and Redux`,
-    repo: "https://codepen.io/dsabalete/full/daqqBQ",
-    live: "",
-    tags: ["react", "redux", "codepen", "markdown"]
-  },
-  {
-    image: "/pomodoro.webp",
-    alt: "Pomodoro clock picture",
-    title: "Pomodoro clock",
-    description: `Pomodoro clock made with React.js and Redux`,
-    repo: "https://codepen.io/dsabalete/full/MLNQvQ",
-    live: "",
-    tags: ["react", "redux", "codepen"]
-  },
-  {
-    image: "/quote_machine.webp",
-    alt: "Quote Machine picture",
-    title: "Quote Machine",
-    description: "Random Quote Machine using external API",
-    repo: "https://codepen.io/dsabalete/full/QdYLOZ",
-    live: "",
-    tags: ["react", "codepen"]
-  },
-  {
-    image: "/tribute_page.webp",
-    alt: "Bruce Lee tribute page",
-    title: "Bruce Lee tribute page",
-    description: "Simple Tribute page made with Bootstrap",
-    repo: "https://codepen.io/dsabalete/full/aBPxzB",
-    live: "",
-    tags: ["bootstrap", "codepen"]
-  },
-  {
-    image: "/weather.webp",
-    alt: "Weather app picture",
-    title: "Weather app",
-    description: "Forecast Weather App using JQuery and OpenWeatherMap API",
-    repo: "https://codepen.io/dsabalete/full/RKvqjJ",
-    live: "",
-    tags: ["jquery", "codepen"]
-  },
-  {
-    image: "/wikipedia_viewer.webp",
-    alt: "Wikipedia viewer picture",
-    title: "Wikipedia viewer",
-    description: "Wikipedia Viewer App made with Angular and Wikipedia API",
-    repo: "https://codepen.io/dsabalete/full/OpRKEZ",
-    live: "",
-    tags: ["angular", "codepen", "wikipedia"]
-  }
-    */
 ]

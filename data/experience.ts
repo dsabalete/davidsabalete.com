@@ -1,4 +1,11 @@
-export const experiences = [
+export interface Experience {
+  id: string
+  company: string
+  period: string
+  descriptionKeys?: string[]
+}
+
+export const experiences: Experience[] = [
   {
     id: "allianz",
     company: "Allianz Technology",
@@ -31,7 +38,7 @@ export const experiences = [
   },
   {
     id: "ict",
-    company: "Institut Català de Tecnologia",
+    company: "Institut Catala de Tecnologia",
     period: "June 2001 - May 2003"
   },
   {
