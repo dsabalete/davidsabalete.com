@@ -1,6 +1,6 @@
 # Personal web page
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ec9c8b17-46bb-42c0-abaa-3a4b2d3c9961/deploy-status)](https://app.netlify.com/sites/davidsabalete/deploys)
+[![ci](https://github.com/dsabalete/davidsabalete.com/actions/workflows/ci.yml/badge.svg)](https://github.com/dsabalete/davidsabalete.com/actions/workflows/ci.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/ec9c8b17-46bb-42c0-abaa-3a4b2d3c9961/deploy-status)](https://app.netlify.com/sites/davidsabalete/deploys)
 
 This is my personal web page, built with [Nuxt.js](https://nuxtjs.org/) and deployed with [Netlify](https://www.netlify.com/).
 
