@@ -4,12 +4,12 @@ export const skills = [
     items: [
       { name: "HTML5", icon: "/icons/html5.svg", tooltip: "HTML5" },
       { name: "CSS3", icon: "/icons/css3.svg", tooltip: "CSS3" },
+      { name: "Sass", icon: "/icons/sass.svg", tooltip: "Sass: Syntactically Awesome Style Sheets" },
       { name: "Javascript", icon: "/icons/javascript-js.svg", tooltip: "Javascript" },
       { name: "Typescript", icon: "/icons/typescript.svg", tooltip: "Typescript" },
       { name: "Vue.js", icon: "/icons/vue.svg", tooltip: "Vue.js" },
       { name: "Nuxt.js", icon: "/icons/nuxt.svg", tooltip: "Nuxt.js: Vue.js Framework" },
       { name: "React", icon: "/icons/react.svg", tooltip: "React.js & Redux" },
-      { name: "Sass", icon: "/icons/sass.svg", tooltip: "Sass: Syntactically Awesome Style Sheets" },
       { name: "Tailwind CSS", icon: "/icons/tailwind.svg", tooltip: "Tailwind CSS: Utility-first CSS Framework" }
     ]
   },

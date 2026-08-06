@@ -1,21 +1,61 @@
 <script setup lang="ts">
+import { ref } from "vue"
 import { skills } from "../data/skills.js"
+
+const expandedCategory = ref<string | null>(null)
+
+const toggleCategory = (category: string) => {
+  expandedCategory.value = expandedCategory.value === category ? null : category
+}
+
+const isExpanded = (category: string) => expandedCategory.value === category
 </script>
 
 <template>
   <SectionApp id="skills" class="lg:pr-32">
     <template #title>{{ $t("skills_title") }}</template>
 
-    <div v-for="group in skills" :key="group.category" class="mb-12">
-      <h3 class="text-lg font-bold mb-4">{{ group.category }}</h3>
-      <ul class="flex flex-wrap py-4">
-        <li v-for="skill in group.items" :key="skill.name" class="mx-4 my-8 hover:scale-150 duration-500">
-          <img v-tooltip.bottom="skill.tooltip" :src="skill.icon" :alt="skill.name" width="48" height="48" class="w-12 h-12" />
-        </li>
-      </ul>
+    <div class="space-y-2">
+      <div
+        v-for="group in skills"
+        :key="group.category"
+        class="border rounded-lg overflow-hidden border-gray-200 dark:border-gray-700"
+      >
+        <button
+          class="w-full flex items-center justify-between px-4 py-3 bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+          @click="toggleCategory(group.category)"
+        >
+          <span class="font-semibold">{{ group.category }}</span>
+          <svg
+            class="w-5 h-5 transition-transform duration-200"
+            :class="{ 'rotate-180': isExpanded(group.category) }"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <Transition name="accordion">
+          <div v-if="isExpanded(group.category)" class="px-4 py-4">
+            <ul class="flex flex-wrap gap-4">
+              <li v-for="skill in group.items" :key="skill.name" class="hover:scale-125 transition duration-300">
+                <img
+                  v-tooltip.bottom="skill.tooltip"
+                  :src="skill.icon"
+                  :alt="skill.name"
+                  width="40"
+                  height="40"
+                  class="w-10 h-10"
+                />
+              </li>
+            </ul>
+          </div>
+        </Transition>
+      </div>
     </div>
 
-    <h3 class="text-lg font-bold">{{ $t("skills_workflow") }}</h3>
+    <h3 class="text-lg font-bold mt-8">{{ $t("skills_workflow") }}</h3>
     <ul class="workflow flex flex-col py-4">
       <li>{{ $t("skills_workflow_text_1") }}</li>
       <li>{{ $t("skills_workflow_text_2") }}</li>
@@ -28,6 +68,26 @@ import { skills } from "../data/skills.js"
 </template>
 
 <style scoped>
+.accordion-enter-active,
+.accordion-leave-active {
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.accordion-enter-from,
+.accordion-leave-to {
+  opacity: 0;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.accordion-enter-to,
+.accordion-leave-from {
+  opacity: 1;
+  max-height: 200px;
+}
+
 .data-analysis li:before,
 .workflow li:before {
   content: "✅";

@@ -11,7 +11,7 @@ const displayedCertificates = computed(() => {
   <SectionApp id="certificates">
     <template #title>{{ $t("certificates_title") }}</template>
 
-    <div class="grid md:grid-cols-3 gap-10 px-6">
+    <div class="grid md:grid-cols-3 gap-10 md:px-6">
       <CertificateCard
         v-for="certificate in displayedCertificates"
         :key="certificate.name"

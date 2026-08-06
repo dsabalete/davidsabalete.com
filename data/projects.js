@@ -14,10 +14,10 @@ export const projects = [
     alt: "Alex Sabalete video portfolio homepage",
     title: "Alex Sabalete portfolio",
     description:
-      "Video portfolio of Alex Sabalete, a young audiovisual director, editor and DOP.",
+      "Video portfolio of Alex Sabalete, a young audiovisual director, editor and DOP. Built with Nuxt 3, TailwindCSS and Supabase. It allows users to watch his work, get in touch with him and get the latest news.",
     repo: "",
     live: "https://alexsabalete.site/",
-    tags: ["portfolio", "video"]
+    tags: ["nuxt", "video"]
   },
   {
     image: "/foto-uploader.webp",
