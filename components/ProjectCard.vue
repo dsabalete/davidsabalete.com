@@ -14,7 +14,13 @@ defineProps({
     <h3 class="text-xl font-bold pb-0 mb-2">{{ project.title }}</h3>
     <div class="project-image w-full">
       <a :href="project.live || project.repo" target="_blank">
-        <nuxt-img :src="project.image" :alt="project.alt" width="320" height="180" sizes="(max-width: 768px) 100vw, 320px" class="mx-auto md:mx-0 md:w-80 aspect-video rounded-xl"
+        <nuxt-img
+          :src="project.image"
+          :alt="project.alt"
+          width="320"
+          height="180"
+          sizes="(max-width: 768px) 100vw, 320px"
+          class="mx-auto md:mx-0 md:w-80 aspect-video rounded-xl"
       /></a>
     </div>
     <div class="project-info justify-center">
@@ -62,10 +68,18 @@ defineProps({
         </span>
       </div>
       <a
+        v-if="project.repo"
         :href="project.repo"
         class="text-base text-blue-600 dark:text-blue-400 hover:text-black dark:hover:text-white mr-4"
         target="_blank"
         >{{ $t("project_view") }}</a
+      >
+      <a
+        v-if="project.live"
+        :href="project.live"
+        class="text-base text-blue-600 dark:text-blue-400 hover:text-black dark:hover:text-white"
+        target="_blank"
+        >{{ $t("project_live") }}</a
       >
     </div>
   </div>
