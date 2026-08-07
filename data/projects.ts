@@ -21,7 +21,8 @@ export const projects: Project[] = [
       "An AI chatbot assistant built into this portfolio that answers questions about my experience, skills, projects and availability in multiple languages, with topic matching and analytics.",
     repo: "https://github.com/dsabalete/chatbot",
     live: "",
-    tags: ["nuxt", "vue", "ai", "typescript"]
+    tags: ["nuxt", "vue", "ai", "typescript"],
+    metrics: { performance: 100, accessibility: 100 }
   },
   {
     image: "/alex-sabalete.webp",
@@ -31,7 +32,8 @@ export const projects: Project[] = [
       "Video portfolio of Alex Sabalete, a young audiovisual director, editor and DOP. Built with Nuxt 3, TailwindCSS and Supabase. It allows users to watch his work, get in touch with him and get the latest news.",
     repo: "",
     live: "https://alexsabalete.site/",
-    tags: ["nuxt", "video"]
+    tags: ["nuxt", "video"],
+    metrics: { performance: 100, accessibility: 100 }
   },
   {
     image: "/foto-uploader.webp",
@@ -42,7 +44,7 @@ export const projects: Project[] = [
     repo: "https://github.com/dsabalete/foto-uploader",
     live: "https://foto-uploader.netlify.app/",
     tags: ["javascript", "netlify"],
-    metrics: { performance: 99, accessibility: 100 }
+    metrics: { performance: 100, accessibility: 100 }
   },
   {
     image: "/gym_tracker.webp",
@@ -64,7 +66,7 @@ export const projects: Project[] = [
     repo: "",
     live: "https://tercerespai.org/",
     tags: ["nuxt", "tailwind", "supabase"],
-    metrics: { performance: 95, accessibility: 97 }
+    metrics: { performance: 99, accessibility: 94 }
   },
   {
     image: "/system-monitor.webp",
