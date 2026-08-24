@@ -48,7 +48,7 @@ const close = () => {
               class="block px-3 py-1.5 text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
               :class="{ 'font-bold': locale === loc.code }"
             >
-              {{ loc.code }}
+              {{ loc.name }}
             </nuxt-link>
           </div>
         </template>
