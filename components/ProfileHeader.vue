@@ -27,12 +27,12 @@ const handleCopyEmailClick = async () => {
     <div class="flex flex-row gap-4 items-center mb-6 md:hidden">
       <div class="shrink-0">
         <nuxt-img
-          class="profile-image rounded-lg w-24 h-auto object-cover aspect-square shadow-2xl"
+          class="profile-image rounded-lg w-40 h-auto object-cover aspect-3/4 shadow-2xl"
           alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
-          src="/profile.jpg"
-          width="160"
-          height="160"
-          sizes="96px"
+          src="/web-profile.webp"
+          width="150"
+          height="200"
+          sizes="200px"
           loading="eager"
           decoding="async"
         />
@@ -44,12 +44,12 @@ const handleCopyEmailClick = async () => {
 
     <div class="shrink-0 hidden md:block">
       <nuxt-img
-        class="profile-image rounded-lg w-24 md:w-40 h-auto object-cover aspect-square shadow-2xl"
+        class="profile-image rounded-lg w-24 md:w-40 h-auto object-cover aspect-[3/4] shadow-2xl"
         alt="David Sabalete Rodríguez - Senior Full Stack Developer in Barcelona"
-        src="/profile.jpg"
+        src="/web-profile.webp"
         width="160"
-        height="160"
-        sizes="160px"
+        height="213"
+        sizes="213px"
         loading="eager"
         decoding="async"
       />

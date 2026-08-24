@@ -16,14 +16,14 @@ useSeoMeta({
   ogTitle: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   ogDescription:
     "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",
-  ogImage: "/profile.jpg",
+  ogImage: "/web-profile.webp",
   ogUrl: "https://www.davidsabalete.com",
   ogType: "website",
   twitterCard: "summary_large_image",
   twitterTitle: "David Sabalete | Senior Full Stack Developer | Vue.js Expert | Barcelona",
   twitterDescription:
     "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications.",
-  twitterImage: "/profile.jpg"
+  twitterImage: "/web-profile.webp"
 })
 
 useHead({
@@ -36,7 +36,7 @@ useSchemaOrg([
     name: "David Sabalete Rodríguez",
     alternateName: "David Sabalete",
     url: "https://www.davidsabalete.com",
-    image: "https://www.davidsabalete.com/profile.jpg",
+    image: "https://www.davidsabalete.com/web-profile.webp",
     jobTitle: "Senior Full Stack Developer",
     description:
       "Senior Full Stack Developer in Barcelona specializing in Vue.js, Nuxt.js, Node.js, and AWS. Expert in building scalable web applications with modern JavaScript frameworks.",

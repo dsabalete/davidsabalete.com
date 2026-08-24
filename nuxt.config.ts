@@ -76,7 +76,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://www.davidsabalete.com/profile.jpg"
+          content: "https://www.davidsabalete.com/web-profile.webp"
         },
         {
           property: "og:image:alt",
@@ -110,7 +110,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://www.davidsabalete.com/profile.jpg"
+          content: "https://www.davidsabalete.com/web-profile.webp"
         },
         {
           name: "twitter:image:alt",
