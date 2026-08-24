@@ -1,53 +1,97 @@
 <script lang="ts" setup>
-import { formatDate } from "~/utils"
-import type { BlogPost } from "~/types/blog"
+import type { BlogPost } from '~/types/blog'
 
 definePageMeta({
-  layout: "blog"
+  layout: 'blog'
 })
 
-// queryCollection is auto-imported by Nuxt Content v3
-const { data: postsData } = await useAsyncData("posts", () => queryCollection("posts").all())
+const { data: postsData } = await useAsyncData('posts', () => queryCollection('posts').all())
 
-// order posts by updatedAt descending
-postsData.value = postsData.value?.sort((a, b) => {
-  const dateA = new Date((a.meta?.updatedAt || a.meta?.createdAt || "") as string | Date).getTime()
-  const dateB = new Date((b.meta?.updatedAt || b.meta?.createdAt || "") as string | Date).getTime()
-  return dateB - dateA
+const posts = computed<BlogPost[]>(() => {
+  const raw = (postsData.value || []) as unknown as BlogPost[]
+  return raw.slice().sort((a, b) => {
+    const dateA = new Date((a.meta?.updatedAt || a.meta?.createdAt || '') as string).getTime()
+    const dateB = new Date((b.meta?.updatedAt || b.meta?.createdAt || '') as string).getTime()
+    return dateB - dateA
+  })
 })
 
-const posts = (postsData.value || []) as unknown as BlogPost[]
+const postsByYear = computed<Map<number, BlogPost[]>>(() => {
+  const map = new Map<number, BlogPost[]>()
+  for (const post of posts.value) {
+    const rawDate = (post.meta?.updatedAt || post.meta?.createdAt || '') as string
+    const year = parseYear(rawDate) ?? 0
+    const group = map.get(year) ?? []
+    group.push(post)
+    map.set(year, group)
+  }
+  return new Map([...map.entries()].sort((a, b) => b[0] - a[0]))
+})
 
-// Helper function to get post URL
+const sortedYears = computed<number[]>(() => [...postsByYear.value.keys()])
+
 const getPostUrl = (post: BlogPost): string => {
-  const slug = post.path?.replace("/posts/", "") || ""
+  const slug = post.path?.replace('/posts/', '') || ''
   return `/blog/${slug}`
+}
+
+const formatShortDate = (date: string | Date | undefined): string => {
+  if (!date) return ''
+  const formatted = formatDate(date)
+  return formatted === 'Unknown date' ? '' : formatted
 }
 </script>
 
 <template>
   <div>
-    <h1 class="text-center text-2xl py-8 uppercase font-bold text-black dark:text-gray-100">Blog Entries</h1>
-    <div class="flex flex-col md:grid md:grid-cols-3 gap-4 md:gap-8">
-      <NuxtLink
-        v-for="post in posts"
-        :key="post.id"
-        :to="getPostUrl(post)"
-        class="flex flex-col justify-between bg-white dark:bg-gray-800 text-black dark:text-gray-100 rounded-xl border p-4 text-center hover:bg-gray-100 dark:hover:bg-gray-700"
-      >
-        <div class="text-lg font-bold">{{ post?.meta?.title || post?.title || "Untitled" }}</div>
+    <div class="pt-16 pb-12 border-b border-gray-200 dark:border-gray-800">
+      <h1 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-gray-100">
+        Writing
+      </h1>
+      <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">
+        Notes on software, books, and things I find worth writing about.
+      </p>
+    </div>
 
-        <nuxt-img :src="post?.meta?.img as string" :alt="post?.meta?.alt as string" width="350" height="197" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 350px" loading="lazy" />
+    <div v-if="posts.length === 0" class="pt-16 text-center text-gray-500 dark:text-gray-400 text-sm">
+      No posts yet.
+    </div>
 
-        <div v-if="post?.meta?.updatedAt || post?.meta?.createdAt" class="text-base">
-          ({{ formatDate((post?.meta?.updatedAt || post?.meta?.createdAt) as string) }})
-        </div>
-      </NuxtLink>
+    <div v-else>
+      <section v-for="year in sortedYears" :key="year" class="mt-10">
+        <h2 class="text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-gray-500 mb-4">
+          {{ year || 'Other' }}
+        </h2>
 
-      <div v-if="posts.length === 0" class="text-center p-8">
-        <p>No posts found. Make sure queryContent is available and content/posts contains markdown files.</p>
-      </div>
-      <NuxtLink to="/" class="underline text-gray-900 dark:text-gray-400 text-sm text-center p-4">Back to home</NuxtLink>
+        <ul class="divide-y divide-gray-100 dark:divide-gray-800">
+          <li v-for="post in postsByYear.get(year)" :key="post.id">
+            <NuxtLink
+              :to="getPostUrl(post)"
+              class="group flex items-baseline justify-between gap-4 py-4 hover:bg-transparent"
+            >
+              <div class="flex-1 min-w-0">
+                <span
+                  class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-150 leading-snug"
+                >
+                  {{ post.meta?.title || post.title || 'Untitled' }}
+                </span>
+                <p
+                  v-if="post.meta?.description || post.description"
+                  class="mt-0.5 text-sm text-gray-500 dark:text-gray-400 truncate"
+                >
+                  {{ post.meta?.description || post.description }}
+                </p>
+              </div>
+              <time
+                v-if="post.meta?.updatedAt || post.meta?.createdAt"
+                class="flex-none text-sm text-gray-400 dark:text-gray-500 whitespace-nowrap"
+              >
+                {{ formatShortDate((post.meta?.updatedAt || post.meta?.createdAt) as string) }}
+              </time>
+            </NuxtLink>
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </template>

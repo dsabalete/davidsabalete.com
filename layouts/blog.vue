@@ -1,10 +1,33 @@
+<script setup lang="ts">
+const route = useRoute()
+const isBlogIndex = computed(() => route.path === '/blog')
+</script>
+
 <template>
-  <div>
-    <NuxtLink to="/" class="mt-2 text-2xl uppercase font-bold text-black dark:text-gray-100 sticky top-2 left-0">
-      <img v-tooltip.right="`Go back home`" src="/icons/home.svg" alt="Home" width="32" height="32" class="h-8 ml-2 dark:invert" />
-    </NuxtLink>
-    <div class="sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto p-4">
+  <div class="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <header class="sticky top-0 z-20 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+      <div class="max-w-2xl mx-auto px-6 h-14 flex items-center justify-between">
+        <NuxtLink
+          to="/"
+          class="text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200 tracking-wide"
+        >
+          david sabalete
+        </NuxtLink>
+        <div class="flex items-center gap-3">
+          <NuxtLink
+            v-if="!isBlogIndex"
+            to="/blog"
+            class="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200"
+          >
+            writing
+          </NuxtLink>
+          <ThemeToggle />
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-6 pb-24">
       <slot />
-    </div>
+    </main>
   </div>
 </template>

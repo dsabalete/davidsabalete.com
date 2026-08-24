@@ -1,3 +1,28 @@
+export const parseYear = (date: string | Date | undefined): number | null => {
+  if (!date) return null
+  if (date instanceof Date) return isNaN(date.getTime()) ? null : date.getFullYear()
+
+  const dateStr = String(date).trim()
+
+  const monthMap: Record<string, string> = {
+    jan: "01", feb: "02", mar: "03", apr: "04", may: "05", jun: "06",
+    jul: "07", aug: "08", sep: "09", oct: "10", nov: "11", dec: "12"
+  }
+
+  const customMatch = dateStr.match(/^([a-z]+)\s+(\d+)\s+(\d+)$/i)
+  if (customMatch) {
+    const [, monthAbbr, day, year] = customMatch
+    const month = monthMap[monthAbbr.toLowerCase()]
+    if (month) {
+      const parsed = new Date(`${year}-${month}-${day.padStart(2, "0")}`)
+      return isNaN(parsed.getTime()) ? null : parsed.getFullYear()
+    }
+  }
+
+  const parsed = new Date(dateStr)
+  return isNaN(parsed.getTime()) ? null : parsed.getFullYear()
+}
+
 export const formatDate = (date: string | Date | undefined): string => {
   if (!date) return "Unknown date"
 
