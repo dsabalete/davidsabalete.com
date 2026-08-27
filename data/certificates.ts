@@ -6,6 +6,11 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
   {
+    name: "Datacamp - Working with the OpenAI API",
+    image: "/certificates/openai-api.webp",
+    pdf: "https://www.datacamp.com/statement-of-accomplishment/course/cb6ab10d6d72f81d339eb536b58e60de87b6aa8c?raw=1"
+  },
+  {
     name: "University of Helsinki - Full Stack Open Containers",
     image: "/certificates/certificate-containers.webp",
     pdf: "https://courses.mooc.fi/certificates/validate/jwv5i2ujicnypzm"
