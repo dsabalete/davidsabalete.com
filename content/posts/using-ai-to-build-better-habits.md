@@ -3,8 +3,8 @@ title: Using AI to Build Better Habits
 description: How to use AI as an accountability partner to drink more water, practice yoga daily, and stick to the habits that matter
 img: /ai_portfolio_assistant.svg
 alt: Abstract illustration of AI assisting with daily habits
-createdAt: aug 27 2026
-updatedAt: aug 27 2026
+createdAt: aug 17 2026
+updatedAt: aug 17 2026
 ---
 
 We all know what we should do. Drink more water. Stretch for ten minutes. Practice yoga in the morning. The problem is not knowledge, it is consistency. And that is exactly where AI can help, not as a magic fix, but as a lightweight accountability system you can shape to your life.
@@ -56,10 +56,10 @@ What you get is gentle accountability and pattern recognition. After a week, it 
 If you prefer structured data, ask it to output a markdown table or CSV you can paste into Notion or Apple Notes:
 
 ```md
-| Date | Water (glasses) | Yoga (min) | Note |
-|------|-----------------|------------|------|
-| 08-27 | 6 | 10 | morning flow, felt good |
-| 08-28 | 4 | 0 | back-to-back calls |
+| Date  | Water (glasses) | Yoga (min) | Note                    |
+| ----- | --------------- | ---------- | ----------------------- |
+| 08-27 | 6               | 10         | morning flow, felt good |
+| 08-28 | 4               | 0          | back-to-back calls      |
 ```
 
 ## 4. Make It More Enjoyable
