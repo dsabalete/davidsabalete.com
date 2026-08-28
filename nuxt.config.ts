@@ -207,7 +207,28 @@ export default defineNuxtConfig({
   ogImage: {
     zeroRuntime: true
   },
-  content: {},
+  mdc: {
+    highlight: {
+      theme: {
+        default: 'github-light',
+        dark: 'github-dark'
+      },
+      langs: ['ts', 'typescript', 'js', 'javascript', 'vue', 'bash', 'shell', 'json', 'yaml', 'html', 'css', 'diff']
+    }
+  },
+  content: {
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'github-light',
+            dark: 'github-dark'
+          },
+          langs: ['ts', 'typescript', 'js', 'javascript', 'vue', 'bash', 'shell', 'json', 'yaml', 'html', 'css', 'diff']
+        }
+      }
+    }
+  },
   nitro: {
     preset: "netlify",
     prerender: {

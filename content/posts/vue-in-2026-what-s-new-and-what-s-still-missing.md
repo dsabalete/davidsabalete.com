@@ -20,7 +20,7 @@ There is no Vue 4.0. The major work for 2026 is **Vapor Mode** - an opt-in compi
 
 - **Vapor Mode is opt-in per component, not global.** Add `vapor` to the SFC block:
 
-  ```vue
+  ```vue [App.vue]
   <script setup vapor lang="ts">
   import { ref } from 'vue'
 
@@ -55,7 +55,7 @@ There is no Vue 4.0. The major work for 2026 is **Vapor Mode** - an opt-in compi
 
 - **`defineOptions`:** For `name` or `inheritAttrs` only. No `props/emits` inside it.
 
-  ```vue
+  ```vue [MyComponent.vue]
   <script setup lang="ts">
   defineOptions({ name: 'MyComponent' })
   </script>
@@ -63,7 +63,7 @@ There is no Vue 4.0. The major work for 2026 is **Vapor Mode** - an opt-in compi
 
 - **`defineProps` and `defineEmits`:** Compiler macros, no import needed. Use in `<script setup>`:
 
-  ```vue
+  ```vue [MyComponent.vue]
   <script setup lang="ts">
   const props = defineProps<{
     title: string
@@ -78,7 +78,7 @@ There is no Vue 4.0. The major work for 2026 is **Vapor Mode** - an opt-in compi
 
 - **`defineSlots`:** Also a macro, no import:
 
-  ```vue
+  ```vue [MyComponent.vue]
   <script setup lang="ts">
   const slots = defineSlots<{
     default(props: { item: string }): any
@@ -111,8 +111,7 @@ There is no Vue Router 5.0. The stable line is **Vue Router 4.x**. Type-safe rou
 - **`unplugin-vue-router`** or **Nuxt file-based routing** generate typed params/query/meta.
 - In-code guards remain `beforeEnter`, `onBeforeRouteLeave`, `onBeforeRouteUpdate`. There is no `onBeforeRouteEnter` composition guard as a macro.
 
-  ```ts
-  // router/index.ts
+  ```ts [router/index.ts]
   import { createRouter, createWebHistory } from 'vue-router'
 
   const router = createRouter({
@@ -144,7 +143,7 @@ Pinia remains **2.x** and the recommended store for Vue. There is no shipped Pin
 - Use `defineStore` with Setup syntax for full TypeScript inference.
 - For persistence, compose with VueUse:
 
-  ```ts
+  ```ts [stores/user.ts]
   import { defineStore } from 'pinia'
   import { ref } from 'vue'
   import { useLocalStorage } from '@vueuse/core'
@@ -189,7 +188,7 @@ Vue core SSR is low-level. For streaming, partial hydration, and head management
 
 Low-level core example (rarely used directly when on Nuxt):
 
-```ts
+```ts [server/ssr.ts]
 import { createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
 
@@ -201,7 +200,7 @@ const html = await renderToString(app)
 
 `defineCustomElement` is stable for building custom elements with Vue, but slot fallback and prop handling follow Web Components specs, not Vue template sugar.
 
-```ts
+```ts [MyElement.ts]
 import { defineCustomElement } from 'vue'
 
 const MyElement = defineCustomElement({
@@ -219,7 +218,7 @@ Use when you ship a design system to non-Vue consumers; otherwise prefer regular
 - **Vue I18n 10+** is incremental: message syntax, pluralization, and datetime/number formatting. It does not ship built-in `a11y` helpers.
 - For a11y, use VueUse (`useFocusTrap`, `useActiveElement`) plus manual ARIA/focus management. Rely on component libraries or `radix-vue`/`reka-ui` for headless primitives rather than expecting core helpers.
 
-```ts
+```ts [i18n.ts]
 import { createI18n } from 'vue-i18n'
 
 const i18n = createI18n({
@@ -258,7 +257,7 @@ No official Vue Native. The path is **Ionic Vue**, **Capacitor**, or **NativeScr
 
 No `<ErrorBoundary>` component in core. The primitive is `onErrorCaptured` plus `app.config.errorHandler`. Libraries and Nuxt's `NuxtErrorBoundary` fill the gap:
 
-```vue
+```vue [ErrorBoundary.vue]
 <script setup lang="ts">
 import { onErrorCaptured, ref } from 'vue'
 

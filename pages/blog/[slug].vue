@@ -201,28 +201,47 @@ useSchemaOrg([
 }
 
 .nuxt-content :deep(code) {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   padding: 0.15em 0.35em;
   border-radius: 0.25rem;
-  font-family: ui-monospace, monospace;
-  @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-200/60 dark:border-gray-700/60;
+}
+
+.nuxt-content :deep(p code),
+.nuxt-content :deep(li code) {
+  font-weight: 500;
+  white-space: break-spaces;
+  word-break: break-word;
 }
 
 .nuxt-content :deep(pre) {
-  margin: 1.75rem 0;
-  padding: 1.25rem 1.5rem;
-  border-radius: 0.5rem;
+  margin: 0;
+  padding: 0;
+  background: transparent !important;
+  border-radius: 0;
   overflow-x: auto;
-  font-size: 0.875rem;
+  font-size: 13.5px;
   line-height: 1.7;
-  @apply bg-gray-950 dark:bg-gray-900 text-gray-100;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .nuxt-content :deep(pre code) {
-  background: transparent;
-  padding: 0;
+  display: block;
+  background: transparent !important;
+  padding: 0 !important;
+  border: 0 !important;
   border-radius: 0;
   font-size: inherit;
-  @apply text-gray-100;
+  font-family: inherit;
+  color: inherit;
+  white-space: inherit;
+}
+
+.nuxt-content :deep(pre.shiki),
+.nuxt-content :deep(pre.shiki code) {
+  background: transparent !important;
 }
 </style>
