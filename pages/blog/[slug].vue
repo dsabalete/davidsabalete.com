@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import type { BlogPost } from '~/types/blog'
+import type { BlogPost } from "~/types/blog"
 
 definePageMeta({
-  layout: 'blog'
+  layout: "blog"
 })
 
 const route = useRoute()
@@ -12,21 +12,21 @@ const {
 
 const { data: post } = await useAsyncData(`blog-post-${route.params.slug}`, async () => {
   try {
-    if (typeof queryCollection !== 'undefined') {
+    if (typeof queryCollection !== "undefined") {
       const slug = route.params.slug as string
-      return (await queryCollection('posts').path(`/posts/${slug}`).first()) as unknown as BlogPost
+      return (await queryCollection("posts").path(`/posts/${slug}`).first()) as unknown as BlogPost
     }
-    console.error('queryCollection is not available')
+    console.error("queryCollection is not available")
     return null
   } catch (error) {
-    console.error('Error fetching article:', error)
+    console.error("Error fetching article:", error)
     return null
   }
 })
 
-const postTitle = computed(() => post.value?.meta?.title || post.value?.title || 'Untitled')
-const postDescription = computed(() => post.value?.meta?.description || post.value?.description || '')
-const postImage = computed(() => post.value?.meta?.img || '')
+const postTitle = computed(() => post.value?.meta?.title || post.value?.title || "Untitled")
+const postDescription = computed(() => post.value?.meta?.description || post.value?.description || "")
+const postImage = computed(() => post.value?.meta?.img || "")
 
 const canonicalUrl = computed(() => `${siteUrl}/blog/${route.params.slug}`)
 
@@ -40,7 +40,7 @@ const readingTime = computed<number>(() => {
 
 const formattedDate = computed<string>(() => {
   const raw = (post.value?.meta?.updatedAt || post.value?.meta?.createdAt) as string | undefined
-  return raw ? formatDate(raw) : ''
+  return raw ? formatDate(raw) : ""
 })
 
 useSeoMeta({
@@ -50,13 +50,13 @@ useSeoMeta({
   ogDescription: postDescription,
   ogUrl: canonicalUrl,
   ogImage: computed(() => (postImage.value ? `${siteUrl}${postImage.value}` : undefined)),
-  twitterCard: 'summary_large_image',
+  twitterCard: "summary_large_image",
   twitterTitle: postTitle,
   twitterDescription: postDescription
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: canonicalUrl.value }]
+  link: [{ rel: "canonical", href: canonicalUrl.value }]
 })
 
 useSchemaOrg([
@@ -67,9 +67,9 @@ useSchemaOrg([
     datePublished: computed(() => post.value?.meta?.createdAt || undefined),
     dateModified: computed(() => post.value?.meta?.updatedAt || undefined),
     author: {
-      '@type': 'Person',
-      name: 'David Sabalete Rodríguez',
-      url: 'https://www.davidsabalete.com'
+      "@type": "Person",
+      name: "David Sabalete Rodríguez",
+      url: "https://www.davidsabalete.com"
     }
   })
 ])
@@ -204,7 +204,7 @@ useSchemaOrg([
   font-size: 0.875em;
   padding: 0.15em 0.35em;
   border-radius: 0.25rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-200/60 dark:border-gray-700/60;
 }
 
@@ -217,7 +217,7 @@ useSchemaOrg([
 
 .nuxt-content :deep(pre) {
   margin: 0;
-  padding: 0;
+  padding: 0 1em;
   background: transparent !important;
   border-radius: 0;
   overflow-x: auto;

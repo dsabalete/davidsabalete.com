@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
       :class="isTerminal ? 'bg-gray-900 dark:bg-gray-950' : 'bg-gray-50 dark:bg-gray-800/50'"
     >
       <span
-        class="text-[11px] font-medium tracking-wide uppercase truncate"
+        class="text-[11px] font-medium tracking-wide truncate"
         :class="isTerminal ? 'text-gray-200' : 'text-gray-500 dark:text-gray-400'"
       >
         {{ displayName }}
@@ -115,8 +115,8 @@ onBeforeUnmount(() => {
     <pre
       :class="[
         props.class,
-        'm-0 overflow-x-auto px-4 py-4 text-[13.5px] leading-6 whitespace-pre-wrap break-words',
-        isTerminal ? '!bg-gray-950 !text-gray-100 dark:!bg-black is-terminal' : ''
+        'm-0 overflow-x-auto px-5 py-5 text-[13.5px] leading-6 whitespace-pre-wrap wrap-break-words',
+        isTerminal ? 'bg-gray-950! text-gray-100! dark:bg-black! is-terminal' : ''
       ]"
     ><code><slot /></code></pre>
   </div>
@@ -192,11 +192,19 @@ pre :deep([line]) {
    on our dark terminal bg. Override token colors to light palette. */
 pre.is-terminal {
   color: #f3f4f6 !important;
+  font-family:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-variant-ligatures: contextual;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
 }
 
 pre.is-terminal :deep(code),
 pre.is-terminal :deep(span) {
   color: #f3f4f6 !important;
+  font-family:
+    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* Keep prompt/command distinction readable without relying on theme */
