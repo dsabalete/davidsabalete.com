@@ -29,10 +29,10 @@ export const projects: Project[] = [
     alt: "Alex Sabalete video portfolio homepage",
     title: "Alex Sabalete portfolio",
     description:
-      "Video portfolio of Alex Sabalete, a young audiovisual director, editor and DOP. Built with Nuxt 3, TailwindCSS and Supabase. It allows users to watch his work, get in touch with him and get the latest news.",
+      'This project is a personal portfolio website built with React, TypeScript, and Vite for "Alex", featuring navigation between Home, About, and Contact pages with analytics tracking and a clean React 19 + TypeScript setup',
     repo: "",
     live: "https://alexsabalete.site/",
-    tags: ["nuxt", "video"],
+    tags: ["react", "video"],
     metrics: { performance: 100, accessibility: 100 }
   },
   {
