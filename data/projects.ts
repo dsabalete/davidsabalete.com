@@ -14,6 +14,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    image: "/stock-watcher.webp",
+    alt: "Stock Watcher homepage picture",
+    title: "Stock Watcher",
+    description:
+      "A web application for tracking stock prices, built with Nuxt 4, Vue 3, TailwindCSS, and powered by the EODHD market data API",
+    repo: "https://github.com/dsabalete/stock-watcher",
+    live: "https://stock-watcher.davidsabalete.com",
+    tags: ["nuxt", "tailwind", "api"],
+    metrics: { performance: 100, accessibility: 67 }
+  },
+  {
     image: "/chatbot.webp",
     alt: "AI Portfolio Assistant chatbot interface",
     title: "AI Portfolio Assistant",
