@@ -40,7 +40,9 @@ const close = () => {
           </svg>
         </button>
         <template #popper>
-          <div class="bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[5rem]">
+          <div
+            class="bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 py-1 min-w-[5rem]"
+          >
             <nuxt-link
               v-for="loc in locales"
               :key="loc.code"
@@ -94,7 +96,9 @@ const close = () => {
           <a v-smooth-scroll href="#interests" class="nav-entry">{{ t("interests") }} </a>
         </li>
         <li>
-          <a v-smooth-scroll href="#projects" class="nav-entry">{{ t("projects") }} </a>
+          <a href="https://projects.davidsabalete.com" target="_blank" rel="noopener noreferrer" class="nav-entry">
+            {{ t("projects") }}
+          </a>
         </li>
         <li>
           <nuxt-link v-smooth-scroll to="/blog" class="nav-entry">blog</nuxt-link>

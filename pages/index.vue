@@ -5,7 +5,6 @@ const EducationSection = defineAsyncComponent(() => import("@/components/Educati
 const CertificatesSection = defineAsyncComponent(() => import("@/components/CertificatesSection.vue"))
 const SkillsSection = defineAsyncComponent(() => import("@/components/SkillsSection.vue"))
 const InterestsSection = defineAsyncComponent(() => import("@/components/InterestsSection.vue"))
-const ProjectsSection = defineAsyncComponent(() => import("@/components/ProjectsSection.vue"))
 const ContactSection = defineAsyncComponent(() => import("@/components/ContactSection.vue"))
 
 useSeoMeta({
@@ -121,9 +120,6 @@ definePageMeta({
       </section>
       <section id="interests" aria-labelledby="interests-heading">
         <InterestsSection />
-      </section>
-      <section id="projects" aria-labelledby="projects-heading">
-        <ProjectsSection />
       </section>
       <section id="contact" aria-labelledby="contact-heading">
         <ContactSection />
