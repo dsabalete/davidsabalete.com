@@ -30,7 +30,8 @@ const close = () => {
     class="nav-app flex flex-col justify-between md:items-center z-20 lg:bg-transparent md:w-40 xl:w-64 md:h-screen md:fixed items-center"
   >
     <div class="flex justify-center items-center gap-2">
-      <VDropdown>
+      <ClientOnly>
+        <VDropdown>
         <button
           class="flex items-center gap-1 px-2 py-1 rounded-md text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
         >
@@ -55,6 +56,7 @@ const close = () => {
           </div>
         </template>
       </VDropdown>
+      </ClientOnly>
       <ThemeToggle />
     </div>
 
