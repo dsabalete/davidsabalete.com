@@ -14,6 +14,7 @@ export const useChatbot = () => {
   const messagesContainer = ref<HTMLElement | null>(null)
 
   const apiUrl = config.public.chatbotApiUrl as string
+  const apiKey = config.public.chatbotApiKey as string
 
   const sessionId =
     typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
@@ -50,8 +51,13 @@ export const useChatbot = () => {
       sessionId,
       locale: locale.value
     }
+    const headers: Record<string, string> = { "Content-Type": "application/json" }
+    if (apiKey) {
+      headers["X-API-Key"] = apiKey
+    }
     const response = await $fetch<ChatApiResponse>(apiUrl, {
       method: "POST",
+      headers,
       body
     })
     if (!response.response || !response.conversationHistory) {

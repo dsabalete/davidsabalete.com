@@ -19,7 +19,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       gtmId: process.env.NUXT_PUBLIC_GTM_ID || "",
-      chatbotApiUrl: process.env.NUXT_PUBLIC_CHATBOT_API_URL || ""
+      chatbotApiUrl: process.env.NUXT_PUBLIC_CHATBOT_API_URL || "",
+      chatbotApiKey: process.env.NUXT_PUBLIC_CHATBOT_API_KEY || ""
     }
   },
   site: {
